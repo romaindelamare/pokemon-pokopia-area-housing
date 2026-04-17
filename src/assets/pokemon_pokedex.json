@@ -144,7 +144,7 @@
     {
         "id": "016",
         "name": "Bellossom",
-        "family": null,
+        "family": "Oddish",
         "specialties": [
             "grow",
             "hype"
@@ -240,7 +240,7 @@
     {
         "id": "026",
         "name": "Slowking",
-        "family": null,
+        "family": "Slowpoke",
         "specialties": [
             "water",
             "teleport"
@@ -298,7 +298,7 @@
     {
         "id": "032",
         "name": "Cubone",
-        "family": null,
+        "family": "Cubone",
         "specialties": [
             "build"
         ],
@@ -307,7 +307,7 @@
     {
         "id": "033",
         "name": "Marowak",
-        "family": null,
+        "family": "Cubone",
         "specialties": [
             "build"
         ],
@@ -334,7 +334,7 @@
     {
         "id": "036",
         "name": "Hitmonchan",
-        "family": null,
+        "family": "Tyrogue",
         "specialties": [
             "trade"
         ],
@@ -343,7 +343,7 @@
     {
         "id": "037",
         "name": "Hitmontop",
-        "family": null,
+        "family": "Tyrogue",
         "specialties": [
             "trade"
         ],
@@ -352,7 +352,7 @@
     {
         "id": "038",
         "name": "Koffing",
-        "family": null,
+        "family": "Koffing",
         "specialties": [
             "recycle"
         ],
@@ -361,7 +361,7 @@
     {
         "id": "039",
         "name": "Weezing",
-        "family": null,
+        "family": "Koffing",
         "specialties": [
             "recycle"
         ],
@@ -407,7 +407,7 @@
     {
         "id": "044",
         "name": "Pinsir",
-        "family": null,
+        "family": "Magby",
         "specialties": [
             "chop",
             "build"
@@ -433,7 +433,7 @@
     {
         "id": "047",
         "name": "Ditto",
-        "family": null,
+        "family": "Magikarp",
         "specialties": [
             "transform"
         ],
@@ -472,7 +472,7 @@
     {
         "id": "051",
         "name": "Volbeat",
-        "family": null,
+        "family": "Electrike",
         "specialties": [
             "hype"
         ],
@@ -481,7 +481,7 @@
     {
         "id": "052",
         "name": "Illumise",
-        "family": null,
+        "family": "Electrike",
         "specialties": [
             "hype"
         ],
@@ -743,7 +743,7 @@
     {
         "id": "080",
         "name": "Raichu",
-        "family": null,
+        "family": "Pichu",
         "specialties": [
             "generate",
             "hype"
@@ -916,7 +916,7 @@
     {
         "id": "098",
         "name": "Exeggcute",
-        "family": null,
+        "family": "Exeggcute",
         "specialties": [
             "grow",
             "teleport"
@@ -926,7 +926,7 @@
     {
         "id": "099",
         "name": "Exeggutor",
-        "family": null,
+        "family": "Exeggcute",
         "specialties": [
             "grow",
             "teleport"
@@ -992,7 +992,7 @@
     {
         "id": "106",
         "name": "Lapras",
-        "family": null,
+        "family": "Magikarp",
         "specialties": [
             "water"
         ],
@@ -1117,7 +1117,7 @@
     {
         "id": "119",
         "name": "Smeargle",
-        "family": null,
+        "family": "Stantler",
         "specialties": [
             "paint"
         ],
@@ -1233,7 +1233,7 @@
     {
         "id": "131",
         "name": "Audino",
-        "family": null,
+        "family": "Drilbur",
         "specialties": [
             "trade"
         ],
@@ -1763,7 +1763,7 @@
     {
         "id": "187",
         "name": "Decidueye",
-        "family": null,
+        "family": "Rowlet",
         "specialties": [
             "grow",
             "chop"
@@ -1906,7 +1906,7 @@
     {
         "id": "202",
         "name": "Ceruledge",
-        "family": null,
+        "family": "Charcadet",
         "specialties": [
             "burn",
             "trade"
@@ -1998,7 +1998,7 @@
     {
         "id": "212",
         "name": "Politoed",
-        "family": null,
+        "family": "Poliwag",
         "specialties": [
             "water",
             "hype"
@@ -2128,7 +2128,7 @@
     {
         "id": "226",
         "name": "Typhlosion",
-        "family": null,
+        "family": "Cyndaquil",
         "specialties": [
             "burn",
             "trade"
@@ -2204,7 +2204,7 @@
     {
         "id": "234",
         "name": "Gallade",
-        "family": null,
+        "family": "Ralts",
         "specialties": [
             "teleport",
             "build"
@@ -2214,7 +2214,7 @@
     {
         "id": "235",
         "name": "Plusle",
-        "family": null,
+        "family": "Electrike",
         "specialties": [
             "generate"
         ],
@@ -2223,7 +2223,7 @@
     {
         "id": "236",
         "name": "Minun",
-        "family": null,
+        "family": "Electrike",
         "specialties": [
             "generate"
         ],
@@ -2385,7 +2385,7 @@
     {
         "id": "253",
         "name": "Greninja",
-        "family": null,
+        "family": "Froakie",
         "specialties": [
             "water",
             "chop"
@@ -2395,7 +2395,7 @@
     {
         "id": "254",
         "name": "Dedenne",
-        "family": null,
+        "family": "Amaura",
         "specialties": [
             "search"
         ],
@@ -2721,14 +2721,14 @@
     {
         "id": "289",
         "name": "Kyogre",
-        "family": null,
+        "family": "Beldum",
         "specialties": [],
         "litter_resource": null
     },
     {
         "id": "290",
         "name": "Raikou",
-        "family": null,
+        "family": "Stantler",
         "specialties": [
             "generate"
         ],
@@ -2737,7 +2737,7 @@
     {
         "id": "291",
         "name": "Entei",
-        "family": null,
+        "family": "Stantler",
         "specialties": [
             "burn"
         ],
@@ -2746,7 +2746,7 @@
     {
         "id": "292",
         "name": "Suicune",
-        "family": null,
+        "family": "Stantler",
         "specialties": [
             "water"
         ],
@@ -2755,7 +2755,7 @@
     {
         "id": "293",
         "name": "Volcanion",
-        "family": null,
+        "family": "Noibat",
         "specialties": [
             "burn"
         ],
@@ -2764,7 +2764,7 @@
     {
         "id": "294",
         "name": "Articuno",
-        "family": null,
+        "family": "Munchlax",
         "specialties": [
             "fly"
         ],
@@ -2773,7 +2773,7 @@
     {
         "id": "295",
         "name": "Zapdos",
-        "family": null,
+        "family": "Munchlax",
         "specialties": [
             "fly"
         ],
@@ -2782,7 +2782,7 @@
     {
         "id": "296",
         "name": "Moltres",
-        "family": null,
+        "family": "Munchlax",
         "specialties": [
             "fly"
         ],
@@ -2791,21 +2791,21 @@
     {
         "id": "297",
         "name": "Lugia",
-        "family": null,
+        "family": "Larvitar",
         "specialties": [],
         "litter_resource": null
     },
     {
         "id": "298",
         "name": "Ho-Oh",
-        "family": null,
+        "family": "Larvitar",
         "specialties": [],
         "litter_resource": null
     },
     {
         "id": "299",
         "name": "Mewtwo",
-        "family": null,
+        "family": "Dratini",
         "specialties": [
             "teleport"
         ],
@@ -2814,7 +2814,7 @@
     {
         "id": "300",
         "name": "Mew",
-        "family": null,
+        "family": "Dratini",
         "specialties": [
             "teleport"
         ],
