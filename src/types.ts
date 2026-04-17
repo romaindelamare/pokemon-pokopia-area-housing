@@ -35,7 +35,8 @@ export type Specialty =
   | 'collect'
   | 'engineer'
   | 'rarify'
-  | 'dream';
+  | 'dream'
+  | 'eat';
 
 export const SPECIALTY_META: Record<
   Specialty,
@@ -78,6 +79,7 @@ export const SPECIALTY_META: Record<
   engineer:  { label: 'Engineer',  icon: '⚙️', color: '#374151', bg: '#f3f4f6' },
   rarify:    { label: 'Rarify',    icon: '🌟', color: '#7c3aed', bg: '#ede9fe' },
   dream:     { label: 'Dream',     icon: '💤', color: '#6b7280', bg: '#f3f4f6' },
+  eat:       { label: 'Eat',       icon: '🍽️', color: '#b45309', bg: '#fef3c7' },
 };
 
 export const ALL_SPECIALTIES: Specialty[] = [
@@ -86,7 +88,7 @@ export const ALL_SPECIALTIES: Specialty[] = [
   'hype', 'recycle', 'storage', 'bulldoze', 'crush', 'explode',
   'teleport', 'transform', 'yawn', 'island',
   'generate', 'illuminate', 'appraise', 'honey', 'paint', 'dj',
-  'party', 'collect', 'engineer', 'rarify', 'dream',
+  'party', 'collect', 'engineer', 'rarify', 'dream', 'eat',
 ];
 
 export const LITTER_RESOURCE_META: Record<string, { label: string; icon: string; color: string; bg: string }> = {

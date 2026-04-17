@@ -24,8 +24,8 @@ export function PokemonPool({ pokemonList }: PokemonPoolProps) {
 
   const filtered = pokemonList.filter((p) => {
     const matchesSearch =
-      p.name.toLowerCase().includes(search.toLowerCase()) ||
-      p.family.toLowerCase().includes(search.toLowerCase());
+      (p.name ?? '').toLowerCase().includes(search.toLowerCase()) ||
+      (p.family ?? '').toLowerCase().includes(search.toLowerCase());
     const matchesSpecialty =
       filterSpecialty === null || p.specialties.includes(filterSpecialty);
     return matchesSearch && matchesSpecialty;

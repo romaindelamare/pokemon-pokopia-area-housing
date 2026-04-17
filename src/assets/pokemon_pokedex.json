@@ -1,6 +1,6 @@
 [
     {
-        "id": "001A",
+        "id": "001",
         "name": "Bulbasaur",
         "family": "Bulbasaur",
         "specialties": [
@@ -9,16 +9,7 @@
         "litter_resource": null
     },
     {
-        "id": "S001B",
-        "name": "Hoppip",
-        "family": "Bulbasaur",
-        "specialties": [
-            "grow"
-        ],
-        "litter_resource": null
-    },
-    {
-        "id": "002A",
+        "id": "002",
         "name": "Ivysaur",
         "family": "Bulbasaur",
         "specialties": [
@@ -27,16 +18,7 @@
         "litter_resource": null
     },
     {
-        "id": "S002B",
-        "name": "Skiploom",
-        "family": "Bulbasaur",
-        "specialties": [
-            "grow"
-        ],
-        "litter_resource": null
-    },
-    {
-        "id": "003A",
+        "id": "003",
         "name": "Venusaur",
         "family": "Bulbasaur",
         "specialties": [
@@ -44,25 +26,6 @@
             "litter"
         ],
         "litter_resource": "Leaf"
-    },
-    {
-        "id": "S003B",
-        "name": "Jumpluff",
-        "family": "Bulbasaur",
-        "specialties": [
-            "grow",
-            "litter"
-        ],
-        "litter_resource": "Fluff"
-    },
-    {
-        "id": "S003C",
-        "name": "Sableye",
-        "family": "Bulbasaur",
-        "specialties": [
-            "search"
-        ],
-        "litter_resource": null
     },
     {
         "id": "004",
@@ -407,7 +370,7 @@
     {
         "id": "040",
         "name": "Tangela",
-        "family": "Tangela",
+        "family": null,
         "specialties": [
             "grow",
             "litter"
@@ -417,7 +380,7 @@
     {
         "id": "041A",
         "name": "Professor Tangrowth",
-        "family": "Tangela",
+        "family": "Professor Tangrowth",
         "specialties": [
             "appraise"
         ],
@@ -426,7 +389,7 @@
     {
         "id": "041B",
         "name": "Tangrowth",
-        "family": "Tangela",
+        "family": "Professor Tangrowth",
         "specialties": [
             "grow",
             "litter"
@@ -801,7 +764,7 @@
     {
         "id": "079A",
         "name": "Peakychu",
-        "family": "Pichu",
+        "family": "Peakychu",
         "specialties": [
             "illuminate"
         ],
@@ -810,7 +773,7 @@
     {
         "id": "079B",
         "name": "Pikachu",
-        "family": "Pichu",
+        "family": "Peakychu",
         "specialties": [
             "generate"
         ],
@@ -1086,7 +1049,7 @@
     {
         "id": "108A",
         "name": "Mosslax",
-        "family": "Munchlax",
+        "family": "Mosslax",
         "specialties": [
             "eat"
         ],
@@ -1095,7 +1058,7 @@
     {
         "id": "108B",
         "name": "Snorlax",
-        "family": "Munchlax",
+        "family": "Mosslax",
         "specialties": [
             "trade",
             "bulldoze"
@@ -2933,5 +2896,33 @@
             "teleport"
         ],
         "litter_resource": null
+    },
+    {
+        "id": "S001",
+        "name": "Hoppip",
+        "family": "Hoppip",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "S002",
+        "name": "Skiploom",
+        "family": "Hoppip",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "S003A",
+        "name": "Jumpluff",
+        "family": "Hoppip",
+        "specialties": [
+            "grow",
+            "litter"
+        ],
+        "litter_resource": "Fluff"
     }
 ]
