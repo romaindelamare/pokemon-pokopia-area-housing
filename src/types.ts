@@ -106,33 +106,11 @@ export const LITTER_RESOURCE_META: Record<string, { label: string; icon: string;
   'small log':           { label: 'Small Log',         icon: '🪵', color: '#78350f', bg: '#fef3c7' },
 };
 
-export const TYPE_COLORS: Record<string, string> = {
-  fire:     '#FF6D00',
-  water:    '#0091EA',
-  grass:    '#00C853',
-  electric: '#FFD600',
-  rock:     '#795548',
-  ground:   '#FFA000',
-  ghost:    '#6A1B9A',
-  normal:   '#9E9E9E',
-  fighting: '#D32F2F',
-  ice:      '#00BCD4',
-  poison:   '#7B1FA2',
-  psychic:  '#E91E63',
-  dragon:   '#0D47A1',
-  steel:    '#607D8B',
-  fairy:    '#F48FB1',
-  dark:     '#37474F',
-  bug:      '#558B2F',
-  flying:   '#1565C0',
-};
-
 export interface Pokemon {
   id: string;
   name: string;
   family: string;
   dexNumber?: number;
-  type?: string;
   specialties: Specialty[];
   favoriteItems: string[];
   /** Resources produced when this Pokémon litters (only set for litter Pokémon) */

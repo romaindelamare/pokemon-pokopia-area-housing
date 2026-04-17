@@ -1,6 +1,6 @@
 import { useDraggable } from '@dnd-kit/core';
 import type { Pokemon } from '../types';
-import { SPECIALTY_META, LITTER_RESOURCE_META, TYPE_COLORS } from '../types';
+import { SPECIALTY_META, LITTER_RESOURCE_META } from '../types';
 
 interface PokemonCardProps {
   pokemon: Pokemon;
@@ -8,7 +8,6 @@ interface PokemonCardProps {
 }
 
 function cardColor(pokemon: Pokemon): string {
-  if (pokemon.type) return TYPE_COLORS[pokemon.type] ?? '#888';
   const first = pokemon.specialties[0];
   return first ? (SPECIALTY_META[first]?.color ?? '#888') : '#888';
 }
