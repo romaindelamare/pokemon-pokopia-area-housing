@@ -1,0 +1,2548 @@
+[
+    {
+        "id": "001",
+        "name": "Bulbasaur",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "002",
+        "name": "Ivysaur",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "003",
+        "name": "Venusaur",
+        "specialties": [
+            "grow",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "004",
+        "name": "Charmander",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "005",
+        "name": "Charmeleon",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "006",
+        "name": "Charizard",
+        "specialties": [
+            "burn",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "007",
+        "name": "Squirtle",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "008",
+        "name": "Wartortle",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "009",
+        "name": "Blastoise",
+        "specialties": [
+            "water",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "010",
+        "name": "Pidgey",
+        "specialties": [
+            "fly",
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "011",
+        "name": "Pidgeotto",
+        "specialties": [
+            "fly",
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "012",
+        "name": "Pidgeot",
+        "specialties": [
+            "fly",
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "013",
+        "name": "Oddish",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "014",
+        "name": "Gloom",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "015",
+        "name": "Vileplume",
+        "specialties": [
+            "grow",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "016",
+        "name": "Bellossom",
+        "specialties": [
+            "grow",
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "017",
+        "name": "Paras",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "018",
+        "name": "Parasect",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "019",
+        "name": "Venonat",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "020",
+        "name": "Venomoth",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "021",
+        "name": "Bellsprout",
+        "specialties": [
+            "grow",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "022",
+        "name": "Weepinbell",
+        "specialties": [
+            "grow",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "023",
+        "name": "Victreebel",
+        "specialties": [
+            "grow",
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "024",
+        "name": "Slowpoke",
+        "specialties": [
+            "water",
+            "yawn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "025",
+        "name": "Slowbro",
+        "specialties": [
+            "water",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "026",
+        "name": "Slowking",
+        "specialties": [
+            "water",
+            "teleport"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "027",
+        "name": "Magnemite",
+        "specialties": [
+            "generate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "028",
+        "name": "Magneton",
+        "specialties": [
+            "generate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "029",
+        "name": "Magnezone",
+        "specialties": [
+            "generate",
+            "recycle"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "030",
+        "name": "Onix",
+        "specialties": [
+            "crush",
+            "bulldoze"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "031",
+        "name": "Steelix",
+        "specialties": [
+            "crush",
+            "bulldoze"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "032",
+        "name": "Cubone",
+        "specialties": [
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "033",
+        "name": "Marowak",
+        "specialties": [
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "034",
+        "name": "Tyrogue",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "035",
+        "name": "Hitmonlee",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "036",
+        "name": "Hitmonchan",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "037",
+        "name": "Hitmontop",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "038",
+        "name": "Koffing",
+        "specialties": [
+            "recycle"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "039",
+        "name": "Weezing",
+        "specialties": [
+            "recycle"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "040",
+        "name": "Tangela",
+        "specialties": [
+            "grow",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "041",
+        "name": "Tangrowth",
+        "specialties": [
+            "appraise"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "042",
+        "name": "Scyther",
+        "specialties": [
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "043",
+        "name": "Scizor",
+        "specialties": [
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "044",
+        "name": "Pinsir",
+        "specialties": [
+            "chop",
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "045",
+        "name": "Magikarp",
+        "specialties": [],
+        "litter_resource": null
+    },
+    {
+        "id": "046",
+        "name": "Gyarados",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "047",
+        "name": "Ditto",
+        "specialties": [
+            "transform"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "048",
+        "name": "Hoothoot",
+        "specialties": [
+            "trade",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "049",
+        "name": "Noctowl",
+        "specialties": [
+            "trade",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "050",
+        "name": "Heracross",
+        "specialties": [
+            "chop",
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "051",
+        "name": "Volbeat",
+        "specialties": [
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "052",
+        "name": "Illumise",
+        "specialties": [
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "053",
+        "name": "Gulpin",
+        "specialties": [
+            "storage"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "054",
+        "name": "Swalot",
+        "specialties": [
+            "storage"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "055",
+        "name": "Cacnea",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "056",
+        "name": "Cacturne",
+        "specialties": [
+            "grow",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "057",
+        "name": "Combee",
+        "specialties": [
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "058",
+        "name": "Vespiquen",
+        "specialties": [
+            "gather",
+            "honey",
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "059",
+        "name": "Shellos(East Sea)(West Sea)",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "060",
+        "name": "Gastrodon(East Sea)(West Sea)",
+        "specialties": [
+            "water",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "061",
+        "name": "Drifloon",
+        "specialties": [
+            "dream",
+            "island"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "062",
+        "name": "Drifblim",
+        "specialties": [
+            "fly",
+            "gather"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "063",
+        "name": "Drilbur",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "064",
+        "name": "Excadrill",
+        "specialties": [
+            "chop",
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "065",
+        "name": "Timburr",
+        "specialties": [
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "066",
+        "name": "Gurdurr",
+        "specialties": [
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "067",
+        "name": "Conkeldurr",
+        "specialties": [
+            "build",
+            "crush"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "068",
+        "name": "Litwick",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "069",
+        "name": "Lampent",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "070",
+        "name": "Chandelure",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "071",
+        "name": "Axew",
+        "specialties": [
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "072",
+        "name": "Fraxure",
+        "specialties": [
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "073",
+        "name": "Haxorus",
+        "specialties": [
+            "chop",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "074",
+        "name": "Goomy",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "075",
+        "name": "Sliggoo",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "076",
+        "name": "Goodra",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "077",
+        "name": "Cramorant",
+        "specialties": [
+            "fly",
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "078",
+        "name": "Pichu",
+        "specialties": [
+            "generate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "079",
+        "name": "Pikachu",
+        "specialties": [
+            "illuminate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "080",
+        "name": "Raichu",
+        "specialties": [
+            "generate",
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "081",
+        "name": "Zubat",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "082",
+        "name": "Golbat",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "083",
+        "name": "Crobat",
+        "specialties": [
+            "search",
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "084",
+        "name": "Meowth",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "085",
+        "name": "Persian",
+        "specialties": [
+            "trade",
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "086",
+        "name": "Psyduck",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "087",
+        "name": "Golduck",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "088",
+        "name": "Growlithe",
+        "specialties": [
+            "burn",
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "089",
+        "name": "Arcanine",
+        "specialties": [
+            "burn",
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "090",
+        "name": "Farfetch'd",
+        "specialties": [
+            "chop",
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "091",
+        "name": "Grimer",
+        "specialties": [
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "092",
+        "name": "Muk",
+        "specialties": [
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "093",
+        "name": "Gastly",
+        "specialties": [
+            "gather",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "094",
+        "name": "Haunter",
+        "specialties": [
+            "gather",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "095",
+        "name": "Gengar",
+        "specialties": [
+            "gather",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "096",
+        "name": "Voltorb",
+        "specialties": [
+            "generate",
+            "explode"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "097",
+        "name": "Electrode",
+        "specialties": [
+            "generate",
+            "explode"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "098",
+        "name": "Exeggcute",
+        "specialties": [
+            "grow",
+            "teleport"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "099",
+        "name": "Exeggutor",
+        "specialties": [
+            "grow",
+            "teleport"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "100",
+        "name": "Happiny",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "101",
+        "name": "Chansey",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "102",
+        "name": "Blissey",
+        "specialties": [
+            "trade",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "103",
+        "name": "Elekid",
+        "specialties": [
+            "generate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "104",
+        "name": "Electabuzz",
+        "specialties": [
+            "generate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "105",
+        "name": "Electivire",
+        "specialties": [
+            "generate",
+            "crush"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "106",
+        "name": "Lapras",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "107",
+        "name": "Munchlax",
+        "specialties": [
+            "bulldoze"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "108",
+        "name": "Snorlax",
+        "specialties": [
+            "trade",
+            "bulldoze"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "109",
+        "name": "Spinarak",
+        "specialties": [
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "110",
+        "name": "Ariados",
+        "specialties": [
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "111",
+        "name": "Mareep",
+        "specialties": [
+            "generate",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "112",
+        "name": "Flaaffy",
+        "specialties": [
+            "generate",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "113",
+        "name": "Ampharos",
+        "specialties": [
+            "generate",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "114",
+        "name": "Azurill",
+        "specialties": [
+            "water",
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "115",
+        "name": "Marill",
+        "specialties": [
+            "water",
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "116",
+        "name": "Azumarill",
+        "specialties": [
+            "water",
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "117",
+        "name": "Paldean Wooper",
+        "specialties": [
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "118",
+        "name": "Clodsire",
+        "specialties": [
+            "litter",
+            "bulldoze"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "119",
+        "name": "Smeargle",
+        "specialties": [
+            "paint"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "120",
+        "name": "Torchic",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "121",
+        "name": "Combusken",
+        "specialties": [
+            "burn",
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "122",
+        "name": "Blaziken",
+        "specialties": [
+            "burn",
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "123",
+        "name": "Wingull",
+        "specialties": [
+            "water",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "124",
+        "name": "Pelipper",
+        "specialties": [
+            "water",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "125",
+        "name": "Makuhita",
+        "specialties": [
+            "build",
+            "bulldoze"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "126",
+        "name": "Hariyama",
+        "specialties": [
+            "build",
+            "bulldoze"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "127",
+        "name": "Absol",
+        "specialties": [
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "128",
+        "name": "Piplup",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "129",
+        "name": "Prinplup",
+        "specialties": [
+            "water",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "130",
+        "name": "Empoleon",
+        "specialties": [
+            "water",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "131",
+        "name": "Audino",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "132",
+        "name": "Trubbish",
+        "specialties": [
+            "recycle"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "133",
+        "name": "Garbodor",
+        "specialties": [
+            "litter",
+            "recycle"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "134",
+        "name": "Zorua",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "135",
+        "name": "Zoroark",
+        "specialties": [
+            "trade",
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "136",
+        "name": "Minccino",
+        "specialties": [
+            "gather"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "137",
+        "name": "Cinccino",
+        "specialties": [
+            "gather",
+            "recycle"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "138",
+        "name": "Grubbin",
+        "specialties": [
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "139",
+        "name": "Charjabug",
+        "specialties": [
+            "generate",
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "140",
+        "name": "Vikavolt",
+        "specialties": [
+            "generate",
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "141",
+        "name": "Mimikyu",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "142",
+        "name": "Pawmi",
+        "specialties": [
+            "generate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "143",
+        "name": "Pawmo",
+        "specialties": [
+            "generate",
+            "crush"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "144",
+        "name": "Pawmot",
+        "specialties": [
+            "generate",
+            "crush"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "145",
+        "name": "Tatsugiri(Curly Form)(Droopy Form)(Stretchy Form)",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "146",
+        "name": "Ekans",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "147",
+        "name": "Arbok",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "148",
+        "name": "Cleffa",
+        "specialties": [
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "149",
+        "name": "Clefairy",
+        "specialties": [
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "150",
+        "name": "Clefable",
+        "specialties": [
+            "hype",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "151",
+        "name": "Igglybuff",
+        "specialties": [
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "152",
+        "name": "Jigglypuff",
+        "specialties": [
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "153",
+        "name": "Wigglytuff",
+        "specialties": [
+            "hype",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "154",
+        "name": "Diglett",
+        "specialties": [
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "155",
+        "name": "Dugtrio",
+        "specialties": [
+            "hype",
+            "crush"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "156",
+        "name": "Machop",
+        "specialties": [
+            "build",
+            "gather"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "157",
+        "name": "Machoke",
+        "specialties": [
+            "build",
+            "gather"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "158",
+        "name": "Machamp",
+        "specialties": [
+            "build",
+            "gather"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "159",
+        "name": "Geodude",
+        "specialties": [
+            "crush"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "160",
+        "name": "Graveler",
+        "specialties": [
+            "crush"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "161",
+        "name": "Golem",
+        "specialties": [
+            "crush",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "162",
+        "name": "Magby",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "163",
+        "name": "Magmar",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "164",
+        "name": "Magmortar",
+        "specialties": [
+            "burn",
+            "crush"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "165",
+        "name": "Bonsly",
+        "specialties": [
+            "bulldoze"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "166",
+        "name": "Sudowoodo",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "167",
+        "name": "Murkrow",
+        "specialties": [
+            "trade",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "168",
+        "name": "Honchkrow",
+        "specialties": [
+            "trade",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "169",
+        "name": "Larvitar",
+        "specialties": [
+            "crush",
+            "bulldoze"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "170",
+        "name": "Pupitar",
+        "specialties": [
+            "crush",
+            "bulldoze"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "171",
+        "name": "Tyranitar",
+        "specialties": [
+            "crush",
+            "bulldoze"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "172",
+        "name": "Lotad",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "173",
+        "name": "Lombre",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "174",
+        "name": "Ludicolo",
+        "specialties": [
+            "water",
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "175",
+        "name": "Mawile",
+        "specialties": [
+            "trade",
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "176",
+        "name": "Torkoal",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "177",
+        "name": "Kricketot",
+        "specialties": [
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "178",
+        "name": "Kricketune",
+        "specialties": [
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "179",
+        "name": "Chatot",
+        "specialties": [
+            "hype",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "180",
+        "name": "Riolu",
+        "specialties": [
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "181",
+        "name": "Lucario",
+        "specialties": [
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "182",
+        "name": "Rotom",
+        "specialties": [
+            "dj"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "183",
+        "name": "Larvesta",
+        "specialties": [
+            "burn",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "184",
+        "name": "Volcarona",
+        "specialties": [
+            "burn",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "185",
+        "name": "Rowlet",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "186",
+        "name": "Dartrix",
+        "specialties": [
+            "grow",
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "187",
+        "name": "Decidueye",
+        "specialties": [
+            "grow",
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "188",
+        "name": "Scorbunny",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "189",
+        "name": "Raboot",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "190",
+        "name": "Cinderace",
+        "specialties": [
+            "burn",
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "191",
+        "name": "Skwovet",
+        "specialties": [
+            "search",
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "192",
+        "name": "Greedent",
+        "specialties": [
+            "party"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "193",
+        "name": "Rolycoly",
+        "specialties": [
+            "burn",
+            "gather"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "194",
+        "name": "Carkol",
+        "specialties": [
+            "burn",
+            "gather"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "195",
+        "name": "Coalossal",
+        "specialties": [
+            "burn",
+            "gather"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "196",
+        "name": "Toxel",
+        "specialties": [
+            "generate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "197",
+        "name": "Toxtricity(Amped Form)(Low Key Form)",
+        "specialties": [
+            "generate",
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "198",
+        "name": "Fidough",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "199",
+        "name": "Dachsbun",
+        "specialties": [
+            "search",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "200",
+        "name": "Charcadet",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "201",
+        "name": "Armarouge",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "202",
+        "name": "Ceruledge",
+        "specialties": [
+            "burn",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "203",
+        "name": "Glimmet",
+        "specialties": [
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "204",
+        "name": "Glimmora",
+        "specialties": [
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "205",
+        "name": "Gimmighoul",
+        "specialties": [
+            "collect"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "206",
+        "name": "Gholdengo",
+        "specialties": [
+            "collect"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "207",
+        "name": "Vulpix",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "208",
+        "name": "Ninetales",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "209",
+        "name": "Poliwag",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "210",
+        "name": "Poliwhirl",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "211",
+        "name": "Poliwrath",
+        "specialties": [
+            "water",
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "212",
+        "name": "Politoed",
+        "specialties": [
+            "water",
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "213",
+        "name": "Abra",
+        "specialties": [
+            "teleport"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "214",
+        "name": "Kadabra",
+        "specialties": [
+            "teleport"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "215",
+        "name": "Alakazam",
+        "specialties": [
+            "teleport",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "216",
+        "name": "Mime Jr",
+        "specialties": [
+            "gather"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "217",
+        "name": "Mr. Mime",
+        "specialties": [
+            "gather",
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "218",
+        "name": "Porygon",
+        "specialties": [
+            "recycle"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "219",
+        "name": "Porygon2",
+        "specialties": [
+            "recycle"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "220",
+        "name": "Porygon-Z",
+        "specialties": [
+            "rarify"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "221",
+        "name": "Dratini",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "222",
+        "name": "Dragonair",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "223",
+        "name": "Dragonite",
+        "specialties": [
+            "water",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "224",
+        "name": "Cyndaquil",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "225",
+        "name": "Quilava",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "226",
+        "name": "Typhlosion",
+        "specialties": [
+            "burn",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "227",
+        "name": "Misdreavus",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "228",
+        "name": "Mismagius",
+        "specialties": [
+            "gather",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "229",
+        "name": "Girafarig",
+        "specialties": [
+            "gather"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "230",
+        "name": "Farigiraf",
+        "specialties": [
+            "gather",
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "231",
+        "name": "Ralts",
+        "specialties": [
+            "teleport"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "232",
+        "name": "Kirlia",
+        "specialties": [
+            "teleport"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "233",
+        "name": "Gardevoir",
+        "specialties": [
+            "teleport",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "234",
+        "name": "Gallade",
+        "specialties": [
+            "teleport",
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "235",
+        "name": "Plusle",
+        "specialties": [
+            "generate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "236",
+        "name": "Minun",
+        "specialties": [
+            "generate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "237",
+        "name": "Trapinch",
+        "specialties": [
+            "bulldoze",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "238",
+        "name": "Vibrava",
+        "specialties": [
+            "bulldoze",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "239",
+        "name": "Flygon",
+        "specialties": [
+            "bulldoze",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "240",
+        "name": "Swablu",
+        "specialties": [
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "241",
+        "name": "Altaria",
+        "specialties": [
+            "litter",
+            "fly"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "242",
+        "name": "Duskull",
+        "specialties": [
+            "gather"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "243",
+        "name": "Dusclops",
+        "specialties": [
+            "gather"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "244",
+        "name": "Dusknoir",
+        "specialties": [
+            "gather",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "245",
+        "name": "Beldum",
+        "specialties": [
+            "recycle"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "246",
+        "name": "Metang",
+        "specialties": [
+            "recycle"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "247",
+        "name": "Metagross",
+        "specialties": [
+            "recycle",
+            "crush"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "248",
+        "name": "Snivy",
+        "specialties": [
+            "grow",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "249",
+        "name": "Servine",
+        "specialties": [
+            "grow",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "250",
+        "name": "Serperior",
+        "specialties": [
+            "grow",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "251",
+        "name": "Froakie",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "252",
+        "name": "Frogadier",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "253",
+        "name": "Greninja",
+        "specialties": [
+            "water",
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "254",
+        "name": "Dedenne",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "255",
+        "name": "Noibat",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "256",
+        "name": "Noivern",
+        "specialties": [
+            "search",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "257",
+        "name": "Rookidee",
+        "specialties": [
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "258",
+        "name": "Corvisquire",
+        "specialties": [
+            "chop"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "259",
+        "name": "Corviknight",
+        "specialties": [
+            "chop",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "260",
+        "name": "Dreepy",
+        "specialties": [
+            "gather",
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "261",
+        "name": "Drakloak",
+        "specialties": [
+            "gather",
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "262",
+        "name": "Dragapult",
+        "specialties": [
+            "gather",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "263",
+        "name": "Sprigatito",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "264",
+        "name": "Floragato",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "265",
+        "name": "Meowscarada",
+        "specialties": [
+            "grow",
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "266",
+        "name": "Wattrel",
+        "specialties": [
+            "generate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "267",
+        "name": "Kilowattrel",
+        "specialties": [
+            "generate",
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "268",
+        "name": "Tinkatink",
+        "specialties": [
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "269",
+        "name": "Tinkatuff",
+        "specialties": [
+            "build"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "270",
+        "name": "Tinkaton",
+        "specialties": [
+            "engineer"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "271",
+        "name": "Aerodactyl",
+        "specialties": [
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "272",
+        "name": "Cranidos",
+        "specialties": [
+            "crush"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "273",
+        "name": "Rampardos",
+        "specialties": [
+            "crush",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "274",
+        "name": "Shieldon",
+        "specialties": [
+            "crush"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "275",
+        "name": "Bastiodon",
+        "specialties": [
+            "crush",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "276",
+        "name": "Tyrunt",
+        "specialties": [
+            "crush"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "277",
+        "name": "Tyrantrum",
+        "specialties": [
+            "crush",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "278",
+        "name": "Amaura",
+        "specialties": [
+            "crush"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "279",
+        "name": "Aurorus",
+        "specialties": [
+            "crush",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    },
+    {
+        "id": "280",
+        "name": "Eevee",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "281",
+        "name": "Vaporeon",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "282",
+        "name": "Jolteon",
+        "specialties": [
+            "generate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "283",
+        "name": "Flareon",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "284",
+        "name": "Espeon",
+        "specialties": [
+            "gather"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "285",
+        "name": "Umbreon",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "286",
+        "name": "Leafeon",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "287",
+        "name": "Glaceon",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "288",
+        "name": "Sylveon",
+        "specialties": [
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "289",
+        "name": "Kyogre",
+        "specialties": [],
+        "litter_resource": null
+    },
+    {
+        "id": "290",
+        "name": "Raikou",
+        "specialties": [
+            "generate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "291",
+        "name": "Entei",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "292",
+        "name": "Suicune",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "293",
+        "name": "Volcanion",
+        "specialties": [
+            "burn"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "294",
+        "name": "Articuno",
+        "specialties": [
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "295",
+        "name": "Zapdos",
+        "specialties": [
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "296",
+        "name": "Moltres",
+        "specialties": [
+            "fly"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "297",
+        "name": "Lugia",
+        "specialties": [],
+        "litter_resource": null
+    },
+    {
+        "id": "298",
+        "name": "Ho-Oh",
+        "specialties": [],
+        "litter_resource": null
+    },
+    {
+        "id": "299",
+        "name": "Mewtwo",
+        "specialties": [
+            "teleport"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "300",
+        "name": "Mew",
+        "specialties": [
+            "teleport"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "S001",
+        "name": "Hoppip",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "S002",
+        "name": "Skiploom",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "S003",
+        "name": "Jumpluff",
+        "specialties": [
+            "grow",
+            "litter"
+        ],
+        "litter_resource": "plant"
+    }
+]
