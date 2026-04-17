@@ -29,6 +29,9 @@ export function HouseGroup({
 
   const isFull = pokemonList.length >= MAX_HOUSE_SIZE;
 
+  const hasLitter = pokemonList.some((p) => p.specialties.includes('litter'));
+  const hasGather = pokemonList.some((p) => p.specialties.includes('gather'));
+
   return (
     <div
       ref={setNodeRef}
@@ -38,6 +41,20 @@ export function HouseGroup({
       <div className="house-header">
         <span className="house-icon">🏠</span>
         <span className="house-title">House {houseNumber}</span>
+
+        {hasLitter && (
+          <span
+            className={`house-synergy-badge${hasGather ? ' synergy-ok' : ' synergy-warn'}`}
+            title={
+              hasGather
+                ? 'This house has both a Litter and a Gather Pokémon – great synergy!'
+                : 'This house has a Litter Pokémon but no Gather Pokémon yet'
+            }
+          >
+            {hasGather ? '🧹✅' : '🧹⚠️'}
+          </span>
+        )}
+
         <span className="house-count">
           {pokemonList.length}/{MAX_HOUSE_SIZE}
         </span>

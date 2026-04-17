@@ -1,42 +1,50 @@
-/* ── App Shell ───────────────────────────────────────────────────────────── */
+/* ── App Shell ────────────────────────────────────────────────────────────── */
 .app {
   display: flex;
   flex-direction: column;
   height: 100vh;
   overflow: hidden;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99,102,241,.18) 0%, transparent 60%),
+    var(--color-bg);
 }
 
-/* ── Header ─────────────────────────────────────────────────────────────── */
+/* ── Header ──────────────────────────────────────────────────────────────── */
 .app-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  height: 58px;
-  background: #2b2d42;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+  padding: 0 24px;
+  height: 60px;
+  background: rgba(15,23,42,.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
   flex-shrink: 0;
-  z-index: 10;
+  z-index: 20;
 }
 
 .header-title {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .header-pokeball {
-  font-size: 24px;
+  font-size: 22px;
+  filter: drop-shadow(0 0 8px rgba(129,140,248,.6));
 }
 
 .app-header h1 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: .02em;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  background: linear-gradient(135deg, #c7d2fe, #818cf8 60%, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-/* ── Family Toggle ───────────────────────────────────────────────────────── */
+/* ── Family Toggle ────────────────────────────────────────────────────────── */
 .family-toggle {
   display: flex;
   align-items: center;
@@ -46,38 +54,43 @@
 }
 
 .toggle-label {
-  font-size: .9rem;
-  opacity: .9;
+  font-size: .82rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  letter-spacing: .01em;
 }
 
 .toggle-switch {
   position: relative;
-  width: 44px;
-  height: 24px;
-  background: #555;
-  border-radius: 12px;
-  transition: background .2s;
+  width: 42px;
+  height: 22px;
+  background: rgba(255,255,255,.12);
+  border-radius: 11px;
+  transition: background var(--transition);
   flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,.1);
 }
 
 .toggle-switch.on {
-  background: #38a169;
+  background: #6366f1;
+  border-color: #818cf8;
+  box-shadow: 0 0 12px rgba(99,102,241,.4);
 }
 
 .toggle-thumb {
   position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 18px;
-  height: 18px;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
   background: #fff;
   border-radius: 50%;
-  transition: left .2s;
+  transition: left var(--transition);
   box-shadow: 0 1px 4px rgba(0,0,0,.3);
 }
 
 .toggle-switch.on .toggle-thumb {
-  left: 23px;
+  left: 22px;
 }
 
 /* ── Main ────────────────────────────────────────────────────────────────── */
@@ -85,81 +98,89 @@
   display: flex;
   flex: 1;
   overflow: hidden;
-  gap: 0;
 }
 
 /* ── Pool Sidebar ────────────────────────────────────────────────────────── */
 .pokemon-pool {
-  width: 230px;
-  min-width: 200px;
-  background: #fff;
-  border-right: 1px solid #e2e8f0;
+  width: 220px;
+  min-width: 180px;
+  background: rgba(15,23,42,.7);
+  border-right: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   overflow: hidden;
   flex-shrink: 0;
-  transition: background .2s;
+  transition: background var(--transition), border-color var(--transition);
+  backdrop-filter: blur(8px);
 }
 
 .pokemon-pool.pool-over {
-  background: #f0fff4;
-  border-right-color: #48bb78;
+  background: rgba(16,185,129,.08);
+  border-right-color: #10b981;
 }
 
 .pool-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 14px 8px;
-  font-size: .9rem;
+  padding: 14px 14px 10px;
+  font-size: .78rem;
   font-weight: 700;
-  color: #2d3748;
-  border-bottom: 1px solid #edf2f7;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
   flex-shrink: 0;
 }
 
 .pool-count {
-  background: #e2e8f0;
-  color: #4a5568;
-  padding: 1px 7px;
-  border-radius: 10px;
-  font-size: .75rem;
-  font-weight: 600;
+  background: rgba(255,255,255,.08);
+  color: var(--color-accent);
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: .72rem;
+  font-weight: 700;
 }
 
 .pool-search {
-  margin: 8px 10px;
-  padding: 6px 10px;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  font-size: .82rem;
+  margin: 10px 10px 6px;
+  padding: 7px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: .8rem;
   outline: none;
-  background: #f7fafc;
+  background: rgba(255,255,255,.05);
+  color: var(--color-text);
   flex-shrink: 0;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.pool-search::placeholder {
+  color: var(--color-text-muted);
 }
 
 .pool-search:focus {
-  border-color: #63b3ed;
-  background: #fff;
+  border-color: var(--color-accent);
+  background: rgba(99,102,241,.08);
 }
 
 .pool-list {
   flex: 1;
   overflow-y: auto;
-  padding: 4px 8px 8px;
+  padding: 4px 8px 12px;
 }
 
 .pool-family-group {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .pool-family-label {
-  font-size: .68rem;
-  font-weight: 600;
-  color: #718096;
+  font-size: .62rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
   text-transform: uppercase;
-  letter-spacing: .05em;
-  padding: 4px 4px 2px;
+  letter-spacing: .07em;
+  padding: 6px 4px 3px;
 }
 
 .pool-empty {
@@ -167,119 +188,122 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
   flex: 1;
-  padding: 24px;
-  color: #718096;
-  font-size: .85rem;
+  padding: 28px 16px;
+  color: var(--color-text-muted);
+  font-size: .82rem;
   text-align: center;
 }
 
-.pool-empty span {
-  font-size: 2rem;
-}
+.pool-empty span { font-size: 2.2rem; }
 
 .pool-drop-hint {
   padding: 8px;
   text-align: center;
-  font-size: .8rem;
-  color: #38a169;
-  background: #f0fff4;
-  border-top: 1px dashed #48bb78;
+  font-size: .76rem;
+  color: #10b981;
+  background: rgba(16,185,129,.08);
+  border-top: 1px dashed #10b981;
   flex-shrink: 0;
 }
 
-/* ── Areas Grid ──────────────────────────────────────────────────────────── */
+/* ── Areas Grid ───────────────────────────────────────────────────────────── */
 .areas-grid {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 0;
   overflow: hidden;
 }
 
-/* ── Area Column ─────────────────────────────────────────────────────────── */
+/* ── Area Column ──────────────────────────────────────────────────────────── */
 .area-column {
   display: flex;
   flex-direction: column;
-  border-top: 4px solid #ccc;
-  border-right: 1px solid #e2e8f0;
-  background: #f8fafc;
+  border-right: 1px solid var(--color-border);
+  background: rgba(255,255,255,.025);
   overflow: hidden;
-  transition: background .15s;
+  transition: background var(--transition);
 }
 
-.area-column:last-child {
-  border-right: none;
-}
+.area-column:last-child { border-right: none; }
 
 .area-column.area-over {
-  background: #fffbeb;
+  background: rgba(255,255,255,.05);
 }
 
 .area-header {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 8px 10px;
+  gap: 7px;
+  padding: 10px 12px;
   color: #fff;
   flex-shrink: 0;
+  position: relative;
 }
 
-.area-icon {
-  font-size: 1.2rem;
+.area-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,.12) 0%, transparent 100%);
+  pointer-events: none;
 }
+
+.area-icon { font-size: 1.1rem; }
 
 .area-name {
-  font-size: .8rem;
+  font-size: .75rem;
   font-weight: 700;
   flex: 1;
   letter-spacing: .01em;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4);
 }
 
 .area-poke-count {
-  background: rgba(255,255,255,.25);
-  padding: 1px 7px;
-  border-radius: 10px;
-  font-size: .72rem;
-  font-weight: 600;
+  background: rgba(0,0,0,.25);
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: .68rem;
+  font-weight: 700;
 }
 
-/* ── Specialty Coverage ──────────────────────────────────────────────────── */
+/* ── Specialty Coverage ───────────────────────────────────────────────────── */
 .area-specialties {
   display: flex;
   flex-wrap: wrap;
   gap: 3px;
-  padding: 6px 8px;
-  background: rgba(255,255,255,.8);
-  border-bottom: 1px solid #e2e8f0;
+  padding: 7px 8px;
+  background: rgba(0,0,0,.2);
+  border-bottom: 1px solid var(--color-border);
   flex-shrink: 0;
 }
 
 .specialty-badge {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
-  font-size: .85rem;
-  border: 1.5px solid transparent;
-  transition: all .15s;
+  border-radius: var(--radius-sm);
+  font-size: .78rem;
+  border: 1px solid transparent;
+  transition: all var(--transition);
 }
 
 .specialty-badge.missing {
-  background: #edf2f7;
-  border-color: #e2e8f0;
-  opacity: .4;
+  background: rgba(255,255,255,.04);
+  border-color: rgba(255,255,255,.06);
+  opacity: .3;
   filter: grayscale(1);
 }
 
 .specialty-badge.covered {
-  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  box-shadow: 0 0 8px rgba(255,255,255,.1);
+  transform: scale(1.05);
 }
 
-/* ── Houses ──────────────────────────────────────────────────────────────── */
+/* ── Houses ───────────────────────────────────────────────────────────────── */
 .area-houses {
   flex: 1;
   overflow-y: auto;
@@ -294,135 +318,156 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  min-height: 80px;
-  color: #a0aec0;
-  font-size: .8rem;
-  border: 2px dashed #e2e8f0;
-  border-radius: 8px;
-  padding: 16px;
+  gap: 8px;
+  min-height: 90px;
+  color: var(--color-text-muted);
+  font-size: .76rem;
+  border: 1.5px dashed rgba(255,255,255,.1);
+  border-radius: var(--radius-lg);
+  padding: 20px 12px;
   text-align: center;
 }
 
-.area-empty-icon {
-  font-size: 1.8rem;
-  opacity: .5;
-}
+.area-empty-icon { font-size: 2rem; opacity: .3; }
 
 .area-drop-hint {
   padding: 10px;
   text-align: center;
-  font-size: .8rem;
-  color: #c05621;
-  background: #fffbeb;
-  border: 2px dashed #f6ad55;
-  border-radius: 8px;
+  font-size: .76rem;
+  color: #fbbf24;
+  background: rgba(251,191,36,.08);
+  border: 1.5px dashed rgba(251,191,36,.4);
+  border-radius: var(--radius-md);
 }
 
 .area-footer {
-  padding: 6px 8px;
-  border-top: 1px solid #e2e8f0;
+  padding: 7px 8px;
+  border-top: 1px solid var(--color-border);
   flex-shrink: 0;
 }
 
 .add-house-btn {
   width: 100%;
-  padding: 5px;
-  border: 1.5px dashed #cbd5e0;
-  border-radius: 6px;
+  padding: 6px;
+  border: 1.5px dashed rgba(255,255,255,.12);
+  border-radius: var(--radius-md);
   background: transparent;
-  color: #718096;
-  font-size: .78rem;
+  color: var(--color-text-muted);
+  font-size: .74rem;
   font-weight: 600;
-  transition: all .15s;
+  letter-spacing: .02em;
+  transition: all var(--transition);
 }
 
 .add-house-btn:hover {
-  background: #edf2f7;
-  border-color: #a0aec0;
-  color: #4a5568;
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.2);
+  color: var(--color-text);
 }
 
-/* ── House Group ─────────────────────────────────────────────────────────── */
+/* ── House Group ──────────────────────────────────────────────────────────── */
 .house-group {
-  background: #fff;
-  border: 1.5px solid #e2e8f0;
-  border-radius: 10px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: border-color .15s, box-shadow .15s;
+  transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
+  backdrop-filter: blur(4px);
 }
 
 .house-group.house-over {
-  border-color: #63b3ed;
-  box-shadow: 0 0 0 3px rgba(99,179,237,.2);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-glow);
+  background: rgba(99,102,241,.08);
 }
 
 .house-group.house-full {
-  opacity: .9;
+  border-color: rgba(255,255,255,.05);
 }
 
 .house-header {
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 5px 8px;
-  background: #f7fafc;
-  border-bottom: 1px solid #edf2f7;
+  padding: 6px 10px;
+  background: rgba(255,255,255,.04);
+  border-bottom: 1px solid var(--color-border);
 }
 
-.house-icon {
-  font-size: .9rem;
-}
+.house-icon { font-size: .85rem; }
 
 .house-title {
-  font-size: .75rem;
+  font-size: .72rem;
   font-weight: 700;
-  color: #4a5568;
+  color: var(--color-text);
   flex: 1;
+  letter-spacing: .01em;
+}
+
+.house-synergy-badge {
+  font-size: .7rem;
+  padding: 1px 5px;
+  border-radius: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.synergy-ok {
+  background: rgba(16,185,129,.15);
+  border: 1px solid rgba(16,185,129,.3);
+}
+
+.synergy-warn {
+  background: rgba(245,158,11,.12);
+  border: 1px solid rgba(245,158,11,.3);
 }
 
 .house-count {
-  font-size: .7rem;
-  color: #718096;
-  background: #edf2f7;
-  padding: 0 5px;
-  border-radius: 8px;
+  font-size: .66rem;
+  color: var(--color-text-muted);
+  background: rgba(255,255,255,.06);
+  padding: 1px 6px;
+  border-radius: 20px;
+  font-weight: 600;
 }
 
 .house-remove-btn {
   background: none;
   border: none;
-  color: #fc8181;
-  font-size: .8rem;
+  color: rgba(248,113,113,.6);
+  font-size: .78rem;
   padding: 1px 4px;
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
   line-height: 1;
-  transition: background .15s;
+  transition: all var(--transition);
 }
 
 .house-remove-btn:hover {
-  background: #fff5f5;
+  background: rgba(248,113,113,.12);
+  color: #f87171;
 }
 
 .house-empty-slot {
-  padding: 12px;
+  padding: 14px;
   text-align: center;
-  color: #a0aec0;
-  font-size: .75rem;
-  border: 2px dashed #e2e8f0;
-  border-radius: 6px;
+  color: var(--color-text-muted);
+  font-size: .72rem;
+  border: 1.5px dashed rgba(255,255,255,.08);
+  border-radius: var(--radius-md);
   margin: 6px;
-  transition: all .15s;
+  transition: all var(--transition);
 }
 
 .house-empty-slot.house-over {
-  border-color: #63b3ed;
-  color: #3182ce;
-  background: #ebf8ff;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: rgba(99,102,241,.08);
 }
 
 .house-pokemon-list {
-  padding: 4px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -430,26 +475,26 @@
 
 .house-full-msg {
   padding: 4px 8px;
-  font-size: .7rem;
-  color: #e53e3e;
-  background: #fff5f5;
+  font-size: .68rem;
+  color: #f87171;
+  background: rgba(248,113,113,.08);
   text-align: center;
 }
 
-/* ── Favorite Items ──────────────────────────────────────────────────────── */
+/* ── Favourite Items ──────────────────────────────────────────────────────── */
 .house-items {
-  border-top: 1px solid #edf2f7;
-  padding: 5px 8px;
-  background: #fffff0;
+  border-top: 1px solid var(--color-border);
+  padding: 6px 8px 7px;
+  background: rgba(251,191,36,.04);
 }
 
 .house-items-label {
   display: block;
-  font-size: .65rem;
+  font-size: .6rem;
   font-weight: 700;
-  color: #744210;
+  color: #fbbf24;
   text-transform: uppercase;
-  letter-spacing: .04em;
+  letter-spacing: .06em;
   margin-bottom: 4px;
 }
 
@@ -460,99 +505,113 @@
 }
 
 .house-item-chip {
-  background: #fefcbf;
-  color: #744210;
-  border: 1px solid #f6e05e;
+  background: rgba(251,191,36,.1);
+  color: #fde68a;
+  border: 1px solid rgba(251,191,36,.2);
   padding: 1px 6px;
-  border-radius: 10px;
-  font-size: .65rem;
+  border-radius: 20px;
+  font-size: .6rem;
   font-weight: 500;
 }
 
-/* ── Pokémon Card ────────────────────────────────────────────────────────── */
+/* ── Pokémon Card ──────────────────────────────────────────────────────────── */
 .pokemon-card {
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   overflow: hidden;
-  border: 1.5px solid transparent;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.06);
+  box-shadow: var(--shadow-xs);
   cursor: grab;
   user-select: none;
-  transition: box-shadow .15s, transform .1s;
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
 }
 
 .pokemon-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,.15);
-  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,.18);
 }
 
 .pokemon-card.is-dragging {
-  opacity: .5;
+  opacity: .45;
 }
 
 .pokemon-card-header {
   display: flex;
   align-items: center;
-  gap: 4px;
-  padding: 4px 6px;
+  gap: 5px;
+  padding: 5px 7px;
   color: #fff;
+  position: relative;
+}
+
+.pokemon-card-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,.15) 0%, transparent 100%);
+  pointer-events: none;
 }
 
 .pokemon-sprite {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   image-rendering: pixelated;
   flex-shrink: 0;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,.35));
+  position: relative;
+  z-index: 1;
 }
 
 .pokemon-name {
-  font-size: .75rem;
+  font-size: .74rem;
   font-weight: 700;
   flex: 1;
-  text-shadow: 0 1px 2px rgba(0,0,0,.3);
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  position: relative;
+  z-index: 1;
 }
 
 .pokemon-card-specialties {
-  padding: 3px 5px 4px;
+  padding: 4px 6px 5px;
   display: flex;
   flex-wrap: wrap;
   gap: 2px;
-  background: #f8fafc;
+  background: rgba(0,0,0,.25);
 }
 
 .specialty-chip {
   padding: 1px 5px;
-  border-radius: 8px;
-  font-size: .62rem;
+  border-radius: 20px;
+  font-size: .58rem;
   font-weight: 600;
   white-space: nowrap;
+  letter-spacing: .01em;
 }
 
-/* ── Drag Overlay ────────────────────────────────────────────────────────── */
+/* ── Drag Overlay ──────────────────────────────────────────────────────────── */
 .overlay-card {
-  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+  box-shadow: var(--shadow-lg);
   cursor: grabbing;
-  transform: rotate(2deg) scale(1.03);
-  width: 180px;
+  transform: rotate(2deg) scale(1.04);
+  width: 175px;
 }
 
-.drag-overlay-stack {
-  position: relative;
-}
+.drag-overlay-stack { position: relative; }
 
 .drag-overlay-badge {
   position: absolute;
   top: -8px;
   right: -8px;
-  background: #e53e3e;
+  background: #6366f1;
   color: #fff;
-  font-size: .7rem;
-  font-weight: 700;
-  padding: 1px 6px;
-  border-radius: 10px;
+  font-size: .68rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 20px;
   z-index: 1;
-  box-shadow: 0 1px 4px rgba(0,0,0,.25);
+  box-shadow: 0 0 10px rgba(99,102,241,.5);
 }
