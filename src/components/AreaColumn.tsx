@@ -2,7 +2,13 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react
 import { useDroppable } from '@dnd-kit/core';
 import type { PokopiaArea, Pokemon, Specialty } from '../types';
 import { SPECIALTY_META, ALL_SPECIALTIES, LITTER_RESOURCE_META, MAX_HOUSE_SIZE } from '../types';
+import { POKEMON_DB } from '../data';
 import { HouseGroup } from './HouseGroup';
+
+// Specialties that exist in at least one Pokemon — avoids showing phantom entries.
+const ACTIVE_SPECIALTIES = ALL_SPECIALTIES.filter((s) =>
+  Object.values(POKEMON_DB).some((p) => p.specialties.includes(s))
+);
 
 interface AreaColumnProps {
   area: PokopiaArea;
@@ -183,7 +189,7 @@ export function AreaColumn({ area, pokemonDb, onRemoveHouse, activeDragCount, is
 
       <div ref={metaRef} className="area-meta">
         <div className="area-specialties" aria-label="Specialty coverage">
-          {ALL_SPECIALTIES.map((s) => {
+          {ACTIVE_SPECIALTIES.map((s) => {
             const meta = SPECIALTY_META[s];
             const covered = coveredSpecialties.has(s);
             return (

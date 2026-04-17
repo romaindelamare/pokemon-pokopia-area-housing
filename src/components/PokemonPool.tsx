@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDroppable } from '@dnd-kit/core';
 import type { Pokemon, Specialty } from '../types';
-import { SPECIALTY_META } from '../types';
+import { SPECIALTY_META, ALL_SPECIALTIES } from '../types';
 import { PokemonCard } from './PokemonCard';
 
 interface PokemonPoolProps {
@@ -18,9 +18,10 @@ export function PokemonPool({ pokemonList }: PokemonPoolProps) {
   });
 
   // Only show specialties present in the current pool
-  const availableSpecialties = Array.from(
-    new Set(pokemonList.flatMap((p) => p.specialties))
-  ).sort() as Specialty[];
+  const specialtiesInPool = new Set(pokemonList.flatMap((p) => p.specialties));
+  const availableSpecialties = ALL_SPECIALTIES.filter((s) =>
+    specialtiesInPool.has(s)
+  ) as Specialty[];
 
   const filtered = pokemonList.filter((p) => {
     const matchesSearch =

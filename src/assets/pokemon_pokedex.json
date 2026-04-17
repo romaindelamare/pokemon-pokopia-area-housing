@@ -1048,17 +1048,8 @@
     },
     {
         "id": "108A",
-        "name": "Mosslax",
-        "family": "Mosslax",
-        "specialties": [
-            "eat"
-        ],
-        "litter_resource": null
-    },
-    {
-        "id": "108B",
         "name": "Snorlax",
-        "family": "Mosslax",
+        "family": "Munchlax",
         "specialties": [
             "trade",
             "bulldoze"
@@ -2796,13 +2787,6 @@
         "litter_resource": null
     },
     {
-        "id": "289",
-        "name": "Kyogre",
-        "family": "Beldum",
-        "specialties": [],
-        "litter_resource": null
-    },
-    {
         "id": "290",
         "name": "Raikou",
         "family": "Stantler",
@@ -2866,20 +2850,6 @@
         "litter_resource": null
     },
     {
-        "id": "297",
-        "name": "Lugia",
-        "family": "Larvitar",
-        "specialties": [],
-        "litter_resource": null
-    },
-    {
-        "id": "298",
-        "name": "Ho-Oh",
-        "family": "Larvitar",
-        "specialties": [],
-        "litter_resource": null
-    },
-    {
         "id": "299",
         "name": "Mewtwo",
         "family": "Dratini",
@@ -2924,5 +2894,14 @@
             "litter"
         ],
         "litter_resource": "Fluff"
+    },
+    {
+        "id": "S003B",
+        "name": "Sableye",
+        "family": "Hoppip",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
     }
 ]
