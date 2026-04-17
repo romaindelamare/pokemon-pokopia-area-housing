@@ -1,6 +1,6 @@
 [
     {
-        "id": "001",
+        "id": "001A",
         "name": "Bulbasaur",
         "family": "Bulbasaur",
         "specialties": [
@@ -9,7 +9,16 @@
         "litter_resource": null
     },
     {
-        "id": "002",
+        "id": "S001B",
+        "name": "Hoppip",
+        "family": "Bulbasaur",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "002A",
         "name": "Ivysaur",
         "family": "Bulbasaur",
         "specialties": [
@@ -18,7 +27,16 @@
         "litter_resource": null
     },
     {
-        "id": "003",
+        "id": "S002B",
+        "name": "Skiploom",
+        "family": "Bulbasaur",
+        "specialties": [
+            "grow"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "003A",
         "name": "Venusaur",
         "family": "Bulbasaur",
         "specialties": [
@@ -26,6 +44,25 @@
             "litter"
         ],
         "litter_resource": "Leaf"
+    },
+    {
+        "id": "S003B",
+        "name": "Jumpluff",
+        "family": "Bulbasaur",
+        "specialties": [
+            "grow",
+            "litter"
+        ],
+        "litter_resource": "Fluff"
+    },
+    {
+        "id": "S003C",
+        "name": "Sableye",
+        "family": "Bulbasaur",
+        "specialties": [
+            "search"
+        ],
+        "litter_resource": null
     },
     {
         "id": "004",
@@ -378,13 +415,23 @@
         "litter_resource": "Vine Rope"
     },
     {
-        "id": "041",
-        "name": "Tangrowth",
+        "id": "041A",
+        "name": "Professor Tangrowth",
         "family": "Tangela",
         "specialties": [
             "appraise"
         ],
         "litter_resource": null
+    },
+    {
+        "id": "041B",
+        "name": "Tangrowth",
+        "family": "Tangela",
+        "specialties": [
+            "grow",
+            "litter"
+        ],
+        "litter_resource": "Vine Rope"
     },
     {
         "id": "042",
@@ -545,18 +592,37 @@
         "litter_resource": null
     },
     {
-        "id": "059",
-        "name": "Shellos(East Sea)(West Sea)",
-        "family": null,
+        "id": "059A",
+        "name": "Shellos",
+        "family": "Shellos",
         "specialties": [
             "water"
         ],
         "litter_resource": null
     },
     {
-        "id": "060",
-        "name": "Gastrodon(East Sea)(West Sea)",
-        "family": null,
+        "id": "059B",
+        "name": "Shellos East Sea",
+        "family": "Shellos",
+        "specialties": [
+            "water"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "060A",
+        "name": "Gastrodon",
+        "family": "Shellos",
+        "specialties": [
+            "water",
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "060B",
+        "name": "Gastrodon East Sea",
+        "family": "Shellos",
         "specialties": [
             "water",
             "trade"
@@ -597,8 +663,8 @@
         "name": "Excadrill",
         "family": "Drilbur",
         "specialties": [
-            "chop",
-            "search"
+            "search",
+            "chop"
         ],
         "litter_resource": null
     },
@@ -708,7 +774,8 @@
         "name": "Goodra",
         "family": "Sliggoo",
         "specialties": [
-            "water"
+            "water",
+            "trade"
         ],
         "litter_resource": null
     },
@@ -732,11 +799,20 @@
         "litter_resource": null
     },
     {
-        "id": "079",
-        "name": "Pikachu",
+        "id": "079A",
+        "name": "Peakychu",
         "family": "Pichu",
         "specialties": [
             "illuminate"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "079B",
+        "name": "Pikachu",
+        "family": "Pichu",
+        "specialties": [
+            "generate"
         ],
         "litter_resource": null
     },
@@ -1008,7 +1084,16 @@
         "litter_resource": null
     },
     {
-        "id": "108",
+        "id": "108A",
+        "name": "Mosslax",
+        "family": "Munchlax",
+        "specialties": [
+            "eat"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "108B",
         "name": "Snorlax",
         "family": "Munchlax",
         "specialties": [
@@ -1253,8 +1338,8 @@
         "name": "Garbodor",
         "family": "Trubbish",
         "specialties": [
-            "litter",
-            "recycle"
+            "recycle",
+            "litter"
         ],
         "litter_resource": "Nonburnable Garbage"
     },
@@ -1364,9 +1449,27 @@
         "litter_resource": null
     },
     {
-        "id": "145",
-        "name": "Tatsugiri(Curly Form)(Droopy Form)(Stretchy Form)",
-        "family": null,
+        "id": "145A",
+        "name": "Tatsugiri Curly Form",
+        "family": "Tatsugiri",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "145B",
+        "name": "Tatsugiri Droopy Form",
+        "family": "Tatsugiri",
+        "specialties": [
+            "trade"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "145C",
+        "name": "Tatsugiri Stretchy Form",
+        "family": "Tatsugiri",
         "specialties": [
             "trade"
         ],
@@ -1714,7 +1817,7 @@
     },
     {
         "id": "182",
-        "name": "Rotom",
+        "name": "Stereo Rotom",
         "family": null,
         "specialties": [
             "dj"
@@ -1857,9 +1960,19 @@
         "litter_resource": null
     },
     {
-        "id": "197",
-        "name": "Toxtricity(Amped Form)(Low Key Form)",
-        "family": null,
+        "id": "197A",
+        "name": "Toxtricity Amped Form",
+        "family": "Toxtricity",
+        "specialties": [
+            "generate",
+            "hype"
+        ],
+        "litter_resource": null
+    },
+    {
+        "id": "197B",
+        "name": "Toxtricity Low Key Form",
+        "family": "Toxtricity",
         "specialties": [
             "generate",
             "hype"
@@ -1899,7 +2012,8 @@
         "name": "Armarouge",
         "family": "Charcadet",
         "specialties": [
-            "burn"
+            "burn",
+            "trade"
         ],
         "litter_resource": null
     },
@@ -2035,7 +2149,7 @@
     },
     {
         "id": "216",
-        "name": "Mime Jr",
+        "name": "Mime Jr.",
         "family": null,
         "specialties": [
             "gather"
@@ -2819,33 +2933,5 @@
             "teleport"
         ],
         "litter_resource": null
-    },
-    {
-        "id": "S001",
-        "name": "Hoppip",
-        "family": "Hoppip",
-        "specialties": [
-            "grow"
-        ],
-        "litter_resource": null
-    },
-    {
-        "id": "S002",
-        "name": "Skiploom",
-        "family": "Hoppip",
-        "specialties": [
-            "grow"
-        ],
-        "litter_resource": null
-    },
-    {
-        "id": "S003",
-        "name": "Jumpluff",
-        "family": "Hoppip",
-        "specialties": [
-            "grow",
-            "litter"
-        ],
-        "litter_resource": "Fluff"
     }
 ]
