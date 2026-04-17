@@ -35,7 +35,7 @@ export function PokemonPool({ pokemonList }: PokemonPoolProps) {
     >
       <h2 className="pool-title">
         <span>🎒 Pokémon Pool</span>
-        <span className="pool-count">{pokemonList.length}</span>
+        <span className="pool-count">{pokemonList.length} Pokémon</span>
       </h2>
 
       <input
