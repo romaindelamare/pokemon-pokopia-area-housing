@@ -1,6 +1,7 @@
 import { useDraggable } from '@dnd-kit/core';
 import type { Pokemon } from '../types';
 import { SPECIALTY_META, LITTER_RESOURCE_META } from '../types';
+import { Icon } from './Icon';
 
 interface PokemonCardProps {
   pokemon: Pokemon;
@@ -16,9 +17,9 @@ function LitterResourceRow({ pokemon }: { pokemon: Pokemon }) {
   if (!pokemon.specialties.includes('litter') || !pokemon.litterResources?.length) return null;
   return (
     <div className="litter-resources-row">
-      <span className="litter-label">Litters:</span>
+      <Icon name="cleaning_services" className="litter-label" />
       {pokemon.litterResources.map((r) => {
-        const meta = LITTER_RESOURCE_META[r] ?? { icon: '📦', label: r, color: '#374151', bg: '#f3f4f6' };
+        const meta = LITTER_RESOURCE_META[r] ?? { icon: 'inventory_2', label: r, color: '#374151', bg: '#f3f4f6' };
         return (
           <span
             key={r}
@@ -26,7 +27,7 @@ function LitterResourceRow({ pokemon }: { pokemon: Pokemon }) {
             style={{ backgroundColor: meta.bg, color: meta.color }}
             title={`Litters ${meta.label}`}
           >
-            {meta.icon} {meta.label}
+            <Icon name={meta.icon} /> {meta.label}
           </span>
         );
       })}
@@ -69,7 +70,7 @@ export function PokemonCard({ pokemon, sourceId }: PokemonCardProps) {
               style={{ backgroundColor: meta.bg, color: meta.color }}
               title={meta.label}
             >
-              {meta.icon} {meta.label}
+              <Icon name={meta.icon} /> {meta.label}
             </span>
           );
         })}
@@ -96,7 +97,7 @@ export function PokemonCardOverlay({ pokemon }: { pokemon: Pokemon }) {
               className="specialty-chip"
               style={{ backgroundColor: meta.bg, color: meta.color }}
             >
-              {meta.icon} {meta.label}
+              <Icon name={meta.icon} /> {meta.label}
             </span>
           );
         })}

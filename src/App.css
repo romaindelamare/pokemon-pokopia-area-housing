@@ -28,7 +28,7 @@
   gap: 10px;
 }
 
-.header-pokeball { font-size: 20px; }
+.header-pokeball { font-size: 22px; }
 
 .app-header h1 {
   font-size: 1rem;
@@ -166,16 +166,21 @@
 }
 
 .pool-filter-chip {
-  padding: 2px 6px;
-  border-radius: 20px;
-  font-size: .62rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border-radius: var(--radius-sm);
+  font-size: .9rem;
   font-weight: 600;
   border: 1.5px solid var(--border);
   cursor: pointer;
   transition: all var(--transition);
   background: var(--bg);
   color: var(--text-3);
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .pool-filter-chip:hover {
@@ -219,7 +224,7 @@
   text-align: center;
 }
 
-.pool-empty span { font-size: 2rem; }
+.pool-empty-icon { font-size: 2.5rem; }
 
 .pool-drop-hint {
   padding: 8px;
@@ -285,7 +290,7 @@
   overflow: hidden;
 }
 
-.area-icon { font-size: 1rem; flex-shrink: 0; }
+.area-icon { font-size: 1.1rem; flex-shrink: 0; }
 
 .area-name {
   font-size: .78rem;
@@ -330,15 +335,16 @@
 }
 
 .area-litter-label {
-  font-size: .6rem;
-  font-weight: 700;
+  font-size: .9rem;
   color: #7e22ce;
-  text-transform: uppercase;
-  letter-spacing: .05em;
   margin-right: 2px;
+  flex-shrink: 0;
 }
 
 .area-litter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
   padding: 1px 6px;
   border-radius: 20px;
   font-size: .62rem;
@@ -353,7 +359,7 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-sm);
-  font-size: .78rem;
+  font-size: 14px;
   border: 1px solid transparent;
   transition: all var(--transition);
 }
@@ -401,7 +407,7 @@
   background: var(--surface);
 }
 
-.area-empty-icon { font-size: 2rem; opacity: .35; }
+.area-empty-icon { font-size: 2.5rem; opacity: .35; }
 
 .area-drop-hint {
   flex-shrink: 0;
@@ -465,7 +471,7 @@
   border-bottom: 1px solid var(--border);
 }
 
-.house-icon { font-size: .82rem; }
+.house-icon { font-size: 1rem; }
 
 .house-title {
   font-size: .71rem;
@@ -475,11 +481,14 @@
 }
 
 .house-synergy-badge {
-  font-size: .68rem;
-  padding: 1px 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  font-size: .9rem;
+  padding: 1px 5px;
   border-radius: 20px;
   font-weight: 600;
-  line-height: 1.7;
+  line-height: 1.5;
   white-space: nowrap;
   cursor: default;
   border: 1px solid transparent;
@@ -507,11 +516,14 @@
 }
 
 .house-remove-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   color: var(--text-4);
-  font-size: .78rem;
-  padding: 1px 4px;
+  font-size: 1rem;
+  padding: 2px;
   border-radius: var(--radius-sm);
   line-height: 1;
   transition: all var(--transition);
@@ -563,8 +575,10 @@
 }
 
 .house-items-label {
-  display: block;
-  font-size: .6rem;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: .65rem;
   font-weight: 700;
   color: #854d0e;
   text-transform: uppercase;
@@ -635,6 +649,9 @@
 }
 
 .specialty-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
   padding: 1px 5px;
   border-radius: 20px;
   font-size: .6rem;
@@ -682,6 +699,9 @@
 }
 
 .header-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   padding: 5px 12px;
   border: 1.5px solid var(--border-dark);
   border-radius: var(--radius);
@@ -809,15 +829,16 @@
 }
 
 .litter-label {
-  font-size: .58rem;
-  font-weight: 700;
+  font-size: .9rem;
   color: #7e22ce;
-  text-transform: uppercase;
-  letter-spacing: .05em;
   margin-right: 2px;
+  flex-shrink: 0;
 }
 
 .litter-resource-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
   padding: 1px 6px;
   border-radius: 20px;
   font-size: .6rem;

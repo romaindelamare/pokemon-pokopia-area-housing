@@ -3,6 +3,7 @@ import { useDroppable } from '@dnd-kit/core';
 import type { Pokemon, Specialty } from '../types';
 import { SPECIALTY_META, ALL_SPECIALTIES } from '../types';
 import { PokemonCard } from './PokemonCard';
+import { Icon } from './Icon';
 
 interface PokemonPoolProps {
   pokemonList: Pokemon[];
@@ -58,7 +59,7 @@ export function PokemonPool({ pokemonList }: PokemonPoolProps) {
       aria-label="Pokémon pool – drag Pokémon from here to an area"
     >
       <h2 className="pool-title">
-        <span>🎒 Pokémon Pool</span>
+        <span><Icon name="catching_pokemon" /> Pokémon Pool</span>
         <span className="pool-count">{pokemonList.length}</span>
       </h2>
 
@@ -89,7 +90,7 @@ export function PokemonPool({ pokemonList }: PokemonPoolProps) {
                 aria-pressed={active}
                 onClick={() => setFilterSpecialty(active ? null : s)}
               >
-                {meta.icon}
+                <Icon name={meta.icon} />
               </button>
             );
           })}
@@ -98,12 +99,12 @@ export function PokemonPool({ pokemonList }: PokemonPoolProps) {
 
       {pokemonList.length === 0 ? (
         <div className="pool-empty">
-          <span>🎉</span>
+          <Icon name="check_circle" className="pool-empty-icon" />
           <p>All Pokémon assigned!</p>
         </div>
       ) : filtered.length === 0 ? (
         <div className="pool-empty">
-          <span>🔍</span>
+          <Icon name="search_off" className="pool-empty-icon" />
           <p>No Pokémon found.</p>
         </div>
       ) : (

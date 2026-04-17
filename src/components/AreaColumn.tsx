@@ -4,6 +4,7 @@ import type { PokopiaArea, Pokemon, Specialty } from '../types';
 import { SPECIALTY_META, ALL_SPECIALTIES, LITTER_RESOURCE_META, MAX_HOUSE_SIZE } from '../types';
 import { POKEMON_DB } from '../data';
 import { HouseGroup } from './HouseGroup';
+import { Icon } from './Icon';
 
 // Specialties that exist in at least one Pokemon — avoids showing phantom entries.
 const ACTIVE_SPECIALTIES = ALL_SPECIALTIES.filter((s) =>
@@ -182,7 +183,7 @@ export function AreaColumn({ area, pokemonDb, onRemoveHouse, activeDragCount, is
       aria-label={`${area.name} – ${totalPokemon} Pokémon`}
     >
       <div ref={headerRef} className="area-header" style={{ backgroundColor: area.color }}>
-        <span className="area-icon">{area.icon}</span>
+        <Icon name={area.icon} className="area-icon" />
         <span className="area-name">{area.name}</span>
         <span className="area-poke-count">{totalPokemon}</span>
       </div>
@@ -203,7 +204,7 @@ export function AreaColumn({ area, pokemonDb, onRemoveHouse, activeDragCount, is
                 }
                 title={covered ? `${meta.label} – covered` : `${meta.label} – missing`}
               >
-                {meta.icon}
+                <Icon name={meta.icon} />
               </span>
             );
           })}
@@ -211,7 +212,7 @@ export function AreaColumn({ area, pokemonDb, onRemoveHouse, activeDragCount, is
 
         {litterResourcesInArea.length > 0 && (
           <div className="area-litter-resources" aria-label="Litter resources in this area">
-            <span className="area-litter-label">🧹</span>
+            <Icon name="cleaning_services" className="area-litter-label" />
             {litterResourcesInArea.map((r) => {
               const meta = LITTER_RESOURCE_META[r];
               if (!meta) return null;
@@ -222,7 +223,7 @@ export function AreaColumn({ area, pokemonDb, onRemoveHouse, activeDragCount, is
                   style={{ backgroundColor: meta.bg, color: meta.color }}
                   title={meta.label}
                 >
-                  {meta.icon} {meta.label}
+                  <Icon name={meta.icon} /> {meta.label}
                 </span>
               );
             })}
@@ -242,7 +243,7 @@ export function AreaColumn({ area, pokemonDb, onRemoveHouse, activeDragCount, is
         >
           {area.houses.length === 0 && !isOver && (
             <div className="area-empty">
-              <div className="area-empty-icon">{area.icon}</div>
+              <Icon name={area.icon} className="area-empty-icon" />
               <p>Drag Pokémon here</p>
             </div>
           )}

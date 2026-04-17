@@ -48,7 +48,7 @@ export const INITIAL_AREAS: PokopiaArea[] = [
     name: 'Withered Wasteland',
     color: '#92400e',
     bgColor: '#fef3c7',
-    icon: '🏜️',
+    icon: 'terrain',
     houses: [],
   },
   {
@@ -56,7 +56,7 @@ export const INITIAL_AREAS: PokopiaArea[] = [
     name: 'Bleak Beach',
     color: '#0e7490',
     bgColor: '#cffafe',
-    icon: '🏖️',
+    icon: 'beach_access',
     houses: [],
   },
   {
@@ -64,7 +64,7 @@ export const INITIAL_AREAS: PokopiaArea[] = [
     name: 'Rocky Ridges',
     color: '#374151',
     bgColor: '#f3f4f6',
-    icon: '⛰️',
+    icon: 'landscape',
     houses: [],
   },
   {
@@ -72,7 +72,7 @@ export const INITIAL_AREAS: PokopiaArea[] = [
     name: 'Sparkling Skylands',
     color: '#5b21b6',
     bgColor: '#ede9fe',
-    icon: '✨',
+    icon: 'auto_awesome',
     houses: [],
   },
   {
@@ -80,7 +80,7 @@ export const INITIAL_AREAS: PokopiaArea[] = [
     name: 'Palette Town',
     color: '#be185d',
     bgColor: '#fce7f3',
-    icon: '🎨',
+    icon: 'palette',
     houses: [],
   },
 ];
