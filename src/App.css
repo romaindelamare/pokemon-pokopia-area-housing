@@ -781,10 +781,21 @@
   font-size: .78rem;
   font-weight: 600;
   font-family: var(--font);
-  transition: opacity var(--transition);
+  transition: opacity var(--transition), background var(--transition), color var(--transition);
 }
 
 .load-confirm-btn:hover { opacity: .9; }
+
+.load-confirm-btn.btn-success {
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1.5px solid #86efac;
+}
+
+.share-popover .load-input {
+  cursor: text;
+  user-select: all;
+}
 
 /* ── Litter Resource Row ─────────────────────────────────────────────────── */
 .litter-resources-row {

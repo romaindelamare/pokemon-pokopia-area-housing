@@ -8,81 +8,128 @@ interface ShareLoadPanelProps {
 }
 
 export function ShareLoadPanel({ state, onLoad }: ShareLoadPanelProps) {
+  const [showShare, setShowShare] = useState(false);
   const [showLoad, setShowLoad] = useState(false);
-  const [code, setCode] = useState('');
+  const [shareCode, setShareCode] = useState('');
+  const [loadCode, setLoadCode] = useState('');
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState('');
   const panelRef = useRef<HTMLDivElement>(null);
-  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const shareTextareaRef = useRef<HTMLTextAreaElement>(null);
+  const loadTextareaRef = useRef<HTMLTextAreaElement>(null);
 
-  // Close load panel when clicking outside
+  // Close popovers when clicking outside
   useEffect(() => {
-    if (!showLoad) return;
+    if (!showShare && !showLoad) return;
     function handleClick(e: MouseEvent) {
       if (panelRef.current && !panelRef.current.contains(e.target as Node)) {
+        setShowShare(false);
         setShowLoad(false);
         setError('');
       }
     }
     document.addEventListener('mousedown', handleClick);
     return () => document.removeEventListener('mousedown', handleClick);
-  }, [showLoad]);
+  }, [showShare, showLoad]);
 
-  // Focus textarea when panel opens
+  // Generate share code and focus textarea when share panel opens
   useEffect(() => {
-    if (showLoad) setTimeout(() => textareaRef.current?.focus(), 50);
+    if (showShare) {
+      const encoded = encodeState(state);
+      setShareCode(encoded);
+      setTimeout(() => {
+        shareTextareaRef.current?.focus();
+        shareTextareaRef.current?.select();
+      }, 50);
+    }
+  }, [showShare, state]);
+
+  // Focus load textarea when load panel opens
+  useEffect(() => {
+    if (showLoad) setTimeout(() => loadTextareaRef.current?.focus(), 50);
   }, [showLoad]);
 
-  const handleShare = async () => {
-    const encoded = encodeState(state);
-    await navigator.clipboard.writeText(encoded);
+  const handleOpenShare = () => {
+    setShowShare((v) => !v);
+    setShowLoad(false);
+    setCopied(false);
+  };
+
+  const handleCopyShare = async () => {
+    await navigator.clipboard.writeText(shareCode);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const handleOpenLoad = () => {
+    setShowLoad((v) => !v);
+    setShowShare(false);
+    setError('');
+  };
+
   const handleLoad = () => {
-    if (!code.trim()) {
+    if (!loadCode.trim()) {
       setError('Please paste a distribution code.');
       return;
     }
-    const decoded = decodeState(code.trim());
+    const decoded = decodeState(loadCode.trim());
     if (!decoded) {
       setError('Invalid code — make sure you pasted the full string.');
       return;
     }
     onLoad(decoded);
     setShowLoad(false);
-    setCode('');
+    setLoadCode('');
     setError('');
   };
 
   return (
     <div className="share-load-panel" ref={panelRef}>
       <button
-        className={`header-btn${copied ? ' btn-success' : ''}`}
-        onClick={handleShare}
-        title="Copy distribution code to clipboard"
+        className={`header-btn${showShare ? ' btn-active' : ''}`}
+        onClick={handleOpenShare}
+        title="Share your current distribution"
       >
-        {copied ? '✓ Copied!' : '🔗 Share'}
+        🔗 Share
       </button>
 
       <button
         className={`header-btn${showLoad ? ' btn-active' : ''}`}
-        onClick={() => { setShowLoad((v) => !v); setError(''); }}
+        onClick={handleOpenLoad}
         title="Load a distribution from a code"
       >
         📥 Load
       </button>
 
+      {showShare && (
+        <div className="load-popover share-popover">
+          <p className="load-popover-label">Your distribution code:</p>
+          <textarea
+            ref={shareTextareaRef}
+            className="load-input"
+            value={shareCode}
+            readOnly
+            rows={3}
+            spellCheck={false}
+          />
+          <button
+            className={`load-confirm-btn${copied ? ' btn-success' : ''}`}
+            onClick={handleCopyShare}
+          >
+            {copied ? '✓ Copied!' : '📋 Copy code'}
+          </button>
+        </div>
+      )}
+
       {showLoad && (
         <div className="load-popover">
           <p className="load-popover-label">Paste a distribution code:</p>
           <textarea
-            ref={textareaRef}
+            ref={loadTextareaRef}
             className="load-input"
             placeholder="eyJ2IjoxLCJwb29sSWRzIjpbLi4uXX0="
-            value={code}
-            onChange={(e) => { setCode(e.target.value); setError(''); }}
+            value={loadCode}
+            onChange={(e) => { setLoadCode(e.target.value); setError(''); }}
             rows={3}
             spellCheck={false}
           />

@@ -44,8 +44,9 @@ export function PokemonPool({ pokemonList }: PokemonPoolProps) {
   const sorted = [...filtered].sort((a, b) => idRank(a.id) - idRank(b.id));
 
   const grouped = sorted.reduce<Record<string, Pokemon[]>>((acc, p) => {
-    if (!acc[p.family]) acc[p.family] = [];
-    acc[p.family].push(p);
+    const key = p.family ?? `__solo__${p.id}`;
+    if (!acc[key]) acc[key] = [];
+    acc[key].push(p);
     return acc;
   }, {});
 
@@ -57,7 +58,7 @@ export function PokemonPool({ pokemonList }: PokemonPoolProps) {
     >
       <h2 className="pool-title">
         <span>🎒 Pokémon Pool</span>
-        <span className="pool-count">{pokemonList.length} Pokémon</span>
+        <span className="pool-count">{pokemonList.length}</span>
       </h2>
 
       <input
@@ -108,7 +109,7 @@ export function PokemonPool({ pokemonList }: PokemonPoolProps) {
         <div className="pool-list">
           {Object.entries(grouped).map(([family, members]) => (
             <div key={family} className="pool-family-group">
-              {members.length > 1 && (
+              {members.length > 1 && !family.startsWith('__solo__') && (
                 <div className="pool-family-label">{family} family</div>
               )}
               {members.map((p) => (

@@ -380,7 +380,7 @@
     {
         "id": "041A",
         "name": "Professor Tangrowth",
-        "family": "Professor Tangrowth",
+        "family": "Tangrowth",
         "specialties": [
             "appraise"
         ],
@@ -389,7 +389,7 @@
     {
         "id": "041B",
         "name": "Tangrowth",
-        "family": "Professor Tangrowth",
+        "family": "Tangrowth",
         "specialties": [
             "grow",
             "litter"
