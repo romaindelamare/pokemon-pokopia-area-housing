@@ -129,8 +129,8 @@ export interface Pokemon {
   id: string;
   name: string;
   family: string;
-  dexNumber: number;
-  type: string;
+  dexNumber?: number;
+  type?: string;
   specialties: Specialty[];
   favoriteItems: string[];
   /** Resources produced when this Pokémon litters (only set for litter Pokémon) */

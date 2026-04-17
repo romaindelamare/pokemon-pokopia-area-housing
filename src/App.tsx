@@ -9,7 +9,7 @@ import {
   closestCenter,
 } from '@dnd-kit/core';
 import type { DragEndEvent, DragStartEvent } from '@dnd-kit/core';
-import { POKEMON_DB, INITIAL_AREAS } from './data';
+import { POKEMON_DB, POKEMON_ORDER, INITIAL_AREAS } from './data';
 import type { PokopiaArea, Pokemon, House } from './types';
 import { MAX_HOUSE_SIZE } from './types';
 import { PokemonPool } from './components/PokemonPool';
@@ -97,7 +97,7 @@ function addPokemonToArea(
 export default function App() {
   const [poolIds, setPoolIds] = useState<string[]>(() => {
     const saved = loadFromLocalStorage();
-    return saved ? saved.poolIds : Object.keys(POKEMON_DB);
+    return saved ? saved.poolIds : POKEMON_ORDER;
   });
   const [areas, setAreas] = useState<PokopiaArea[]>(() => {
     const saved = loadFromLocalStorage();
@@ -127,7 +127,7 @@ export default function App() {
   const handleReset = useCallback(() => {
     if (!window.confirm('Reset all areas? All Pokémon will return to the pool.')) return;
     setAreas(INITIAL_AREAS);
-    setPoolIds(Object.keys(POKEMON_DB));
+    setPoolIds(POKEMON_ORDER);
   }, []);
 
   const sensors = useSensors(

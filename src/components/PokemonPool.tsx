@@ -31,7 +31,15 @@ export function PokemonPool({ pokemonList }: PokemonPoolProps) {
     return matchesSearch && matchesSpecialty;
   });
 
-  const grouped = filtered.reduce<Record<string, Pokemon[]>>((acc, p) => {
+  /** Sort filtered list by JSON id order (numeric first, then S-ids alphabetically) */
+  const idRank = (id: string) => {
+    const n = parseInt(id, 10);
+    return isNaN(n) ? 100000 + id.charCodeAt(0) * 1000 + parseInt(id.slice(1), 10) : n;
+  };
+
+  const sorted = [...filtered].sort((a, b) => idRank(a.id) - idRank(b.id));
+
+  const grouped = sorted.reduce<Record<string, Pokemon[]>>((acc, p) => {
     if (!acc[p.family]) acc[p.family] = [];
     acc[p.family].push(p);
     return acc;

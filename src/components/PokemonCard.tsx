@@ -7,6 +7,12 @@ interface PokemonCardProps {
   sourceId: string;
 }
 
+function cardColor(pokemon: Pokemon): string {
+  if (pokemon.type) return TYPE_COLORS[pokemon.type] ?? '#888';
+  const first = pokemon.specialties[0];
+  return first ? (SPECIALTY_META[first]?.color ?? '#888') : '#888';
+}
+
 function LitterResourceRow({ pokemon }: { pokemon: Pokemon }) {
   if (!pokemon.specialties.includes('litter') || !pokemon.litterResources?.length) return null;
   return (
@@ -39,8 +45,10 @@ export function PokemonCard({ pokemon, sourceId }: PokemonCardProps) {
     ? { transform: `translate3d(${transform.x}px, ${transform.y}px, 0)`, zIndex: 999 }
     : {};
 
-  const typeColor = TYPE_COLORS[pokemon.type] ?? '#888';
-  const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.dexNumber}.png`;
+  const headerColor = cardColor(pokemon);
+  const spriteUrl = pokemon.dexNumber
+    ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.dexNumber}.png`
+    : null;
 
   return (
     <div
@@ -52,15 +60,17 @@ export function PokemonCard({ pokemon, sourceId }: PokemonCardProps) {
       title={pokemon.name}
       aria-label={`${pokemon.name} – drag to move`}
     >
-      <div className="pokemon-card-header" style={{ backgroundColor: typeColor }}>
-        <img
-          src={spriteUrl}
-          alt={pokemon.name}
-          className="pokemon-sprite"
-          onError={(e) => {
-            (e.currentTarget as HTMLImageElement).style.display = 'none';
-          }}
-        />
+      <div className="pokemon-card-header" style={{ backgroundColor: headerColor }}>
+        {spriteUrl && (
+          <img
+            src={spriteUrl}
+            alt={pokemon.name}
+            className="pokemon-sprite"
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).style.display = 'none';
+            }}
+          />
+        )}
         <span className="pokemon-name">{pokemon.name}</span>
       </div>
       <div className="pokemon-card-specialties">
@@ -84,20 +94,24 @@ export function PokemonCard({ pokemon, sourceId }: PokemonCardProps) {
 }
 
 export function PokemonCardOverlay({ pokemon }: { pokemon: Pokemon }) {
-  const typeColor = TYPE_COLORS[pokemon.type] ?? '#888';
-  const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.dexNumber}.png`;
+  const headerColor = cardColor(pokemon);
+  const spriteUrl = pokemon.dexNumber
+    ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.dexNumber}.png`
+    : null;
 
   return (
     <div className="pokemon-card overlay-card">
-      <div className="pokemon-card-header" style={{ backgroundColor: typeColor }}>
-        <img
-          src={spriteUrl}
-          alt={pokemon.name}
-          className="pokemon-sprite"
-          onError={(e) => {
-            (e.currentTarget as HTMLImageElement).style.display = 'none';
-          }}
-        />
+      <div className="pokemon-card-header" style={{ backgroundColor: headerColor }}>
+        {spriteUrl && (
+          <img
+            src={spriteUrl}
+            alt={pokemon.name}
+            className="pokemon-sprite"
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).style.display = 'none';
+            }}
+          />
+        )}
         <span className="pokemon-name">{pokemon.name}</span>
       </div>
       <div className="pokemon-card-specialties">
