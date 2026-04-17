@@ -2,6 +2,8 @@ export type Specialty =
   | 'burn'
   | 'water'
   | 'plant'
+  | 'grow'
+  | 'fly'
   | 'electric'
   | 'cool'
   | 'craft'
@@ -42,6 +44,8 @@ export const SPECIALTY_META: Record<
   burn:      { label: 'Burn',      icon: '🔥', color: '#9d2b06', bg: '#fde8df' },
   water:     { label: 'Water',     icon: '💧', color: '#0a5694', bg: '#dff1fc' },
   plant:     { label: 'Plant',     icon: '🌿', color: '#1a6b2f', bg: '#dff5e6' },
+  grow:      { label: 'Grow',      icon: '🌱', color: '#2d5a1b', bg: '#e6f5de' },
+  fly:       { label: 'Fly',       icon: '🕊️', color: '#1565c0', bg: '#e3f2fd' },
   electric:  { label: 'Electric',  icon: '⚡', color: '#8b6d00', bg: '#fff8d6' },
   cool:      { label: 'Cool',      icon: '❄️', color: '#0b6b8a', bg: '#d6f5ff' },
   craft:     { label: 'Craft',     icon: '🔨', color: '#6b3e2c', bg: '#f5e6df' },
@@ -77,7 +81,7 @@ export const SPECIALTY_META: Record<
 };
 
 export const ALL_SPECIALTIES: Specialty[] = [
-  'burn', 'water', 'plant', 'electric', 'cool', 'craft', 'mine',
+  'burn', 'water', 'plant', 'grow', 'fly', 'electric', 'cool', 'craft', 'mine',
   'gather', 'litter', 'transport', 'search', 'chop', 'trade', 'build',
   'hype', 'recycle', 'storage', 'bulldoze', 'crush', 'explode',
   'teleport', 'transform', 'yawn', 'island',

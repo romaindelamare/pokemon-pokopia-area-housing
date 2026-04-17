@@ -5,17 +5,17 @@ export const POKEMON_DB: Record<string, Pokemon> = {
   // ── Bulbasaur ─────────────────────────────────────────
   bulbasaur: {
     id: 'bulbasaur', name: 'Bulbasaur', family: 'Bulbasaur', dexNumber: 1,
-    type: 'grass', specialties: ['plant', 'gather'],
+    type: 'grass', specialties: ['grow'],
     favoriteItems: [],
   },
   ivysaur: {
     id: 'ivysaur', name: 'Ivysaur', family: 'Bulbasaur', dexNumber: 2,
-    type: 'grass', specialties: ['plant', 'gather'],
+    type: 'grass', specialties: ['grow'],
     favoriteItems: [],
   },
   venusaur: {
     id: 'venusaur', name: 'Venusaur', family: 'Bulbasaur', dexNumber: 3,
-    type: 'grass', specialties: ['plant', 'gather', 'litter'],
+    type: 'grass', specialties: ['litter'],
     litterResources: ['plant'],
     favoriteItems: [],
   },
@@ -23,17 +23,17 @@ export const POKEMON_DB: Record<string, Pokemon> = {
   // ── Charmander ────────────────────────────────────────
   charmander: {
     id: 'charmander', name: 'Charmander', family: 'Charmander', dexNumber: 4,
-    type: 'fire', specialties: ['burn', 'craft'],
+    type: 'fire', specialties: ['burn'],
     favoriteItems: [],
   },
   charmeleon: {
     id: 'charmeleon', name: 'Charmeleon', family: 'Charmander', dexNumber: 5,
-    type: 'fire', specialties: ['burn', 'craft'],
+    type: 'fire', specialties: ['burn'],
     favoriteItems: [],
   },
   charizard: {
     id: 'charizard', name: 'Charizard', family: 'Charmander', dexNumber: 6,
-    type: 'fire', specialties: ['burn', 'craft', 'transport'],
+    type: 'fire', specialties: ['burn', 'fly'],
     favoriteItems: [],
   },
 
@@ -50,47 +50,47 @@ export const POKEMON_DB: Record<string, Pokemon> = {
   },
   blastoise: {
     id: 'blastoise', name: 'Blastoise', family: 'Squirtle', dexNumber: 9,
-    type: 'water', specialties: ['water'],
+    type: 'water', specialties: ['water', 'trade'],
     favoriteItems: [],
   },
 
   // ── Pidgey ────────────────────────────────────────────
   pidgey: {
     id: 'pidgey', name: 'Pidgey', family: 'Pidgey', dexNumber: 16,
-    type: 'flying', specialties: ['transport'],
+    type: 'flying', specialties: ['fly', 'search'],
     favoriteItems: [],
   },
   pidgeotto: {
     id: 'pidgeotto', name: 'Pidgeotto', family: 'Pidgey', dexNumber: 17,
-    type: 'flying', specialties: ['transport'],
+    type: 'flying', specialties: ['fly', 'search'],
     favoriteItems: [],
   },
   pidgeot: {
     id: 'pidgeot', name: 'Pidgeot', family: 'Pidgey', dexNumber: 18,
-    type: 'flying', specialties: ['transport', 'chop'],
+    type: 'flying', specialties: ['fly', 'chop'],
     favoriteItems: [],
   },
 
   // ── Oddish ────────────────────────────────────────────
   oddish: {
     id: 'oddish', name: 'Oddish', family: 'Oddish', dexNumber: 43,
-    type: 'grass', specialties: ['plant', 'gather'],
+    type: 'grass', specialties: ['grow'],
     favoriteItems: [],
   },
   gloom: {
     id: 'gloom', name: 'Gloom', family: 'Oddish', dexNumber: 44,
-    type: 'grass', specialties: ['plant', 'gather'],
+    type: 'grass', specialties: ['grow'],
     favoriteItems: [],
   },
   vileplume: {
     id: 'vileplume', name: 'Vileplume', family: 'Oddish', dexNumber: 45,
-    type: 'grass', specialties: ['plant', 'gather', 'litter'],
+    type: 'grass', specialties: ['litter'],
     litterResources: ['plant'],
     favoriteItems: [],
   },
   bellossom: {
     id: 'bellossom', name: 'Bellossom', family: 'Oddish', dexNumber: 182,
-    type: 'grass', specialties: ['plant', 'gather'],
+    type: 'grass', specialties: ['grow', 'hype'],
     favoriteItems: [],
   },
 
@@ -121,36 +121,36 @@ export const POKEMON_DB: Record<string, Pokemon> = {
   // ── Bellsprout ────────────────────────────────────────
   bellsprout: {
     id: 'bellsprout', name: 'Bellsprout', family: 'Bellsprout', dexNumber: 69,
-    type: 'grass', specialties: ['plant', 'gather', 'litter'],
+    type: 'grass', specialties: ['litter'],
     litterResources: ['plant'],
     favoriteItems: [],
   },
   weepinbell: {
     id: 'weepinbell', name: 'Weepinbell', family: 'Bellsprout', dexNumber: 70,
-    type: 'grass', specialties: ['plant', 'gather', 'litter'],
+    type: 'grass', specialties: ['litter'],
     litterResources: ['plant'],
     favoriteItems: [],
   },
   victreebel: {
     id: 'victreebel', name: 'Victreebel', family: 'Bellsprout', dexNumber: 71,
-    type: 'grass', specialties: ['plant', 'gather', 'chop'],
+    type: 'grass', specialties: ['grow', 'chop'],
     favoriteItems: [],
   },
 
   // ── Slowpoke ──────────────────────────────────────────
   slowpoke: {
     id: 'slowpoke', name: 'Slowpoke', family: 'Slowpoke', dexNumber: 79,
-    type: 'water', specialties: ['water'],
+    type: 'water', specialties: ['water', 'yawn'],
     favoriteItems: [],
   },
   slowbro: {
     id: 'slowbro', name: 'Slowbro', family: 'Slowpoke', dexNumber: 80,
-    type: 'water', specialties: ['water'],
+    type: 'water', specialties: ['water', 'trade'],
     favoriteItems: [],
   },
   slowking: {
     id: 'slowking', name: 'Slowking', family: 'Slowpoke', dexNumber: 199,
-    type: 'water', specialties: ['water'],
+    type: 'water', specialties: ['water', 'teleport'],
     favoriteItems: [],
   },
 
@@ -232,7 +232,7 @@ export const POKEMON_DB: Record<string, Pokemon> = {
   // ── Tangela ───────────────────────────────────────────
   tangela: {
     id: 'tangela', name: 'Tangela', family: 'Tangela', dexNumber: 114,
-    type: 'grass', specialties: ['plant', 'gather', 'litter'],
+    type: 'grass', specialties: ['litter'],
     litterResources: ['plant'],
     favoriteItems: [],
   },
@@ -283,12 +283,12 @@ export const POKEMON_DB: Record<string, Pokemon> = {
   // ── Hoothoot ──────────────────────────────────────────
   hoothoot: {
     id: 'hoothoot', name: 'Hoothoot', family: 'Hoothoot', dexNumber: 163,
-    type: 'normal', specialties: ['transport'],
+    type: 'normal', specialties: ['trade', 'fly'],
     favoriteItems: [],
   },
   noctowl: {
     id: 'noctowl', name: 'Noctowl', family: 'Hoothoot', dexNumber: 164,
-    type: 'normal', specialties: ['transport'],
+    type: 'normal', specialties: ['trade', 'fly'],
     favoriteItems: [],
   },
 
@@ -328,12 +328,12 @@ export const POKEMON_DB: Record<string, Pokemon> = {
   // ── Cacnea ────────────────────────────────────────────
   cacnea: {
     id: 'cacnea', name: 'Cacnea', family: 'Cacnea', dexNumber: 331,
-    type: 'grass', specialties: ['plant', 'gather'],
+    type: 'grass', specialties: ['grow'],
     favoriteItems: [],
   },
   cacturne: {
     id: 'cacturne', name: 'Cacturne', family: 'Cacnea', dexNumber: 332,
-    type: 'grass', specialties: ['plant', 'gather', 'litter'],
+    type: 'grass', specialties: ['litter'],
     litterResources: ['plant'],
     favoriteItems: [],
   },
@@ -359,7 +359,7 @@ export const POKEMON_DB: Record<string, Pokemon> = {
   },
   gastrodon: {
     id: 'gastrodon', name: 'Gastrodon', family: 'Shellos', dexNumber: 423,
-    type: 'water', specialties: ['water'],
+    type: 'water', specialties: ['water', 'trade'],
     favoriteItems: [],
   },
 
@@ -371,7 +371,7 @@ export const POKEMON_DB: Record<string, Pokemon> = {
   },
   drifblim: {
     id: 'drifblim', name: 'Drifblim', family: 'Drifloon', dexNumber: 426,
-    type: 'ghost', specialties: ['transport'],
+    type: 'ghost', specialties: ['fly', 'gather'],
     favoriteItems: [],
   },
 
@@ -383,7 +383,7 @@ export const POKEMON_DB: Record<string, Pokemon> = {
   },
   excadrill: {
     id: 'excadrill', name: 'Excadrill', family: 'Drilbur', dexNumber: 530,
-    type: 'ground', specialties: ['chop'],
+    type: 'ground', specialties: ['chop', 'search'],
     favoriteItems: [],
   },
 
@@ -400,24 +400,24 @@ export const POKEMON_DB: Record<string, Pokemon> = {
   },
   conkeldurr: {
     id: 'conkeldurr', name: 'Conkeldurr', family: 'Timburr', dexNumber: 534,
-    type: 'fighting', specialties: ['build'],
+    type: 'fighting', specialties: ['build', 'crush'],
     favoriteItems: [],
   },
 
   // ── Litwick ───────────────────────────────────────────
   litwick: {
     id: 'litwick', name: 'Litwick', family: 'Litwick', dexNumber: 607,
-    type: 'ghost', specialties: ['burn', 'craft'],
+    type: 'ghost', specialties: ['burn'],
     favoriteItems: [],
   },
   lampent: {
     id: 'lampent', name: 'Lampent', family: 'Litwick', dexNumber: 608,
-    type: 'ghost', specialties: ['burn', 'craft'],
+    type: 'ghost', specialties: ['burn'],
     favoriteItems: [],
   },
   chandelure: {
     id: 'chandelure', name: 'Chandelure', family: 'Litwick', dexNumber: 609,
-    type: 'ghost', specialties: ['burn', 'craft'],
+    type: 'ghost', specialties: ['burn'],
     favoriteItems: [],
   },
 
