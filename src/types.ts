@@ -22,7 +22,18 @@ export type Specialty =
   | 'teleport'
   | 'transform'
   | 'yawn'
-  | 'island';
+  | 'island'
+  | 'generate'
+  | 'illuminate'
+  | 'appraise'
+  | 'honey'
+  | 'paint'
+  | 'dj'
+  | 'party'
+  | 'collect'
+  | 'engineer'
+  | 'rarify'
+  | 'dream';
 
 export const SPECIALTY_META: Record<
   Specialty,
@@ -52,6 +63,17 @@ export const SPECIALTY_META: Record<
   transform: { label: 'Transform', icon: '🌀', color: '#0f766e', bg: '#ccfbf1' },
   yawn:      { label: 'Yawn',      icon: '😴', color: '#6b7280', bg: '#f3f4f6' },
   island:    { label: 'Island',    icon: '🏝️', color: '#0369a1', bg: '#e0f2fe' },
+  generate:  { label: 'Generate',  icon: '⚡', color: '#8b6d00', bg: '#fff8d6' },
+  illuminate:{ label: 'Illuminate',icon: '💡', color: '#f59e0b', bg: '#fef3c7' },
+  appraise:  { label: 'Appraise',  icon: '🔎', color: '#374151', bg: '#f3f4f6' },
+  honey:     { label: 'Honey',     icon: '🍯', color: '#b45309', bg: '#fef3c7' },
+  paint:     { label: 'Paint',     icon: '🎨', color: '#7c3aed', bg: '#ede9fe' },
+  dj:        { label: 'DJ',        icon: '🎧', color: '#1d4ed8', bg: '#dbeafe' },
+  party:     { label: 'Party',     icon: '🥳', color: '#db2777', bg: '#fce7f3' },
+  collect:   { label: 'Collect',   icon: '💰', color: '#b45309', bg: '#fef3c7' },
+  engineer:  { label: 'Engineer',  icon: '⚙️', color: '#374151', bg: '#f3f4f6' },
+  rarify:    { label: 'Rarify',    icon: '🌟', color: '#7c3aed', bg: '#ede9fe' },
+  dream:     { label: 'Dream',     icon: '💤', color: '#6b7280', bg: '#f3f4f6' },
 };
 
 export const ALL_SPECIALTIES: Specialty[] = [
@@ -59,9 +81,12 @@ export const ALL_SPECIALTIES: Specialty[] = [
   'gather', 'litter', 'transport', 'search', 'chop', 'trade', 'build',
   'hype', 'recycle', 'storage', 'bulldoze', 'crush', 'explode',
   'teleport', 'transform', 'yawn', 'island',
+  'generate', 'illuminate', 'appraise', 'honey', 'paint', 'dj',
+  'party', 'collect', 'engineer', 'rarify', 'dream',
 ];
 
 export const LITTER_RESOURCE_META: Record<string, { label: string; icon: string; color: string; bg: string }> = {
+  'plant':               { label: 'Plant',             icon: '🌿', color: '#1a6b2f', bg: '#dff5e6' },
   'leaf':                { label: 'Leaf',              icon: '🍃', color: '#1a6b2f', bg: '#dff5e6' },
   'vine rope':           { label: 'Vine Rope',         icon: '🌱', color: '#2d5a1b', bg: '#e6f5de' },
   'honey':               { label: 'Honey',             icon: '🍯', color: '#8b6d00', bg: '#fff8d6' },

@@ -93,13 +93,21 @@ export default function App() {
     const saved = loadFromLocalStorage();
     return saved ? saved.areas : INITIAL_AREAS;
   });
-  const [moveFamilyTogether, setMoveFamilyTogether] = useState(false);
+  const [moveFamilyTogether, setMoveFamilyTogether] = useState<boolean>(() => {
+    try { return JSON.parse(localStorage.getItem('pokopia-move-family') ?? 'false'); }
+    catch { return false; }
+  });
   const [activeDragIds, setActiveDragIds] = useState<string[]>([]);
 
   // Auto-save distribution to localStorage on every state change
   useEffect(() => {
     saveToLocalStorage({ poolIds, areas });
   }, [poolIds, areas]);
+
+  // Persist moveFamily toggle
+  useEffect(() => {
+    localStorage.setItem('pokopia-move-family', JSON.stringify(moveFamilyTogether));
+  }, [moveFamilyTogether]);
 
   const handleLoadState = useCallback((state: AppState) => {
     setPoolIds(state.poolIds);
