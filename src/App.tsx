@@ -118,6 +118,12 @@ export default function App() {
     setAreas(state.areas);
   }, []);
 
+  const handleReset = useCallback(() => {
+    if (!window.confirm('Reset all areas? All Pokémon will return to the pool.')) return;
+    setAreas(INITIAL_AREAS);
+    setPoolIds(Object.keys(POKEMON_DB));
+  }, []);
+
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 6 } }),
     useSensor(KeyboardSensor)
@@ -222,6 +228,13 @@ export default function App() {
             <h1>Pokopia Area Housing</h1>
           </div>
           <div className="header-controls">
+            <button
+              className="header-btn btn-danger"
+              onClick={handleReset}
+              title="Reset all areas and return all Pokémon to the pool"
+            >
+              🗑️ Reset
+            </button>
             <ShareLoadPanel state={{ poolIds, areas }} onLoad={handleLoadState} />
             <label className="family-toggle" htmlFor="family-toggle-input">
               <span className="toggle-label">Move family together</span>
@@ -229,7 +242,6 @@ export default function App() {
                 className={`toggle-switch${moveFamilyTogether ? ' on' : ''}`}
                 role="switch"
                 aria-checked={moveFamilyTogether}
-                onClick={() => setMoveFamilyTogether((v) => !v)}
               >
                 <span className="toggle-thumb" />
               </div>
