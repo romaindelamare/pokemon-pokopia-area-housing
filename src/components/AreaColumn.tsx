@@ -1,6 +1,6 @@
 import { useDroppable } from '@dnd-kit/core';
 import type { PokopiaArea, Pokemon, Specialty } from '../types';
-import { SPECIALTY_META, ALL_SPECIALTIES } from '../types';
+import { SPECIALTY_META, ALL_SPECIALTIES, LITTER_RESOURCE_META } from '../types';
 import { HouseGroup } from './HouseGroup';
 
 interface AreaColumnProps {
@@ -20,6 +20,15 @@ export function AreaColumn({ area, pokemonDb, onAddHouse, onRemoveHouse, activeD
   const coveredSpecialties = new Set<Specialty>(
     area.houses.flatMap((h) =>
       h.pokemonIds.flatMap((pid) => pokemonDb[pid]?.specialties ?? [])
+    )
+  );
+
+  // Collect unique litter resource types present in this area
+  const litterResourcesInArea = Array.from(
+    new Set(
+      area.houses.flatMap((h) =>
+        h.pokemonIds.flatMap((pid) => pokemonDb[pid]?.litterResources ?? [])
+      )
     )
   );
 
@@ -58,6 +67,26 @@ export function AreaColumn({ area, pokemonDb, onAddHouse, onRemoveHouse, activeD
           );
         })}
       </div>
+
+      {litterResourcesInArea.length > 0 && (
+        <div className="area-litter-resources" aria-label="Litter resources in this area">
+          <span className="area-litter-label">🧹</span>
+          {litterResourcesInArea.map((r) => {
+            const meta = LITTER_RESOURCE_META[r];
+            if (!meta) return null;
+            return (
+              <span
+                key={r}
+                className="area-litter-chip"
+                style={{ backgroundColor: meta.bg, color: meta.color }}
+                title={meta.label}
+              >
+                {meta.icon} {meta.label}
+              </span>
+            );
+          })}
+        </div>
+      )}
 
       <div className="area-houses">
         {area.houses.length === 0 && !isOver && (

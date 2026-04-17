@@ -81,8 +81,8 @@
 /* ── Main ────────────────────────────────────────────────────────────────── */
 .app-main {
   display: flex;
-  flex: 1;
-  min-height: 0;
+  /* explicit height so nested flex/grid children have a definite bound */
+  height: calc(100vh - 52px);
   overflow: hidden;
 }
 
@@ -151,6 +151,38 @@
   background: var(--surface);
 }
 
+/* ── Pool Specialty Filter ───────────────────────────────────────────────── */
+.pool-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding: 0 10px 8px;
+  flex-shrink: 0;
+}
+
+.pool-filter-chip {
+  padding: 2px 6px;
+  border-radius: 20px;
+  font-size: .62rem;
+  font-weight: 600;
+  border: 1.5px solid var(--border);
+  cursor: pointer;
+  transition: all var(--transition);
+  background: var(--bg);
+  color: var(--text-3);
+  line-height: 1.5;
+}
+
+.pool-filter-chip:hover {
+  border-color: var(--border-dark);
+  color: var(--text-2);
+}
+
+.pool-filter-chip.active {
+  border-color: currentColor;
+  box-shadow: 0 0 0 1px currentColor;
+}
+
 .pool-list {
   flex: 1;
   overflow-y: auto;
@@ -197,13 +229,11 @@
 /* ── Areas Grid ───────────────────────────────────────────────────────────── */
 .areas-grid {
   flex: 1;
-  min-height: 0;
+  /* height: 100% ensures the grid fills the explicit height of .app-main */
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /* Explicit 1fr row forces the single row to fill the grid container's
-     definite height instead of auto-sizing to the tallest column's content.
-     This is required so each area-column gets a bounded height and
-     .area-houses overflow-y:auto actually triggers. */
+  /* 1fr row = row height equals the grid container's height */
   grid-template-rows: 1fr;
   overflow: hidden;
   gap: 0;
@@ -213,7 +243,8 @@
 .area-column {
   display: flex;
   flex-direction: column;
-  min-height: 0;
+  /* height: 100% fills the grid row so inner flex children have a bounded height */
+  height: 100%;
   border-right: 1px solid var(--border);
   background: var(--bg);
   overflow: hidden;
@@ -267,6 +298,35 @@
   background: var(--surface);
   border-bottom: 1px solid var(--border);
   flex-shrink: 0;
+}
+
+/* ── Area Litter Resources ────────────────────────────────────────────────── */
+.area-litter-resources {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding: 4px 8px 5px;
+  background: #fdf4ff;
+  border-bottom: 1px solid #f3e8ff;
+  flex-shrink: 0;
+}
+
+.area-litter-label {
+  font-size: .6rem;
+  font-weight: 700;
+  color: #7e22ce;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-right: 2px;
+}
+
+.area-litter-chip {
+  padding: 1px 6px;
+  border-radius: 20px;
+  font-size: .62rem;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .specialty-badge {

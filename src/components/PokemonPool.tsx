@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDroppable } from '@dnd-kit/core';
-import type { Pokemon } from '../types';
+import type { Pokemon, Specialty } from '../types';
+import { SPECIALTY_META } from '../types';
 import { PokemonCard } from './PokemonCard';
 
 interface PokemonPoolProps {
@@ -9,17 +10,26 @@ interface PokemonPoolProps {
 
 export function PokemonPool({ pokemonList }: PokemonPoolProps) {
   const [search, setSearch] = useState('');
+  const [filterSpecialty, setFilterSpecialty] = useState<Specialty | null>(null);
 
   const { setNodeRef, isOver } = useDroppable({
     id: 'pool',
     data: { type: 'pool' },
   });
 
-  const filtered = pokemonList.filter(
-    (p) =>
+  // Only show specialties present in the current pool
+  const availableSpecialties = Array.from(
+    new Set(pokemonList.flatMap((p) => p.specialties))
+  ).sort() as Specialty[];
+
+  const filtered = pokemonList.filter((p) => {
+    const matchesSearch =
       p.name.toLowerCase().includes(search.toLowerCase()) ||
-      p.family.toLowerCase().includes(search.toLowerCase())
-  );
+      p.family.toLowerCase().includes(search.toLowerCase());
+    const matchesSpecialty =
+      filterSpecialty === null || p.specialties.includes(filterSpecialty);
+    return matchesSearch && matchesSpecialty;
+  });
 
   const grouped = filtered.reduce<Record<string, Pokemon[]>>((acc, p) => {
     if (!acc[p.family]) acc[p.family] = [];
@@ -46,6 +56,31 @@ export function PokemonPool({ pokemonList }: PokemonPoolProps) {
         onChange={(e) => setSearch(e.target.value)}
         aria-label="Search Pokémon"
       />
+
+      {availableSpecialties.length > 0 && (
+        <div className="pool-filter-row" aria-label="Filter by specialty">
+          {availableSpecialties.map((s) => {
+            const meta = SPECIALTY_META[s];
+            const active = filterSpecialty === s;
+            return (
+              <button
+                key={s}
+                className={`pool-filter-chip${active ? ' active' : ''}`}
+                style={
+                  active
+                    ? { backgroundColor: meta.bg, color: meta.color, borderColor: meta.color }
+                    : {}
+                }
+                title={`Filter: ${meta.label}`}
+                aria-pressed={active}
+                onClick={() => setFilterSpecialty(active ? null : s)}
+              >
+                {meta.icon}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       {pokemonList.length === 0 ? (
         <div className="pool-empty">
