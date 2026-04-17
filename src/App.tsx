@@ -52,11 +52,21 @@ function removePokemonFromAreas(areas: PokopiaArea[], ids: string[]): PokopiaAre
   }));
 }
 
-function purgeEmptyHouses(areas: PokopiaArea[]): PokopiaArea[] {
-  return areas.map((area) => ({
-    ...area,
-    houses: area.houses.filter((h) => h.pokemonIds.length > 0),
-  }));
+/** Only remove houses that were occupied *before* the drag but are now empty.
+ *  User-created empty houses (always had 0 Pokémon) are preserved. */
+function purgeSourceHouses(before: PokopiaArea[], after: PokopiaArea[]): PokopiaArea[] {
+  return after.map((area) => {
+    const beforeArea = before.find((a) => a.id === area.id);
+    return {
+      ...area,
+      houses: area.houses.filter((h) => {
+        if (h.pokemonIds.length > 0) return true;
+        const houseBefore = beforeArea?.houses.find((bh) => bh.id === h.id);
+        const wasOccupied = (houseBefore?.pokemonIds.length ?? 0) > 0;
+        return !wasOccupied;
+      }),
+    };
+  });
 }
 
 function addPokemonToArea(
@@ -169,7 +179,10 @@ export default function App() {
       const overHouseId = (over.data.current as { houseId?: string })?.houseId;
 
       if (overType === 'pool' || over.id === 'pool') {
-        setAreas((prev) => purgeEmptyHouses(removePokemonFromAreas(prev, draggedIds)));
+        setAreas((prev) => {
+          const cleared = removePokemonFromAreas(prev, draggedIds);
+          return purgeSourceHouses(prev, cleared);
+        });
         setPoolIds((prev) => {
           const existing = new Set(prev);
           const toAdd = draggedIds.filter((id) => !existing.has(id));
@@ -204,7 +217,7 @@ export default function App() {
       setAreas((prev) => {
         const cleared = removePokemonFromAreas(prev, draggedIds);
         const updated = addPokemonToArea(cleared, targetAreaId, draggedIds, overHouseId);
-        return purgeEmptyHouses(updated);
+        return purgeSourceHouses(prev, updated);
       });
     },
     [getFamilyIds, poolIds, areas]
