@@ -92,7 +92,7 @@ export function HouseGroup({
 
       {allItems.length > 0 && (
         <div className="house-items">
-          <span className="house-items-label">⭐ Favourite items</span>
+          <span className="house-items-label">⭐ Favorite items</span>
           <div className="house-items-list">
             {allItems.map((item) => (
               <span key={item} className="house-item-chip">
