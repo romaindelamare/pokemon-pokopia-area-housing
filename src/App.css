@@ -1,0 +1,558 @@
+/* ── App Shell ───────────────────────────────────────────────────────────── */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 58px;
+  background: #2b2d42;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-pokeball {
+  font-size: 24px;
+}
+
+.app-header h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+/* ── Family Toggle ───────────────────────────────────────────────────────── */
+.family-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle-label {
+  font-size: .9rem;
+  opacity: .9;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background: #555;
+  border-radius: 12px;
+  transition: background .2s;
+  flex-shrink: 0;
+}
+
+.toggle-switch.on {
+  background: #38a169;
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  transition: left .2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
+
+.toggle-switch.on .toggle-thumb {
+  left: 23px;
+}
+
+/* ── Main ────────────────────────────────────────────────────────────────── */
+.app-main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  gap: 0;
+}
+
+/* ── Pool Sidebar ────────────────────────────────────────────────────────── */
+.pokemon-pool {
+  width: 230px;
+  min-width: 200px;
+  background: #fff;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: background .2s;
+}
+
+.pokemon-pool.pool-over {
+  background: #f0fff4;
+  border-right-color: #48bb78;
+}
+
+.pool-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px 8px;
+  font-size: .9rem;
+  font-weight: 700;
+  color: #2d3748;
+  border-bottom: 1px solid #edf2f7;
+  flex-shrink: 0;
+}
+
+.pool-count {
+  background: #e2e8f0;
+  color: #4a5568;
+  padding: 1px 7px;
+  border-radius: 10px;
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.pool-search {
+  margin: 8px 10px;
+  padding: 6px 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: .82rem;
+  outline: none;
+  background: #f7fafc;
+  flex-shrink: 0;
+}
+
+.pool-search:focus {
+  border-color: #63b3ed;
+  background: #fff;
+}
+
+.pool-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 8px 8px;
+}
+
+.pool-family-group {
+  margin-bottom: 6px;
+}
+
+.pool-family-label {
+  font-size: .68rem;
+  font-weight: 600;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding: 4px 4px 2px;
+}
+
+.pool-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 1;
+  padding: 24px;
+  color: #718096;
+  font-size: .85rem;
+  text-align: center;
+}
+
+.pool-empty span {
+  font-size: 2rem;
+}
+
+.pool-drop-hint {
+  padding: 8px;
+  text-align: center;
+  font-size: .8rem;
+  color: #38a169;
+  background: #f0fff4;
+  border-top: 1px dashed #48bb78;
+  flex-shrink: 0;
+}
+
+/* ── Areas Grid ──────────────────────────────────────────────────────────── */
+.areas-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  overflow: hidden;
+}
+
+/* ── Area Column ─────────────────────────────────────────────────────────── */
+.area-column {
+  display: flex;
+  flex-direction: column;
+  border-top: 4px solid #ccc;
+  border-right: 1px solid #e2e8f0;
+  background: #f8fafc;
+  overflow: hidden;
+  transition: background .15s;
+}
+
+.area-column:last-child {
+  border-right: none;
+}
+
+.area-column.area-over {
+  background: #fffbeb;
+}
+
+.area-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.area-icon {
+  font-size: 1.2rem;
+}
+
+.area-name {
+  font-size: .8rem;
+  font-weight: 700;
+  flex: 1;
+  letter-spacing: .01em;
+}
+
+.area-poke-count {
+  background: rgba(255,255,255,.25);
+  padding: 1px 7px;
+  border-radius: 10px;
+  font-size: .72rem;
+  font-weight: 600;
+}
+
+/* ── Specialty Coverage ──────────────────────────────────────────────────── */
+.area-specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding: 6px 8px;
+  background: rgba(255,255,255,.8);
+  border-bottom: 1px solid #e2e8f0;
+  flex-shrink: 0;
+}
+
+.specialty-badge {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: .85rem;
+  border: 1.5px solid transparent;
+  transition: all .15s;
+}
+
+.specialty-badge.missing {
+  background: #edf2f7;
+  border-color: #e2e8f0;
+  opacity: .4;
+  filter: grayscale(1);
+}
+
+.specialty-badge.covered {
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+/* ── Houses ──────────────────────────────────────────────────────────────── */
+.area-houses {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.area-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 80px;
+  color: #a0aec0;
+  font-size: .8rem;
+  border: 2px dashed #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.area-empty-icon {
+  font-size: 1.8rem;
+  opacity: .5;
+}
+
+.area-drop-hint {
+  padding: 10px;
+  text-align: center;
+  font-size: .8rem;
+  color: #c05621;
+  background: #fffbeb;
+  border: 2px dashed #f6ad55;
+  border-radius: 8px;
+}
+
+.area-footer {
+  padding: 6px 8px;
+  border-top: 1px solid #e2e8f0;
+  flex-shrink: 0;
+}
+
+.add-house-btn {
+  width: 100%;
+  padding: 5px;
+  border: 1.5px dashed #cbd5e0;
+  border-radius: 6px;
+  background: transparent;
+  color: #718096;
+  font-size: .78rem;
+  font-weight: 600;
+  transition: all .15s;
+}
+
+.add-house-btn:hover {
+  background: #edf2f7;
+  border-color: #a0aec0;
+  color: #4a5568;
+}
+
+/* ── House Group ─────────────────────────────────────────────────────────── */
+.house-group {
+  background: #fff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color .15s, box-shadow .15s;
+}
+
+.house-group.house-over {
+  border-color: #63b3ed;
+  box-shadow: 0 0 0 3px rgba(99,179,237,.2);
+}
+
+.house-group.house-full {
+  opacity: .9;
+}
+
+.house-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 8px;
+  background: #f7fafc;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.house-icon {
+  font-size: .9rem;
+}
+
+.house-title {
+  font-size: .75rem;
+  font-weight: 700;
+  color: #4a5568;
+  flex: 1;
+}
+
+.house-count {
+  font-size: .7rem;
+  color: #718096;
+  background: #edf2f7;
+  padding: 0 5px;
+  border-radius: 8px;
+}
+
+.house-remove-btn {
+  background: none;
+  border: none;
+  color: #fc8181;
+  font-size: .8rem;
+  padding: 1px 4px;
+  border-radius: 4px;
+  line-height: 1;
+  transition: background .15s;
+}
+
+.house-remove-btn:hover {
+  background: #fff5f5;
+}
+
+.house-empty-slot {
+  padding: 12px;
+  text-align: center;
+  color: #a0aec0;
+  font-size: .75rem;
+  border: 2px dashed #e2e8f0;
+  border-radius: 6px;
+  margin: 6px;
+  transition: all .15s;
+}
+
+.house-empty-slot.house-over {
+  border-color: #63b3ed;
+  color: #3182ce;
+  background: #ebf8ff;
+}
+
+.house-pokemon-list {
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.house-full-msg {
+  padding: 4px 8px;
+  font-size: .7rem;
+  color: #e53e3e;
+  background: #fff5f5;
+  text-align: center;
+}
+
+/* ── Favorite Items ──────────────────────────────────────────────────────── */
+.house-items {
+  border-top: 1px solid #edf2f7;
+  padding: 5px 8px;
+  background: #fffff0;
+}
+
+.house-items-label {
+  display: block;
+  font-size: .65rem;
+  font-weight: 700;
+  color: #744210;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin-bottom: 4px;
+}
+
+.house-items-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.house-item-chip {
+  background: #fefcbf;
+  color: #744210;
+  border: 1px solid #f6e05e;
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-size: .65rem;
+  font-weight: 500;
+}
+
+/* ── Pokémon Card ────────────────────────────────────────────────────────── */
+.pokemon-card {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1.5px solid transparent;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  cursor: grab;
+  user-select: none;
+  transition: box-shadow .15s, transform .1s;
+}
+
+.pokemon-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  transform: translateY(-1px);
+}
+
+.pokemon-card.is-dragging {
+  opacity: .5;
+}
+
+.pokemon-card-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  color: #fff;
+}
+
+.pokemon-sprite {
+  width: 28px;
+  height: 28px;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+
+.pokemon-name {
+  font-size: .75rem;
+  font-weight: 700;
+  flex: 1;
+  text-shadow: 0 1px 2px rgba(0,0,0,.3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pokemon-card-specialties {
+  padding: 3px 5px 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  background: #f8fafc;
+}
+
+.specialty-chip {
+  padding: 1px 5px;
+  border-radius: 8px;
+  font-size: .62rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ── Drag Overlay ────────────────────────────────────────────────────────── */
+.overlay-card {
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+  cursor: grabbing;
+  transform: rotate(2deg) scale(1.03);
+  width: 180px;
+}
+
+.drag-overlay-stack {
+  position: relative;
+}
+
+.drag-overlay-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #e53e3e;
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 1px 4px rgba(0,0,0,.25);
+}
