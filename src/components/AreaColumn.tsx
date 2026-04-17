@@ -8,9 +8,10 @@ interface AreaColumnProps {
   pokemonDb: Record<string, Pokemon>;
   onAddHouse: (areaId: string) => void;
   onRemoveHouse: (areaId: string, houseId: string) => void;
+  activeDragCount: number;
 }
 
-export function AreaColumn({ area, pokemonDb, onAddHouse, onRemoveHouse }: AreaColumnProps) {
+export function AreaColumn({ area, pokemonDb, onAddHouse, onRemoveHouse, activeDragCount }: AreaColumnProps) {
   const { setNodeRef, isOver } = useDroppable({
     id: area.id,
     data: { type: 'area', areaId: area.id },
@@ -78,6 +79,7 @@ export function AreaColumn({ area, pokemonDb, onAddHouse, onRemoveHouse }: AreaC
               pokemonList={housePokemon}
               areaId={area.id}
               onRemoveHouse={() => onRemoveHouse(area.id, house.id)}
+              activeDragCount={activeDragCount}
             />
           );
         })}

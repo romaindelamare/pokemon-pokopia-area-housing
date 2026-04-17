@@ -45,9 +45,17 @@ function findLocation(
 function removePokemonFromAreas(areas: PokopiaArea[], ids: string[]): PokopiaArea[] {
   return areas.map((area) => ({
     ...area,
-    houses: area.houses
-      .map((h) => ({ ...h, pokemonIds: h.pokemonIds.filter((pid) => !ids.includes(pid)) }))
-      .filter((h) => h.pokemonIds.length > 0),
+    houses: area.houses.map((h) => ({
+      ...h,
+      pokemonIds: h.pokemonIds.filter((pid) => !ids.includes(pid)),
+    })),
+  }));
+}
+
+function purgeEmptyHouses(areas: PokopiaArea[]): PokopiaArea[] {
+  return areas.map((area) => ({
+    ...area,
+    houses: area.houses.filter((h) => h.pokemonIds.length > 0),
   }));
 }
 
@@ -64,19 +72,8 @@ function addPokemonToArea(
     if (targetHouseId) {
       const houseIdx = houses.findIndex((h) => h.id === targetHouseId);
       if (houseIdx !== -1) {
-        let remaining = [...pokemonIds];
-        let hi = houseIdx;
-        while (remaining.length > 0) {
-          const available = MAX_HOUSE_SIZE - houses[hi].pokemonIds.length;
-          if (available > 0) {
-            houses[hi].pokemonIds.push(...remaining.splice(0, available));
-          }
-          if (remaining.length > 0) {
-            const newH = createHouse(remaining.splice(0, MAX_HOUSE_SIZE));
-            houses.splice(hi + 1, 0, newH);
-            hi++;
-          }
-        }
+        // Only fill the targeted house — no overflow to other houses
+        houses[houseIdx].pokemonIds.push(...pokemonIds);
         return { ...area, houses };
       }
     }
@@ -173,7 +170,7 @@ export default function App() {
       const overHouseId = (over.data.current as { houseId?: string })?.houseId;
 
       if (overType === 'pool' || over.id === 'pool') {
-        setAreas((prev) => removePokemonFromAreas(prev, draggedIds));
+        setAreas((prev) => purgeEmptyHouses(removePokemonFromAreas(prev, draggedIds)));
         setPoolIds((prev) => {
           const existing = new Set(prev);
           const toAdd = draggedIds.filter((id) => !existing.has(id));
@@ -185,10 +182,26 @@ export default function App() {
       const targetAreaId = overAreaId;
       if (!targetAreaId) return;
 
+      // Reject drop on a specific house if there isn't enough room for all dragged Pokémon.
+      // We account for the dragged Pokémon already being in that house (they would be removed first).
+      if (overHouseId) {
+        const targetArea = areas.find((a) => a.id === targetAreaId);
+        const targetHouse = targetArea?.houses.find((h) => h.id === overHouseId);
+        if (targetHouse) {
+          const alreadyInHouse = draggedIds.filter((id) =>
+            targetHouse.pokemonIds.includes(id)
+          ).length;
+          const effectiveOccupied = targetHouse.pokemonIds.length - alreadyInHouse;
+          const available = MAX_HOUSE_SIZE - effectiveOccupied;
+          if (draggedIds.length > available) return;
+        }
+      }
+
       setPoolIds((prev) => prev.filter((id) => !draggedIds.includes(id)));
       setAreas((prev) => {
         const cleared = removePokemonFromAreas(prev, draggedIds);
-        return addPokemonToArea(cleared, targetAreaId, draggedIds, overHouseId);
+        const updated = addPokemonToArea(cleared, targetAreaId, draggedIds, overHouseId);
+        return purgeEmptyHouses(updated);
       });
     },
     [getFamilyIds, poolIds, areas]
@@ -267,6 +280,7 @@ export default function App() {
                 pokemonDb={POKEMON_DB}
                 onAddHouse={handleAddHouse}
                 onRemoveHouse={handleRemoveHouse}
+                activeDragCount={activeDragIds.length}
               />
             ))}
           </div>

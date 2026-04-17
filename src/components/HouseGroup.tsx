@@ -9,6 +9,7 @@ interface HouseGroupProps {
   pokemonList: Pokemon[];
   areaId: string;
   onRemoveHouse: () => void;
+  activeDragCount: number;
 }
 
 export function HouseGroup({
@@ -17,10 +18,16 @@ export function HouseGroup({
   pokemonList,
   areaId,
   onRemoveHouse,
+  activeDragCount,
 }: HouseGroupProps) {
+  // A house cannot accept a drop when there isn't enough room for all dragged Pokémon.
+  const canAcceptDrop =
+    activeDragCount === 0 || pokemonList.length + activeDragCount <= MAX_HOUSE_SIZE;
+
   const { setNodeRef, isOver } = useDroppable({
     id: `house-${house.id}`,
     data: { type: 'house', houseId: house.id, areaId },
+    disabled: !canAcceptDrop,
   });
 
   const allItems = Array.from(
@@ -48,7 +55,7 @@ export function HouseGroup({
   return (
     <div
       ref={setNodeRef}
-      className={`house-group${isOver && !isFull ? ' house-over' : ''}${isFull ? ' house-full' : ''}`}
+      className={`house-group${isOver && canAcceptDrop ? ' house-over' : ''}${isFull ? ' house-full' : ''}${!canAcceptDrop && activeDragCount > 0 ? ' house-no-space' : ''}`}
       aria-label={`House ${houseNumber} – ${pokemonList.length}/${MAX_HOUSE_SIZE} Pokémon`}
     >
       <div className="house-header">
@@ -84,7 +91,7 @@ export function HouseGroup({
       </div>
 
       {pokemonList.length === 0 ? (
-        <div className={`house-empty-slot${isOver ? ' house-over' : ''}`}>
+        <div className={`house-empty-slot${isOver && canAcceptDrop ? ' house-over' : ''}`}>
           Drop Pokémon here
         </div>
       ) : (
@@ -99,7 +106,10 @@ export function HouseGroup({
         </div>
       )}
 
-      {isFull && isOver && (
+      {!canAcceptDrop && activeDragCount > 0 && (
+        <div className="house-full-msg">Not enough space ({MAX_HOUSE_SIZE - pokemonList.length} free, {activeDragCount} dragging)</div>
+      )}
+      {canAcceptDrop && isFull && isOver && (
         <div className="house-full-msg">House is full (max {MAX_HOUSE_SIZE})</div>
       )}
 

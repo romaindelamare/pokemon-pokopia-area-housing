@@ -365,6 +365,12 @@
 
 .house-group.house-full { opacity: .88; }
 
+.house-group.house-no-space {
+  opacity: .55;
+  border-color: #ef4444;
+  cursor: not-allowed;
+}
+
 .house-header {
   display: flex;
   align-items: center;
