@@ -1,6 +1,6 @@
 import { useDroppable } from '@dnd-kit/core';
 import type { House, Pokemon } from '../types';
-import { MAX_HOUSE_SIZE } from '../types';
+import { MAX_HOUSE_SIZE, SPECIALTY_META } from '../types';
 import { PokemonCard } from './PokemonCard';
 
 interface HouseGroupProps {
@@ -32,6 +32,19 @@ export function HouseGroup({
   const hasLitter = pokemonList.some((p) => p.specialties.includes('litter'));
   const hasGather = pokemonList.some((p) => p.specialties.includes('gather'));
 
+  // Collect unique litter resource types from all litter Pokémon in this house
+  const litterResourceTypes = Array.from(
+    new Set(
+      pokemonList
+        .filter((p) => p.specialties.includes('litter'))
+        .flatMap((p) => p.litterResources ?? [])
+    )
+  );
+
+  const resourceIcons = litterResourceTypes
+    .map((r) => SPECIALTY_META[r]?.icon ?? '')
+    .join(' ');
+
   return (
     <div
       ref={setNodeRef}
@@ -47,11 +60,11 @@ export function HouseGroup({
             className={`house-synergy-badge${hasGather ? ' synergy-ok' : ' synergy-warn'}`}
             title={
               hasGather
-                ? 'This house has both a Litter and a Gather Pokémon – great synergy!'
-                : 'This house has a Litter Pokémon but no Gather Pokémon yet'
+                ? `Litter (${litterResourceTypes.join(', ')}) is being gathered ✅`
+                : `Litter (${litterResourceTypes.join(', ')}) needs a gather Pokémon ⚠️`
             }
           >
-            {hasGather ? '🧹✅' : '🧹⚠️'}
+            🧹{resourceIcons ? ` ${resourceIcons}` : ''} {hasGather ? '✅' : '⚠️'}
           </span>
         )}
 

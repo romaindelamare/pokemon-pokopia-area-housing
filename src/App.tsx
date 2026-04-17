@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import {
   DndContext,
   DragOverlay,
@@ -15,15 +15,17 @@ import { MAX_HOUSE_SIZE } from './types';
 import { PokemonPool } from './components/PokemonPool';
 import { AreaColumn } from './components/AreaColumn';
 import { PokemonCardOverlay } from './components/PokemonCard';
+import { ShareLoadPanel } from './components/ShareLoadPanel';
+import {
+  makeHouse,
+  saveToLocalStorage,
+  loadFromLocalStorage,
+  type AppState,
+} from './utils/persistence';
 import './App.css';
 
-let houseIdCounter = 1;
-function newHouseId(): string {
-  return `house-${houseIdCounter++}`;
-}
-
 function createHouse(pokemonIds: string[] = []): House {
-  return { id: newHouseId(), pokemonIds };
+  return makeHouse(pokemonIds);
 }
 
 function findLocation(
@@ -95,10 +97,26 @@ function addPokemonToArea(
 }
 
 export default function App() {
-  const [poolIds, setPoolIds] = useState<string[]>(Object.keys(POKEMON_DB));
-  const [areas, setAreas] = useState<PokopiaArea[]>(INITIAL_AREAS);
+  const [poolIds, setPoolIds] = useState<string[]>(() => {
+    const saved = loadFromLocalStorage();
+    return saved ? saved.poolIds : Object.keys(POKEMON_DB);
+  });
+  const [areas, setAreas] = useState<PokopiaArea[]>(() => {
+    const saved = loadFromLocalStorage();
+    return saved ? saved.areas : INITIAL_AREAS;
+  });
   const [moveFamilyTogether, setMoveFamilyTogether] = useState(false);
   const [activeDragIds, setActiveDragIds] = useState<string[]>([]);
+
+  // Auto-save distribution to localStorage on every state change
+  useEffect(() => {
+    saveToLocalStorage({ poolIds, areas });
+  }, [poolIds, areas]);
+
+  const handleLoadState = useCallback((state: AppState) => {
+    setPoolIds(state.poolIds);
+    setAreas(state.areas);
+  }, []);
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 6 } }),
@@ -204,6 +222,7 @@ export default function App() {
             <h1>Pokopia Area Housing</h1>
           </div>
           <div className="header-controls">
+            <ShareLoadPanel state={{ poolIds, areas }} onLoad={handleLoadState} />
             <label className="family-toggle" htmlFor="family-toggle-input">
               <span className="toggle-label">Move family together</span>
               <div

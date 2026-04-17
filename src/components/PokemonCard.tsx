@@ -7,6 +7,28 @@ interface PokemonCardProps {
   sourceId: string;
 }
 
+function LitterResourceRow({ pokemon }: { pokemon: Pokemon }) {
+  if (!pokemon.specialties.includes('litter') || !pokemon.litterResources?.length) return null;
+  return (
+    <div className="litter-resources-row">
+      <span className="litter-label">Litters:</span>
+      {pokemon.litterResources.map((r) => {
+        const meta = SPECIALTY_META[r];
+        return (
+          <span
+            key={r}
+            className="litter-resource-chip"
+            style={{ backgroundColor: meta.bg, color: meta.color }}
+            title={`Litters ${meta.label} resources`}
+          >
+            {meta.icon} {meta.label}
+          </span>
+        );
+      })}
+    </div>
+  );
+}
+
 export function PokemonCard({ pokemon, sourceId }: PokemonCardProps) {
   const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({
     id: `drag-${pokemon.id}-from-${sourceId}`,
@@ -56,6 +78,7 @@ export function PokemonCard({ pokemon, sourceId }: PokemonCardProps) {
           );
         })}
       </div>
+      <LitterResourceRow pokemon={pokemon} />
     </div>
   );
 }
@@ -91,6 +114,7 @@ export function PokemonCardOverlay({ pokemon }: { pokemon: Pokemon }) {
           );
         })}
       </div>
+      <LitterResourceRow pokemon={pokemon} />
     </div>
   );
 }

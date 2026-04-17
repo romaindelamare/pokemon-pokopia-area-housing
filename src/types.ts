@@ -60,6 +60,8 @@ export interface Pokemon {
   type: string;
   specialties: Specialty[];
   favoriteItems: string[];
+  /** Resources produced when this Pokémon litters (only set for litter Pokémon) */
+  litterResources?: Specialty[];
 }
 
 export const MAX_HOUSE_SIZE = 4;

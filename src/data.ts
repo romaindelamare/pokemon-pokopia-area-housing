@@ -10,11 +10,13 @@ export const POKEMON_DB: Record<string, Pokemon> = {
     id: 'ivysaur', name: 'Ivysaur', family: 'Bulbasaur', dexNumber: 2,
     type: 'grass', specialties: ['plant', 'gather', 'litter'],
     favoriteItems: ['Sitrus Berry', 'Miracle Seed', 'Big Root'],
+    litterResources: ['plant'],
   },
   venusaur: {
     id: 'venusaur', name: 'Venusaur', family: 'Bulbasaur', dexNumber: 3,
     type: 'grass', specialties: ['plant', 'gather', 'litter'],
     favoriteItems: ['Lum Berry', 'Miracle Seed', 'Big Root', 'Leaf Stone'],
+    litterResources: ['plant'],
   },
   charmander: {
     id: 'charmander', name: 'Charmander', family: 'Charmander', dexNumber: 4,
@@ -80,16 +82,19 @@ export const POKEMON_DB: Record<string, Pokemon> = {
     id: 'oddish', name: 'Oddish', family: 'Oddish', dexNumber: 43,
     type: 'grass', specialties: ['plant', 'litter'],
     favoriteItems: ['Poison Barb', 'Miracle Seed', 'Oran Berry'],
+    litterResources: ['plant'],
   },
   gloom: {
     id: 'gloom', name: 'Gloom', family: 'Oddish', dexNumber: 44,
     type: 'grass', specialties: ['plant', 'litter', 'gather'],
     favoriteItems: ['Poison Barb', 'Miracle Seed', 'Sitrus Berry'],
+    litterResources: ['plant'],
   },
   vileplume: {
     id: 'vileplume', name: 'Vileplume', family: 'Oddish', dexNumber: 45,
     type: 'grass', specialties: ['plant', 'litter', 'gather'],
     favoriteItems: ['Poison Barb', 'Miracle Seed', 'Leaf Stone', 'Big Root'],
+    litterResources: ['plant'],
   },
   diglett: {
     id: 'diglett', name: 'Diglett', family: 'Diglett', dexNumber: 50,
@@ -105,11 +110,13 @@ export const POKEMON_DB: Record<string, Pokemon> = {
     id: 'meowth', name: 'Meowth', family: 'Meowth', dexNumber: 52,
     type: 'normal', specialties: ['gather', 'litter'],
     favoriteItems: ['Amulet Coin', 'Silk Scarf'],
+    litterResources: ['craft'],
   },
   persian: {
     id: 'persian', name: 'Persian', family: 'Meowth', dexNumber: 53,
     type: 'normal', specialties: ['gather', 'litter', 'craft'],
     favoriteItems: ['Amulet Coin', 'Silk Scarf', 'Moon Stone', 'Nugget'],
+    litterResources: ['craft'],
   },
   growlithe: {
     id: 'growlithe', name: 'Growlithe', family: 'Growlithe', dexNumber: 58,
@@ -130,26 +137,31 @@ export const POKEMON_DB: Record<string, Pokemon> = {
     id: 'slowbro', name: 'Slowbro', family: 'Slowpoke', dexNumber: 80,
     type: 'water', specialties: ['water', 'cool', 'litter'],
     favoriteItems: ["King's Rock", 'Lum Berry', 'Water Stone', 'Shell Bell'],
+    litterResources: ['water', 'cool'],
   },
   gastly: {
     id: 'gastly', name: 'Gastly', family: 'Gastly', dexNumber: 92,
     type: 'ghost', specialties: ['litter'],
     favoriteItems: ['Spell Tag', 'Dusk Stone'],
+    litterResources: ['cool'],
   },
   haunter: {
     id: 'haunter', name: 'Haunter', family: 'Gastly', dexNumber: 93,
     type: 'ghost', specialties: ['litter', 'gather'],
     favoriteItems: ['Spell Tag', 'Dusk Stone', 'Twisted Spoon'],
+    litterResources: ['cool'],
   },
   gengar: {
     id: 'gengar', name: 'Gengar', family: 'Gastly', dexNumber: 94,
     type: 'ghost', specialties: ['litter', 'gather', 'cool'],
     favoriteItems: ['Spell Tag', 'Dusk Stone', 'Twisted Spoon', 'Shadow Ball'],
+    litterResources: ['cool'],
   },
   snorlax: {
     id: 'snorlax', name: 'Snorlax', family: 'Snorlax', dexNumber: 143,
     type: 'normal', specialties: ['litter', 'transport'],
     favoriteItems: ['Leftovers', 'Full Restore', 'Big Root', 'Chesto Berry'],
+    litterResources: ['transport'],
   },
   eevee: {
     id: 'eevee', name: 'Eevee', family: 'Eevee', dexNumber: 133,
