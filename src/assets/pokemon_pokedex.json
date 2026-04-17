@@ -25,7 +25,7 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Leaf"
     },
     {
         "id": "004",
@@ -139,7 +139,7 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Leaf"
     },
     {
         "id": "016",
@@ -195,7 +195,7 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Vine Rope"
     },
     {
         "id": "022",
@@ -205,7 +205,7 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Vine Rope"
     },
     {
         "id": "023",
@@ -375,7 +375,7 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Vine Rope"
     },
     {
         "id": "041",
@@ -522,7 +522,7 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Sturdy Stick"
     },
     {
         "id": "057",
@@ -531,7 +531,7 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Honey"
     },
     {
         "id": "058",
@@ -683,7 +683,7 @@
             "chop",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Small log"
     },
     {
         "id": "074",
@@ -852,7 +852,7 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Nonburnable Garbage"
     },
     {
         "id": "092",
@@ -861,7 +861,7 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Nonburnable Garbage"
     },
     {
         "id": "093",
@@ -959,7 +959,7 @@
             "trade",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Stone"
     },
     {
         "id": "103",
@@ -1024,7 +1024,7 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Twine"
     },
     {
         "id": "110",
@@ -1033,7 +1033,7 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Twine"
     },
     {
         "id": "111",
@@ -1043,7 +1043,7 @@
             "generate",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Fluff"
     },
     {
         "id": "112",
@@ -1053,7 +1053,7 @@
             "generate",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Fluff"
     },
     {
         "id": "113",
@@ -1102,7 +1102,7 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Squishy Clay"
     },
     {
         "id": "118",
@@ -1112,7 +1112,7 @@
             "litter",
             "bulldoze"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Squishy Clay"
     },
     {
         "id": "119",
@@ -1256,7 +1256,7 @@
             "litter",
             "recycle"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Nonburnable Garbage"
     },
     {
         "id": "134",
@@ -1729,7 +1729,7 @@
             "burn",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Twine"
     },
     {
         "id": "184",
@@ -1739,7 +1739,7 @@
             "burn",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Twine"
     },
     {
         "id": "185",
@@ -1920,7 +1920,7 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Iron Ore"
     },
     {
         "id": "204",
@@ -1929,7 +1929,7 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Iron Ore"
     },
     {
         "id": "205",
@@ -2237,7 +2237,7 @@
             "bulldoze",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Squishy Clay"
     },
     {
         "id": "238",
@@ -2266,7 +2266,7 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Fluff"
     },
     {
         "id": "241",
@@ -2276,7 +2276,7 @@
             "litter",
             "fly"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Fluff"
     },
     {
         "id": "242",
@@ -2342,7 +2342,7 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Vine Rope"
     },
     {
         "id": "249",
@@ -2352,7 +2352,7 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Vine Rope"
     },
     {
         "id": "250",
@@ -2362,7 +2362,7 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Vine Rope"
     },
     {
         "id": "251",
@@ -2578,7 +2578,7 @@
             "crush",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Stone"
     },
     {
         "id": "274",
@@ -2597,7 +2597,7 @@
             "crush",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Stone"
     },
     {
         "id": "276",
@@ -2616,7 +2616,7 @@
             "crush",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Stone"
     },
     {
         "id": "278",
@@ -2635,7 +2635,7 @@
             "crush",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Stone"
     },
     {
         "id": "280",
@@ -2846,6 +2846,6 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "plant"
+        "litter_resource": "Fluff"
     }
 ]

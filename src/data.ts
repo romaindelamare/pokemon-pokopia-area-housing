@@ -10,6 +10,14 @@ type JsonEntry = {
   litter_resource: string | null;
 };
 
+function parseDexNumber(id: string): number | undefined {
+  return /^\d+$/.test(id) ? Number(id) : undefined;
+}
+
+function normalizeLitterResource(resource: string): string {
+  return resource.trim().toLowerCase();
+}
+
 /**
  * POKEMON_DB — keyed by the JSON id (e.g. "001", "006", "S001").
  * Built at module load time from pokemon_pokedex.json.
@@ -21,9 +29,12 @@ for (const raw of pokemonJson as JsonEntry[]) {
     id: raw.id,
     name: raw.name,
     family: raw.family,
+    dexNumber: parseDexNumber(raw.id),
     specialties: raw.specialties as Specialty[],
     favoriteItems: [],
-    ...(raw.litter_resource ? { litterResources: [raw.litter_resource] } : {}),
+    ...(raw.litter_resource
+      ? { litterResources: [normalizeLitterResource(raw.litter_resource)] }
+      : {}),
   };
   POKEMON_DB[raw.id] = pokemon;
 }

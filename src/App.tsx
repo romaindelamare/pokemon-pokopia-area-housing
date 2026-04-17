@@ -4,11 +4,18 @@ import {
   DragOverlay,
   PointerSensor,
   KeyboardSensor,
+  pointerWithin,
   useSensor,
   useSensors,
   closestCenter,
 } from '@dnd-kit/core';
-import type { DragEndEvent, DragStartEvent } from '@dnd-kit/core';
+import type {
+  CollisionDetection,
+  DragCancelEvent,
+  DragEndEvent,
+  DragOverEvent,
+  DragStartEvent,
+} from '@dnd-kit/core';
 import { POKEMON_DB, POKEMON_ORDER, INITIAL_AREAS } from './data';
 import type { PokopiaArea, Pokemon, House } from './types';
 import { MAX_HOUSE_SIZE } from './types';
@@ -27,6 +34,25 @@ import './App.css';
 function createHouse(pokemonIds: string[] = []): House {
   return makeHouse(pokemonIds);
 }
+
+const collisionDetection: CollisionDetection = (args) => {
+  const pointerCollisions = pointerWithin(args);
+  if (pointerCollisions.length > 0) {
+    const newHouseCollision = pointerCollisions.find((collision) =>
+      String(collision.id).startsWith('area-new-house-')
+    );
+    if (newHouseCollision) return [newHouseCollision];
+
+    const houseCollision = pointerCollisions.find((collision) =>
+      String(collision.id).startsWith('house-')
+    );
+    if (houseCollision) return [houseCollision];
+
+    return pointerCollisions;
+  }
+
+  return closestCenter(args);
+};
 
 function findLocation(
   areas: PokopiaArea[],
@@ -108,6 +134,7 @@ export default function App() {
     catch { return false; }
   });
   const [activeDragIds, setActiveDragIds] = useState<string[]>([]);
+  const [activeOverAreaId, setActiveOverAreaId] = useState<string | null>(null);
 
   // Auto-save distribution to localStorage on every state change
   useEffect(() => {
@@ -161,13 +188,25 @@ export default function App() {
       const pokemonId = (event.active.data.current as { pokemonId: string }).pokemonId;
       const ids = getFamilyIds(pokemonId, poolIds, areas);
       setActiveDragIds(ids);
+      setActiveOverAreaId(null);
     },
     [getFamilyIds, poolIds, areas]
   );
 
+  const handleDragOver = useCallback((event: DragOverEvent) => {
+    const overAreaId = (event.over?.data.current as { areaId?: string } | undefined)?.areaId;
+    setActiveOverAreaId(overAreaId ?? null);
+  }, []);
+
+  const handleDragCancel = useCallback((_event: DragCancelEvent) => {
+    setActiveDragIds([]);
+    setActiveOverAreaId(null);
+  }, []);
+
   const handleDragEnd = useCallback(
     (event: DragEndEvent) => {
       setActiveDragIds([]);
+      setActiveOverAreaId(null);
       const { active, over } = event;
       if (!over) return;
 
@@ -193,10 +232,11 @@ export default function App() {
 
       const targetAreaId = overAreaId;
       if (!targetAreaId) return;
+      const createNewHouse = overType === 'area-new-house';
 
       // Reject drop on a specific house if there isn't enough room for all dragged Pokémon.
       // We account for the dragged Pokémon already being in that house (they would be removed first).
-      if (overHouseId) {
+      if (overHouseId && !createNewHouse) {
         const targetArea = areas.find((a) => a.id === targetAreaId);
         const targetHouse = targetArea?.houses.find((h) => h.id === overHouseId);
         if (targetHouse) {
@@ -216,20 +256,17 @@ export default function App() {
       setPoolIds((prev) => prev.filter((id) => !draggedIds.includes(id)));
       setAreas((prev) => {
         const cleared = removePokemonFromAreas(prev, draggedIds);
-        const updated = addPokemonToArea(cleared, targetAreaId, draggedIds, overHouseId);
+        const updated = addPokemonToArea(
+          cleared,
+          targetAreaId,
+          draggedIds,
+          createNewHouse ? undefined : overHouseId
+        );
         return purgeSourceHouses(prev, updated);
       });
     },
     [getFamilyIds, poolIds, areas]
   );
-
-  const handleAddHouse = useCallback((areaId: string) => {
-    setAreas((prev) =>
-      prev.map((a) =>
-        a.id === areaId ? { ...a, houses: [...a.houses, createHouse()] } : a
-      )
-    );
-  }, []);
 
   const handleRemoveHouse = useCallback((areaId: string, houseId: string) => {
     setAreas((prev) =>
@@ -246,8 +283,10 @@ export default function App() {
   return (
     <DndContext
       sensors={sensors}
-      collisionDetection={closestCenter}
+      collisionDetection={collisionDetection}
       onDragStart={handleDragStart}
+      onDragOver={handleDragOver}
+      onDragCancel={handleDragCancel}
       onDragEnd={handleDragEnd}
     >
       <div className="app">
@@ -294,9 +333,9 @@ export default function App() {
                 key={area.id}
                 area={area}
                 pokemonDb={POKEMON_DB}
-                onAddHouse={handleAddHouse}
                 onRemoveHouse={handleRemoveHouse}
                 activeDragCount={activeDragIds.length}
+                isActiveDropArea={activeOverAreaId === area.id}
               />
             ))}
           </div>

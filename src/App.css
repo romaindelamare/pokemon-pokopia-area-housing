@@ -17,6 +17,8 @@
   background: var(--surface);
   border-bottom: 1px solid var(--border);
   flex-shrink: 0;
+  position: sticky;
+  top: 0;
   z-index: 20;
 }
 
@@ -81,7 +83,8 @@
 /* ── Main ────────────────────────────────────────────────────────────────── */
 .app-main {
   display: flex;
-  /* explicit height so nested flex/grid children have a definite bound */
+  align-items: stretch;
+  min-height: 0;
   height: calc(100vh - 52px);
   overflow: hidden;
 }
@@ -90,12 +93,14 @@
 .pokemon-pool {
   width: 220px;
   min-width: 180px;
+  min-height: 0;
   background: var(--surface);
   border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   overflow: hidden;
   flex-shrink: 0;
+  align-self: stretch;
   transition: background var(--transition);
 }
 
@@ -185,6 +190,7 @@
 
 .pool-list {
   flex: 1;
+  min-height: 0;
   overflow-y: auto;
   padding: 4px 8px 12px;
 }
@@ -229,12 +235,12 @@
 /* ── Areas Grid ───────────────────────────────────────────────────────────── */
 .areas-grid {
   flex: 1;
-  /* height: 100% ensures the grid fills the explicit height of .app-main */
-  height: 100%;
+  min-height: 0;
+  min-width: 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /* 1fr row = row height equals the grid container's height */
-  grid-template-rows: 1fr;
+  grid-template-rows: minmax(0, 1fr);
+  height: 100%;
   overflow: hidden;
   gap: 0;
 }
@@ -243,8 +249,9 @@
 .area-column {
   display: flex;
   flex-direction: column;
-  /* height: 100% fills the grid row so inner flex children have a bounded height */
   height: 100%;
+  min-height: 0;
+  min-width: 0;
   border-right: 1px solid var(--border);
   background: var(--bg);
   overflow: hidden;
@@ -253,6 +260,16 @@
 
 .area-column:last-child { border-right: none; }
 .area-column.area-over { background: #fafafa; }
+
+.area-meta {
+  flex-shrink: 0;
+}
+
+.area-body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
 
 /* Fixed height so all headers are identical */
 .area-header {
@@ -354,9 +371,13 @@
 
 /* ── Houses ───────────────────────────────────────────────────────────────── */
 .area-houses {
-  flex: 1;
+  flex: none;
+  max-height: 100%;
   min-height: 0;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+  align-items: stretch;
   padding: 8px;
   display: flex;
   flex-direction: column;
@@ -364,6 +385,7 @@
 }
 
 .area-empty {
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -382,7 +404,14 @@
 .area-empty-icon { font-size: 2rem; opacity: .35; }
 
 .area-drop-hint {
-  padding: 10px;
+  flex-shrink: 0;
+  margin: 10px 8px 0;
+  margin-bottom: 12px;
+  min-height: 52px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-size: .76rem;
   font-weight: 500;
@@ -392,33 +421,20 @@
   border-radius: var(--radius-md);
 }
 
-.area-footer {
-  padding: 7px 8px;
-  border-top: 1px solid var(--border);
-  background: var(--surface);
-  flex-shrink: 0;
+.area-drop-hint.invalid {
+  color: #b91c1c;
+  background: #fef2f2;
+  border-color: #fca5a5;
 }
 
-.add-house-btn {
-  width: 100%;
-  padding: 6px;
-  border: 1.5px dashed var(--border-dark);
-  border-radius: var(--radius-md);
-  background: transparent;
-  color: var(--text-3);
-  font-size: .74rem;
-  font-weight: 600;
-  transition: all var(--transition);
-}
-
-.add-house-btn:hover {
-  background: var(--bg);
+.area-drop-hint.area-drop-hint-over {
   border-color: var(--accent);
-  color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(79,70,229,.12);
 }
 
 /* ── House Group ──────────────────────────────────────────────────────────── */
 .house-group {
+  flex-shrink: 0;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -598,14 +614,6 @@
   gap: 5px;
   padding: 5px 7px;
   color: #fff;
-}
-
-.pokemon-sprite {
-  width: 28px;
-  height: 28px;
-  image-rendering: pixelated;
-  flex-shrink: 0;
-  filter: drop-shadow(0 1px 2px rgba(0,0,0,.25));
 }
 
 .pokemon-name {

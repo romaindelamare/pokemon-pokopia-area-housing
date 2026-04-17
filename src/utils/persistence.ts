@@ -1,4 +1,5 @@
 import type { PokopiaArea, House } from '../types';
+import { POKEMON_ORDER } from '../data';
 import { INITIAL_AREAS } from '../data';
 
 const LS_KEY = 'pokopia-distribution';
@@ -32,6 +33,43 @@ export function makeHouse(pokemonIds: string[] = []): House {
   return { id: nextHouseId(), pokemonIds };
 }
 
+function sanitizeState(state: AppState): AppState {
+  const knownIds = new Set(POKEMON_ORDER);
+  const seenIds = new Set<string>();
+  const normalizedAreas = INITIAL_AREAS.map((baseArea) => {
+    const sourceArea = state.areas.find((area) => area.id === baseArea.id);
+    const houses = (sourceArea?.houses ?? [])
+      .map((house) => {
+        const pokemonIds = house.pokemonIds.filter((pokemonId) => {
+          if (!knownIds.has(pokemonId) || seenIds.has(pokemonId)) return false;
+          seenIds.add(pokemonId);
+          return true;
+        });
+        return makeHouse(pokemonIds);
+      })
+      .filter((house) => house.pokemonIds.length > 0);
+
+    return {
+      ...baseArea,
+      houses,
+    };
+  });
+
+  const normalizedPoolIds = [
+    ...state.poolIds.filter((pokemonId) => {
+      if (!knownIds.has(pokemonId) || seenIds.has(pokemonId)) return false;
+      seenIds.add(pokemonId);
+      return true;
+    }),
+    ...POKEMON_ORDER.filter((pokemonId) => !seenIds.has(pokemonId)),
+  ];
+
+  return {
+    poolIds: normalizedPoolIds,
+    areas: normalizedAreas,
+  };
+}
+
 export function encodeState(state: AppState): string {
   const serialized: SerializedState = {
     v: 1,
@@ -58,7 +96,7 @@ export function decodeState(code: string): AppState | null {
         houses: sa.houses.map((sh) => makeHouse(sh.pokemonIds)),
       };
     }).filter(Boolean) as PokopiaArea[];
-    return { poolIds: data.poolIds, areas };
+    return sanitizeState({ poolIds: data.poolIds, areas });
   } catch {
     return null;
   }
