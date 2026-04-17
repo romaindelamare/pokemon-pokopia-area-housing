@@ -32,9 +32,13 @@ export function PokemonPool({ pokemonList }: PokemonPoolProps) {
   });
 
   /** Sort filtered list by JSON id order (numeric first, then S-ids alphabetically) */
+  const SPECIAL_ID_OFFSET = 100_000;
+  const CHAR_CODE_MULTIPLIER = 1_000;
   const idRank = (id: string) => {
     const n = parseInt(id, 10);
-    return isNaN(n) ? 100000 + id.charCodeAt(0) * 1000 + parseInt(id.slice(1), 10) : n;
+    return isNaN(n)
+      ? SPECIAL_ID_OFFSET + id.charCodeAt(0) * CHAR_CODE_MULTIPLIER + (parseInt(id.slice(1), 10) || 0)
+      : n;
   };
 
   const sorted = [...filtered].sort((a, b) => idRank(a.id) - idRank(b.id));
