@@ -200,6 +200,11 @@
   min-height: 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  /* Explicit 1fr row forces the single row to fill the grid container's
+     definite height instead of auto-sizing to the tallest column's content.
+     This is required so each area-column gets a bounded height and
+     .area-houses overflow-y:auto actually triggers. */
+  grid-template-rows: 1fr;
   overflow: hidden;
   gap: 0;
 }
