@@ -8,7 +8,21 @@ export type Specialty =
   | 'mine'
   | 'gather'
   | 'litter'
-  | 'transport';
+  | 'transport'
+  | 'search'
+  | 'chop'
+  | 'trade'
+  | 'build'
+  | 'hype'
+  | 'recycle'
+  | 'storage'
+  | 'bulldoze'
+  | 'crush'
+  | 'explode'
+  | 'teleport'
+  | 'transform'
+  | 'yawn'
+  | 'island';
 
 export const SPECIALTY_META: Record<
   Specialty,
@@ -24,12 +38,42 @@ export const SPECIALTY_META: Record<
   gather:    { label: 'Gather',    icon: '🌾', color: '#7b4f00', bg: '#fff3d6' },
   litter:    { label: 'Litter',    icon: '🧹', color: '#6b2b7e', bg: '#f5dfff' },
   transport: { label: 'Transport', icon: '📦', color: '#2d5016', bg: '#e6f0d6' },
+  search:    { label: 'Search',    icon: '🔍', color: '#1d4ed8', bg: '#dbeafe' },
+  chop:      { label: 'Chop',      icon: '🪓', color: '#7c2d12', bg: '#fef9c3' },
+  trade:     { label: 'Trade',     icon: '🤝', color: '#065f46', bg: '#d1fae5' },
+  build:     { label: 'Build',     icon: '🏗️', color: '#78350f', bg: '#fef3c7' },
+  hype:      { label: 'Hype',      icon: '🎉', color: '#9d174d', bg: '#fce7f3' },
+  recycle:   { label: 'Recycle',   icon: '♻️', color: '#065f46', bg: '#d1fae5' },
+  storage:   { label: 'Storage',   icon: '🗄️', color: '#374151', bg: '#f3f4f6' },
+  bulldoze:  { label: 'Bulldoze',  icon: '💪', color: '#92400e', bg: '#fef3c7' },
+  crush:     { label: 'Crush',     icon: '💥', color: '#7f1d1d', bg: '#fee2e2' },
+  explode:   { label: 'Explode',   icon: '🧨', color: '#991b1b', bg: '#ffe4e6' },
+  teleport:  { label: 'Teleport',  icon: '🔮', color: '#5b21b6', bg: '#ede9fe' },
+  transform: { label: 'Transform', icon: '🌀', color: '#0f766e', bg: '#ccfbf1' },
+  yawn:      { label: 'Yawn',      icon: '😴', color: '#6b7280', bg: '#f3f4f6' },
+  island:    { label: 'Island',    icon: '🏝️', color: '#0369a1', bg: '#e0f2fe' },
 };
 
 export const ALL_SPECIALTIES: Specialty[] = [
-  'burn', 'water', 'plant', 'electric', 'cool',
-  'craft', 'mine', 'gather', 'litter', 'transport',
+  'burn', 'water', 'plant', 'electric', 'cool', 'craft', 'mine',
+  'gather', 'litter', 'transport', 'search', 'chop', 'trade', 'build',
+  'hype', 'recycle', 'storage', 'bulldoze', 'crush', 'explode',
+  'teleport', 'transform', 'yawn', 'island',
 ];
+
+export const LITTER_RESOURCE_META: Record<string, { label: string; icon: string; color: string; bg: string }> = {
+  'leaf':                { label: 'Leaf',              icon: '🍃', color: '#1a6b2f', bg: '#dff5e6' },
+  'vine rope':           { label: 'Vine Rope',         icon: '🌱', color: '#2d5a1b', bg: '#e6f5de' },
+  'honey':               { label: 'Honey',             icon: '🍯', color: '#8b6d00', bg: '#fff8d6' },
+  'sturdy stick':        { label: 'Sturdy Stick',      icon: '🪵', color: '#6b3e2c', bg: '#f5e6df' },
+  'twine':               { label: 'Twine',             icon: '🧵', color: '#7b4f00', bg: '#fff3d6' },
+  'fluff':               { label: 'Fluff',             icon: '☁️', color: '#6b7280', bg: '#f3f4f6' },
+  'nonburnable garbage': { label: 'Garbage',           icon: '🗑️', color: '#4a5568', bg: '#edf2f7' },
+  'squishy clay':        { label: 'Squishy Clay',      icon: '🫙', color: '#92400e', bg: '#fef3c7' },
+  'stone':               { label: 'Stone',             icon: '🪨', color: '#4a5568', bg: '#edf2f7' },
+  'iron ore':            { label: 'Iron Ore',          icon: '🔩', color: '#374151', bg: '#f1f5f9' },
+  'small log':           { label: 'Small Log',         icon: '🪵', color: '#78350f', bg: '#fef3c7' },
+};
 
 export const TYPE_COLORS: Record<string, string> = {
   fire:     '#FF6D00',
@@ -61,7 +105,7 @@ export interface Pokemon {
   specialties: Specialty[];
   favoriteItems: string[];
   /** Resources produced when this Pokémon litters (only set for litter Pokémon) */
-  litterResources?: Specialty[];
+  litterResources?: string[];
 }
 
 export const MAX_HOUSE_SIZE = 4;

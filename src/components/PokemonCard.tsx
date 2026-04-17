@@ -1,6 +1,6 @@
 import { useDraggable } from '@dnd-kit/core';
 import type { Pokemon } from '../types';
-import { SPECIALTY_META, TYPE_COLORS } from '../types';
+import { SPECIALTY_META, LITTER_RESOURCE_META, TYPE_COLORS } from '../types';
 
 interface PokemonCardProps {
   pokemon: Pokemon;
@@ -13,13 +13,13 @@ function LitterResourceRow({ pokemon }: { pokemon: Pokemon }) {
     <div className="litter-resources-row">
       <span className="litter-label">Litters:</span>
       {pokemon.litterResources.map((r) => {
-        const meta = SPECIALTY_META[r];
+        const meta = LITTER_RESOURCE_META[r] ?? { icon: '📦', label: r, color: '#374151', bg: '#f3f4f6' };
         return (
           <span
             key={r}
             className="litter-resource-chip"
             style={{ backgroundColor: meta.bg, color: meta.color }}
-            title={`Litters ${meta.label} resources`}
+            title={`Litters ${meta.label}`}
           >
             {meta.icon} {meta.label}
           </span>

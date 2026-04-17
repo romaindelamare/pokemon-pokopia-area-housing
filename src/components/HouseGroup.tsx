@@ -1,6 +1,6 @@
 import { useDroppable } from '@dnd-kit/core';
 import type { House, Pokemon } from '../types';
-import { MAX_HOUSE_SIZE, SPECIALTY_META } from '../types';
+import { MAX_HOUSE_SIZE, LITTER_RESOURCE_META } from '../types';
 import { PokemonCard } from './PokemonCard';
 
 interface HouseGroupProps {
@@ -42,7 +42,7 @@ export function HouseGroup({
   );
 
   const resourceIcons = litterResourceTypes
-    .map((r) => SPECIALTY_META[r]?.icon ?? '')
+    .map((r) => LITTER_RESOURCE_META[r]?.icon ?? '📦')
     .join(' ');
 
   return (
