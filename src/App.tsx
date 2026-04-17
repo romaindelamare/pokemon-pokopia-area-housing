@@ -78,17 +78,8 @@ function addPokemonToArea(
       }
     }
 
-    let remaining = [...pokemonIds];
-    if (houses.length > 0) {
-      const last = houses[houses.length - 1];
-      const available = MAX_HOUSE_SIZE - last.pokemonIds.length;
-      if (available > 0) {
-        last.pokemonIds.push(...remaining.splice(0, available));
-      }
-    }
-    while (remaining.length > 0) {
-      houses.push(createHouse(remaining.splice(0, MAX_HOUSE_SIZE)));
-    }
+    // No specific house targeted → always create a brand-new house for these Pokémon
+    houses.push(createHouse(pokemonIds));
     return { ...area, houses };
   });
 }
@@ -195,6 +186,10 @@ export default function App() {
           const available = MAX_HOUSE_SIZE - effectiveOccupied;
           if (draggedIds.length > available) return;
         }
+      } else {
+        // Dropping on the area itself (not a house) → will create a new house.
+        // Reject if the family is too large to fit in a single house.
+        if (draggedIds.length > MAX_HOUSE_SIZE) return;
       }
 
       setPoolIds((prev) => prev.filter((id) => !draggedIds.includes(id)));
