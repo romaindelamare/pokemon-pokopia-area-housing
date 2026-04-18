@@ -1,7 +1,8 @@
 import { useDroppable } from '@dnd-kit/core';
 import type { House, Pokemon } from '../types';
-import { MAX_HOUSE_SIZE, LITTER_RESOURCE_META } from '../types';
+import { MAX_HOUSE_SIZE } from '../types';
 import { PokemonCard } from './PokemonCard';
+import { Icon } from './Icon';
 
 interface HouseGroupProps {
   house: House;
@@ -48,10 +49,6 @@ export function HouseGroup({
     )
   );
 
-  const resourceIcons = litterResourceTypes
-    .map((r) => LITTER_RESOURCE_META[r]?.icon ?? '📦')
-    .join(' ');
-
   return (
     <div
       ref={setNodeRef}
@@ -59,19 +56,20 @@ export function HouseGroup({
       aria-label={`House ${houseNumber} – ${pokemonList.length}/${MAX_HOUSE_SIZE} Pokémon`}
     >
       <div className="house-header">
-        <span className="house-icon">🏠</span>
+        <Icon name="home" className="house-icon" />
         <span className="house-title">House {houseNumber}</span>
 
         {hasLitter && (
           <span
-            className={`house-synergy-badge${hasGather ? ' synergy-ok' : ' synergy-warn'}`}
+            className={`house-synergy-chip ${hasGather ? 'synergy-ok' : 'synergy-warn'}${hasGather ? '' : ' missing'}`}
             title={
               hasGather
-                ? `Litter (${litterResourceTypes.join(', ')}) is being gathered ✅`
-                : `Litter (${litterResourceTypes.join(', ')}) needs a gather Pokémon ⚠️`
+                ? `Litter (${litterResourceTypes.join(', ')}) is being gathered`
+                : `Litter (${litterResourceTypes.join(', ')}) needs gathering`
             }
           >
-            🧹{resourceIcons ? ` ${resourceIcons}` : ''} {hasGather ? '✅' : '⚠️'}
+            <Icon name="eco" />
+            <span>Gathering</span>
           </span>
         )}
 
@@ -85,7 +83,7 @@ export function HouseGroup({
             title="Remove empty house"
             aria-label="Remove empty house"
           >
-            ✕
+            <Icon name="close" />
           </button>
         )}
       </div>
@@ -115,7 +113,7 @@ export function HouseGroup({
 
       {allItems.length > 0 && (
         <div className="house-items">
-          <span className="house-items-label">⭐ Favorite items</span>
+          <span className="house-items-label"><Icon name="star" /> Favorite items</span>
           <div className="house-items-list">
             {allItems.map((item) => (
               <span key={item} className="house-item-chip">

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { AppState } from '../utils/persistence';
 import { encodeState, decodeState } from '../utils/persistence';
+import { Icon } from './Icon';
 
 interface ShareLoadPanelProps {
   state: AppState;
@@ -90,7 +91,7 @@ export function ShareLoadPanel({ state, onLoad }: ShareLoadPanelProps) {
         onClick={handleOpenShare}
         title="Share your current distribution"
       >
-        🔗 Share
+        <Icon name="link" /> Share
       </button>
 
       <button
@@ -98,7 +99,7 @@ export function ShareLoadPanel({ state, onLoad }: ShareLoadPanelProps) {
         onClick={handleOpenLoad}
         title="Load a distribution from a code"
       >
-        📥 Load
+        <Icon name="download" /> Load
       </button>
 
       {showShare && (
@@ -116,7 +117,7 @@ export function ShareLoadPanel({ state, onLoad }: ShareLoadPanelProps) {
             className={`load-confirm-btn${copied ? ' btn-success' : ''}`}
             onClick={handleCopyShare}
           >
-            {copied ? '✓ Copied!' : '📋 Copy code'}
+            {copied ? <><Icon name="check" /> Copied!</> : <><Icon name="content_copy" /> Copy code</>}
           </button>
         </div>
       )}

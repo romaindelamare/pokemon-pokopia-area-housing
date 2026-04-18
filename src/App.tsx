@@ -23,6 +23,7 @@ import { PokemonPool } from './components/PokemonPool';
 import { AreaColumn } from './components/AreaColumn';
 import { PokemonCardOverlay } from './components/PokemonCard';
 import { ShareLoadPanel } from './components/ShareLoadPanel';
+import { Icon } from './components/Icon';
 import {
   makeHouse,
   saveToLocalStorage,
@@ -292,7 +293,7 @@ export default function App() {
       <div className="app">
         <header className="app-header">
           <div className="header-title">
-            <span className="header-pokeball">⚾</span>
+            <Icon name="catching_pokemon" className="header-pokeball" />
             <h1>Pokopia Area Housing</h1>
           </div>
           <div className="header-controls">
@@ -301,7 +302,7 @@ export default function App() {
               onClick={handleReset}
               title="Reset all areas and return all Pokémon to the pool"
             >
-              🗑️ Reset
+              <Icon name="restart_alt" /> Reset
             </button>
             <ShareLoadPanel state={{ poolIds, areas }} onLoad={handleLoadState} />
             <label className="family-toggle" htmlFor="family-toggle-input">
