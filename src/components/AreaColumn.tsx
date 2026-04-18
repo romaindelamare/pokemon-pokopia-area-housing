@@ -59,6 +59,7 @@ export function AreaColumn({ area, pokemonDb, onRemoveHouse, activeDragCount, is
   );
 
   const totalPokemon = area.houses.reduce((sum, h) => sum + h.pokemonIds.length, 0);
+  const totalHouses = area.houses.length;
   const showAreaDropHint = isActiveDropArea && activeDragCount > 0;
   const canCreateHouse = activeDragCount <= MAX_HOUSE_SIZE;
   const isDropHintActive = showAreaDropHint && canCreateHouse;
@@ -185,7 +186,16 @@ export function AreaColumn({ area, pokemonDb, onRemoveHouse, activeDragCount, is
       <div ref={headerRef} className="area-header" style={{ backgroundColor: area.color }}>
         <Icon name={area.icon} className="area-icon" />
         <span className="area-name">{area.name}</span>
-        <span className="area-poke-count">{totalPokemon}</span>
+        <div className="area-counters">
+          <span className="area-counter" title={`${totalPokemon} Pokémon`}>
+            <Icon name="catching_pokemon" className="area-counter-icon" />
+            {totalPokemon}
+          </span>
+          <span className="area-counter" title={`${totalHouses} house${totalHouses !== 1 ? 's' : ''}`}>
+            <Icon name="home" className="area-counter-icon" />
+            {totalHouses}
+          </span>
+        </div>
       </div>
 
       <div ref={metaRef} className="area-meta">
