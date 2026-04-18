@@ -1,6 +1,6 @@
 import { useDroppable } from '@dnd-kit/core';
 import type { House, Pokemon } from '../types';
-import { MAX_HOUSE_SIZE, LITTER_RESOURCE_META } from '../types';
+import { MAX_HOUSE_SIZE } from '../types';
 import { PokemonCard } from './PokemonCard';
 import { Icon } from './Icon';
 
@@ -61,18 +61,15 @@ export function HouseGroup({
 
         {hasLitter && (
           <span
-            className={`house-synergy-badge${hasGather ? ' synergy-ok' : ' synergy-warn'}`}
+            className={`house-synergy-chip ${hasGather ? 'synergy-ok' : 'synergy-warn'}${hasGather ? '' : ' missing'}`}
             title={
               hasGather
                 ? `Litter (${litterResourceTypes.join(', ')}) is being gathered`
-                : `Litter (${litterResourceTypes.join(', ')}) needs a gather Pokémon`
+                : `Litter (${litterResourceTypes.join(', ')}) needs gathering`
             }
           >
-            <Icon name="cleaning_services" />
-            {litterResourceTypes.map((r) => (
-              <Icon key={r} name={LITTER_RESOURCE_META[r]?.icon ?? 'inventory_2'} />
-            ))}
-            <Icon name={hasGather ? 'check_circle' : 'warning'} />
+            <Icon name="eco" />
+            <span>Gathering</span>
           </span>
         )}
 

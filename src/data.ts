@@ -48,7 +48,7 @@ export const INITIAL_AREAS: PokopiaArea[] = [
     name: 'Withered Wasteland',
     color: '#92400e',
     bgColor: '#fef3c7',
-    icon: 'terrain',
+    icon: 'nature',
     houses: [],
   },
   {
