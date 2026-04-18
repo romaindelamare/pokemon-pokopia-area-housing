@@ -370,7 +370,7 @@
     {
         "id": "040",
         "name": "Tangela",
-        "family": null,
+        "family": "Tangela",
         "specialties": [
             "grow",
             "litter"
@@ -380,7 +380,7 @@
     {
         "id": "041A",
         "name": "Professor Tangrowth",
-        "family": "Tangrowth",
+        "family": "Tangela",
         "specialties": [
             "appraise"
         ],
@@ -389,7 +389,7 @@
     {
         "id": "041B",
         "name": "Tangrowth",
-        "family": "Tangrowth",
+        "family": "Tangela",
         "specialties": [
             "grow",
             "litter"
