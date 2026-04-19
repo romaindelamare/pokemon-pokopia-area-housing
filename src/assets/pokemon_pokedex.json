@@ -144,7 +144,7 @@
     {
         "id": "016",
         "name": "Bellossom",
-        "family": "Oddish",
+        "family": null,
         "specialties": [
             "grow",
             "hype"
@@ -240,7 +240,7 @@
     {
         "id": "026",
         "name": "Slowking",
-        "family": "Slowpoke",
+        "family": null,
         "specialties": [
             "water",
             "teleport"
@@ -334,7 +334,7 @@
     {
         "id": "036",
         "name": "Hitmonchan",
-        "family": "Tyrogue",
+        "family": null,
         "specialties": [
             "trade"
         ],
@@ -343,7 +343,7 @@
     {
         "id": "037",
         "name": "Hitmontop",
-        "family": "Tyrogue",
+        "family": null,
         "specialties": [
             "trade"
         ],
@@ -417,7 +417,7 @@
     {
         "id": "044",
         "name": "Pinsir",
-        "family": "Magby",
+        "family": null,
         "specialties": [
             "chop",
             "build"
@@ -437,15 +437,6 @@
         "family": "Magikarp",
         "specialties": [
             "water"
-        ],
-        "litter_resource": null
-    },
-    {
-        "id": "047",
-        "name": "Ditto",
-        "family": "Magikarp",
-        "specialties": [
-            "transform"
         ],
         "litter_resource": null
     },
@@ -482,7 +473,7 @@
     {
         "id": "051",
         "name": "Volbeat",
-        "family": "Electrike",
+        "family": "Volbeat & Illumise",
         "specialties": [
             "hype"
         ],
@@ -491,7 +482,7 @@
     {
         "id": "052",
         "name": "Illumise",
-        "family": "Electrike",
+        "family": "Volbeat & Illumise",
         "specialties": [
             "hype"
         ],
@@ -764,7 +755,7 @@
     {
         "id": "079A",
         "name": "Peakychu",
-        "family": "Peakychu",
+        "family": "Pichu",
         "specialties": [
             "illuminate"
         ],
@@ -773,7 +764,7 @@
     {
         "id": "079B",
         "name": "Pikachu",
-        "family": "Peakychu",
+        "family": "Pichu",
         "specialties": [
             "generate"
         ],
@@ -1031,7 +1022,7 @@
     {
         "id": "106",
         "name": "Lapras",
-        "family": "Magikarp",
+        "family": null,
         "specialties": [
             "water"
         ],
@@ -1156,7 +1147,7 @@
     {
         "id": "119",
         "name": "Smeargle",
-        "family": "Stantler",
+        "family": null,
         "specialties": [
             "paint"
         ],
@@ -1272,7 +1263,7 @@
     {
         "id": "131",
         "name": "Audino",
-        "family": "Drilbur",
+        "family": null,
         "specialties": [
             "trade"
         ],
@@ -1405,7 +1396,7 @@
     {
         "id": "145A",
         "name": "Tatsugiri Curly Form",
-        "family": "Tatsugiri",
+        "family": "Tatsugiri Curly Form",
         "specialties": [
             "trade"
         ],
@@ -1414,7 +1405,7 @@
     {
         "id": "145B",
         "name": "Tatsugiri Droopy Form",
-        "family": "Tatsugiri",
+        "family": "Tatsugiri Curly Form",
         "specialties": [
             "trade"
         ],
@@ -1423,7 +1414,7 @@
     {
         "id": "145C",
         "name": "Tatsugiri Stretchy Form",
-        "family": "Tatsugiri",
+        "family": "Tatsugiri Curly Form",
         "specialties": [
             "trade"
         ],
@@ -1916,7 +1907,7 @@
     {
         "id": "197A",
         "name": "Toxtricity Amped Form",
-        "family": "Toxtricity",
+        "family": "Toxtricity Amped Form",
         "specialties": [
             "generate",
             "hype"
@@ -1926,7 +1917,7 @@
     {
         "id": "197B",
         "name": "Toxtricity Low Key Form",
-        "family": "Toxtricity",
+        "family": "Toxtricity Amped Form",
         "specialties": [
             "generate",
             "hype"
@@ -1974,7 +1965,7 @@
     {
         "id": "202",
         "name": "Ceruledge",
-        "family": "Charcadet",
+        "family": null,
         "specialties": [
             "burn",
             "trade"
@@ -2066,7 +2057,7 @@
     {
         "id": "212",
         "name": "Politoed",
-        "family": "Poliwag",
+        "family": null,
         "specialties": [
             "water",
             "hype"
@@ -2272,7 +2263,7 @@
     {
         "id": "234",
         "name": "Gallade",
-        "family": "Ralts",
+        "family": null,
         "specialties": [
             "teleport",
             "build"
@@ -2282,7 +2273,7 @@
     {
         "id": "235",
         "name": "Plusle",
-        "family": "Electrike",
+        "family": "Plusle & Minun",
         "specialties": [
             "generate"
         ],
@@ -2291,7 +2282,7 @@
     {
         "id": "236",
         "name": "Minun",
-        "family": "Electrike",
+        "family": "Plusle & Minun",
         "specialties": [
             "generate"
         ],
@@ -2463,7 +2454,7 @@
     {
         "id": "254",
         "name": "Dedenne",
-        "family": "Amaura",
+        "family": null,
         "specialties": [
             "search"
         ],
@@ -2789,7 +2780,7 @@
     {
         "id": "290",
         "name": "Raikou",
-        "family": "Stantler",
+        "family": null,
         "specialties": [
             "generate"
         ],
@@ -2798,7 +2789,7 @@
     {
         "id": "291",
         "name": "Entei",
-        "family": "Stantler",
+        "family": null,
         "specialties": [
             "burn"
         ],
@@ -2807,7 +2798,7 @@
     {
         "id": "292",
         "name": "Suicune",
-        "family": "Stantler",
+        "family": null,
         "specialties": [
             "water"
         ],
@@ -2816,7 +2807,7 @@
     {
         "id": "293",
         "name": "Volcanion",
-        "family": "Noibat",
+        "family": null,
         "specialties": [
             "burn"
         ],
@@ -2825,7 +2816,7 @@
     {
         "id": "294",
         "name": "Articuno",
-        "family": "Munchlax",
+        "family": null,
         "specialties": [
             "fly"
         ],
@@ -2834,7 +2825,7 @@
     {
         "id": "295",
         "name": "Zapdos",
-        "family": "Munchlax",
+        "family": null,
         "specialties": [
             "fly"
         ],
@@ -2843,7 +2834,7 @@
     {
         "id": "296",
         "name": "Moltres",
-        "family": "Munchlax",
+        "family": null,
         "specialties": [
             "fly"
         ],
@@ -2852,7 +2843,7 @@
     {
         "id": "299",
         "name": "Mewtwo",
-        "family": "Dratini",
+        "family": null,
         "specialties": [
             "teleport"
         ],
@@ -2861,7 +2852,7 @@
     {
         "id": "300",
         "name": "Mew",
-        "family": "Dratini",
+        "family": null,
         "specialties": [
             "teleport"
         ],
