@@ -144,7 +144,7 @@
     {
         "id": "016",
         "name": "Bellossom",
-        "family": null,
+        "family": "Oddish",
         "specialties": [
             "grow",
             "hype"
@@ -240,7 +240,7 @@
     {
         "id": "026",
         "name": "Slowking",
-        "family": null,
+        "family": "Slowpoke",
         "specialties": [
             "water",
             "teleport"
@@ -334,7 +334,7 @@
     {
         "id": "036",
         "name": "Hitmonchan",
-        "family": null,
+        "family": "Tyrogue",
         "specialties": [
             "trade"
         ],
@@ -343,7 +343,7 @@
     {
         "id": "037",
         "name": "Hitmontop",
-        "family": null,
+        "family": "Tyrogue",
         "specialties": [
             "trade"
         ],
@@ -708,7 +708,7 @@
     {
         "id": "074",
         "name": "Goomy",
-        "family": null,
+        "family": "Sliggoo",
         "specialties": [
             "water"
         ],
@@ -1128,7 +1128,7 @@
     {
         "id": "117",
         "name": "Paldean Wooper",
-        "family": null,
+        "family": "Paldean Wooper",
         "specialties": [
             "litter"
         ],
@@ -1137,7 +1137,7 @@
     {
         "id": "118",
         "name": "Clodsire",
-        "family": null,
+        "family": "Paldean Wooper",
         "specialties": [
             "litter",
             "bulldoze"
@@ -1898,7 +1898,7 @@
     {
         "id": "196",
         "name": "Toxel",
-        "family": null,
+        "family": "Toxtricity Amped Form",
         "specialties": [
             "generate"
         ],
@@ -1965,7 +1965,7 @@
     {
         "id": "202",
         "name": "Ceruledge",
-        "family": null,
+        "family": "Charcadet",
         "specialties": [
             "burn",
             "trade"
@@ -2057,7 +2057,7 @@
     {
         "id": "212",
         "name": "Politoed",
-        "family": null,
+        "family": "Poliwag",
         "specialties": [
             "water",
             "hype"
@@ -2095,7 +2095,7 @@
     {
         "id": "216",
         "name": "Mime Jr.",
-        "family": null,
+        "family": "Mime Jr.",
         "specialties": [
             "gather"
         ],
@@ -2104,7 +2104,7 @@
     {
         "id": "217",
         "name": "Mr. Mime",
-        "family": null,
+        "family": "Mime Jr.",
         "specialties": [
             "gather",
             "build"
@@ -2263,7 +2263,7 @@
     {
         "id": "234",
         "name": "Gallade",
-        "family": null,
+        "family": "Ralts",
         "specialties": [
             "teleport",
             "build"

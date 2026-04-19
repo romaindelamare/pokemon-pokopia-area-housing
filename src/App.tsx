@@ -26,6 +26,7 @@ import { ShareLoadPanel } from './components/ShareLoadPanel';
 import { Icon } from './components/Icon';
 import {
   makeHouse,
+  encodeState,
   saveToLocalStorage,
   loadFromLocalStorage,
   type AppState,
@@ -121,6 +122,61 @@ function addPokemonToArea(
   });
 }
 
+function buildRepartitionExportText(
+  areas: PokopiaArea[],
+  poolIds: string[],
+  shareId: string
+): string {
+  const areaSeparator = '==================================================';
+  const lines: string[] = [];
+  lines.push('Pokopia Area Housing - Repartition Export');
+  lines.push(`Share ID: ${shareId}`);
+  lines.push(`Generated: ${new Date().toLocaleString()}`);
+  lines.push('');
+
+  for (const area of areas) {
+    lines.push(areaSeparator);
+    lines.push(`Area: ${area.name}`);
+    lines.push(areaSeparator);
+
+    if (area.houses.length === 0) {
+      lines.push('  - No houses');
+      lines.push('');
+      continue;
+    }
+
+    area.houses.forEach((house, houseIndex) => {
+      lines.push(`  House ${houseIndex + 1}`);
+      if (house.pokemonIds.length === 0) {
+        lines.push('    - Empty');
+        return;
+      }
+
+      for (const pokemonId of house.pokemonIds) {
+        const pokemon = POKEMON_DB[pokemonId];
+        const label = pokemon ? `${pokemon.name} (${pokemon.id})` : pokemonId;
+        lines.push(`    - ${label}`);
+      }
+    });
+
+    lines.push('');
+  }
+
+  lines.push(areaSeparator);
+  lines.push('Unassigned (Pool):');
+  if (poolIds.length === 0) {
+    lines.push('  - None');
+  } else {
+    for (const pokemonId of poolIds) {
+      const pokemon = POKEMON_DB[pokemonId];
+      const label = pokemon ? `${pokemon.name} (${pokemon.id})` : pokemonId;
+      lines.push(`  - ${label}`);
+    }
+  }
+
+  return lines.join('\n');
+}
+
 export default function App() {
   const [poolIds, setPoolIds] = useState<string[]>(() => {
     const saved = loadFromLocalStorage();
@@ -157,6 +213,22 @@ export default function App() {
     setAreas(INITIAL_AREAS);
     setPoolIds(POKEMON_ORDER);
   }, []);
+
+  const handleExportTxt = useCallback(() => {
+    const shareId = encodeState({ poolIds, areas });
+    const content = buildRepartitionExportText(areas, poolIds, shareId);
+    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    const date = new Date().toISOString().slice(0, 10);
+
+    link.href = url;
+    link.download = `pokopia-repartition-${date}.txt`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  }, [areas, poolIds]);
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 6 } }),
@@ -303,6 +375,13 @@ export default function App() {
               title="Reset all areas and return all Pokémon to the pool"
             >
               <Icon name="restart_alt" /> Reset
+            </button>
+            <button
+              className="header-btn"
+              onClick={handleExportTxt}
+              title="Export the current repartition to a TXT file"
+            >
+              <Icon name="description" /> Export TXT
             </button>
             <ShareLoadPanel state={{ poolIds, areas }} onLoad={handleLoadState} />
             <label className="family-toggle" htmlFor="family-toggle-input">
