@@ -8,6 +8,7 @@ type JsonEntry = {
   family: string;
   specialties: string[];
   litter_resource: string | null;
+  favorites?: string[];
 };
 
 function parseDexNumber(id: string): number | undefined {
@@ -16,6 +17,13 @@ function parseDexNumber(id: string): number | undefined {
 
 function normalizeLitterResource(resource: string): string {
   return resource.trim().toLowerCase();
+}
+
+function normalizeFavorites(favorites: string[] | undefined): string[] {
+  if (!favorites || favorites.length === 0) return [];
+  return Array.from(
+    new Set(favorites.map((favorite) => favorite.trim()).filter(Boolean))
+  );
 }
 
 /**
@@ -31,7 +39,7 @@ for (const raw of pokemonJson as JsonEntry[]) {
     family: raw.family,
     dexNumber: parseDexNumber(raw.id),
     specialties: raw.specialties as Specialty[],
-    favoriteItems: [],
+    favoriteItems: normalizeFavorites(raw.favorites),
     ...(raw.litter_resource
       ? { litterResources: [normalizeLitterResource(raw.litter_resource)] }
       : {}),

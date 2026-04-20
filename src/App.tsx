@@ -128,6 +128,7 @@ function buildRepartitionExportText(
   shareId: string
 ): string {
   const areaSeparator = '==================================================';
+  const houseSeparator = '-'.repeat(areaSeparator.length);
   const lines: string[] = [];
   lines.push('Pokopia Area Housing - Repartition Export');
   lines.push(`Share ID: ${shareId}`);
@@ -149,13 +150,30 @@ function buildRepartitionExportText(
       lines.push(`  House ${houseIndex + 1}`);
       if (house.pokemonIds.length === 0) {
         lines.push('    - Empty');
+        if (houseIndex < area.houses.length - 1) {
+          lines.push(houseSeparator);
+        }
         return;
       }
 
-      for (const pokemonId of house.pokemonIds) {
+      const housePokemonLabels = house.pokemonIds.map((pokemonId) => {
         const pokemon = POKEMON_DB[pokemonId];
-        const label = pokemon ? `${pokemon.name} (${pokemon.id})` : pokemonId;
-        lines.push(`    - ${label}`);
+        return pokemon ? `${pokemon.name} (${pokemon.id})` : pokemonId;
+      });
+      lines.push(`    Pokemon: ${housePokemonLabels.join(', ')}`);
+
+      const houseFavorites = Array.from(
+        new Set(
+          house.pokemonIds.flatMap((pokemonId) => POKEMON_DB[pokemonId]?.favoriteItems ?? [])
+        )
+      ).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+
+      if (houseFavorites.length > 0) {
+        lines.push(`    Favorite items: ${houseFavorites.join(', ')}`);
+      }
+
+      if (houseIndex < area.houses.length - 1) {
+        lines.push(houseSeparator);
       }
     });
 

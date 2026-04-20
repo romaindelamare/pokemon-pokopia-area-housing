@@ -6,7 +6,15 @@
         "specialties": [
             "grow"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Soft stuff",
+            "Cute stuff",
+            "Lots of water",
+            "Group Activities",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "002",
@@ -15,7 +23,15 @@
         "specialties": [
             "grow"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Soft stuff",
+            "Cute stuff",
+            "Pretty flowers",
+            "Colorful stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "003",
@@ -25,7 +41,15 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "Leaf"
+        "litter_resource": "Leaf",
+        "favorites": [
+            "Lots of nature",
+            "Soft stuff",
+            "Cute stuff",
+            "Pretty flowers",
+            "Luxury",
+            "Sour flavors"
+        ]
     },
     {
         "id": "004",
@@ -34,7 +58,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Wooden stuff",
+            "Hard stuff",
+            "Exercise",
+            "Group Activities",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "005",
@@ -43,7 +75,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Wooden stuff",
+            "Hard stuff",
+            "Exercise",
+            "Rides",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "006",
@@ -53,7 +93,15 @@
             "burn",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Nice breezes",
+            "Wooden stuff",
+            "Exercise",
+            "Luxury",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "007",
@@ -62,7 +110,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Cleanliness",
+            "Healing",
+            "Cute stuff",
+            "Group Activities",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "008",
@@ -71,7 +127,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Cleanliness",
+            "Healing",
+            "Exercise",
+            "Hard stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "009",
@@ -81,7 +145,15 @@
             "water",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Cleanliness",
+            "Healing",
+            "Exercise",
+            "Luxury",
+            "Sour flavors"
+        ]
     },
     {
         "id": "010",
@@ -91,7 +163,15 @@
             "fly",
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Nice breezes",
+            "Watching stuff",
+            "Lots of nature",
+            "Play spaces",
+            "Sour flavors"
+        ]
     },
     {
         "id": "011",
@@ -101,7 +181,15 @@
             "fly",
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Nice breezes",
+            "Watching stuff",
+            "Lots of nature",
+            "Looks like food",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "012",
@@ -111,7 +199,15 @@
             "fly",
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Nice breezes",
+            "Wooden stuff",
+            "Lots of nature",
+            "Luxury",
+            "Sour flavors"
+        ]
     },
     {
         "id": "013",
@@ -120,7 +216,15 @@
         "specialties": [
             "grow"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Lots of dirt",
+            "Soft stuff",
+            "Pretty flowers",
+            "Lots of water",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "014",
@@ -129,7 +233,15 @@
         "specialties": [
             "grow"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Lots of dirt",
+            "Soft stuff",
+            "Pretty flowers",
+            "Garbage",
+            "Dry flavors"
+        ]
     },
     {
         "id": "015",
@@ -139,7 +251,15 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "Leaf"
+        "litter_resource": "Leaf",
+        "favorites": [
+            "Lots of nature",
+            "Lots of dirt",
+            "Soft stuff",
+            "Pretty flowers",
+            "Colorful stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "016",
@@ -149,7 +269,15 @@
             "grow",
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Pretty flowers",
+            "Play spaces",
+            "Cute stuff",
+            "Noisy stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "017",
@@ -158,7 +286,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Watching stuff",
+            "Lots of dirt",
+            "Looks like food",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "018",
@@ -167,7 +303,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Watching stuff",
+            "Lots of dirt",
+            "Strange stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "019",
@@ -176,7 +320,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Watching stuff",
+            "Complicated stuff",
+            "Letters and words",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "020",
@@ -185,7 +337,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Watching stuff",
+            "Nice breezes",
+            "Pretty flowers",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "021",
@@ -195,7 +355,15 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "Vine Rope"
+        "litter_resource": "Vine Rope",
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Lots of dirt",
+            "Lots of water",
+            "Pretty flowers",
+            "Dry flavors"
+        ]
     },
     {
         "id": "022",
@@ -205,7 +373,15 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "Vine Rope"
+        "litter_resource": "Vine Rope",
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Lots of dirt",
+            "Colorful stuff",
+            "Pretty flowers",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "023",
@@ -215,7 +391,15 @@
             "grow",
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Lots of dirt",
+            "Colorful stuff",
+            "Pretty flowers",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "024",
@@ -225,7 +409,15 @@
             "water",
             "yawn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Cleanliness",
+            "Strange stuff",
+            "Soft stuff",
+            "Healing",
+            "Dry flavors"
+        ]
     },
     {
         "id": "025",
@@ -235,7 +427,15 @@
             "water",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Cleanliness",
+            "Strange stuff",
+            "Group Activities",
+            "Healing",
+            "Dry flavors"
+        ]
     },
     {
         "id": "026",
@@ -245,7 +445,15 @@
             "water",
             "teleport"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Cleanliness",
+            "Strange stuff",
+            "Group Activities",
+            "Healing",
+            "Sour flavors"
+        ]
     },
     {
         "id": "027",
@@ -254,7 +462,15 @@
         "specialties": [
             "generate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Metal stuff",
+            "Shiny stuff",
+            "Hard stuff",
+            "Group Activities",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "028",
@@ -263,7 +479,15 @@
         "specialties": [
             "generate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Metal stuff",
+            "Shiny stuff",
+            "Gatherings",
+            "Group Activities",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "029",
@@ -273,7 +497,15 @@
             "generate",
             "recycle"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Metal stuff",
+            "Luxury",
+            "Gatherings",
+            "Hard stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "030",
@@ -283,7 +515,15 @@
             "crush",
             "bulldoze"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Lots of dirt",
+            "Blocky stuff",
+            "Slender objects",
+            "Exercise",
+            "Dry flavors"
+        ]
     },
     {
         "id": "031",
@@ -293,7 +533,15 @@
             "crush",
             "bulldoze"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Metal stuff",
+            "Lots of dirt",
+            "Stone stuff",
+            "Slender objects",
+            "Hard stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "032",
@@ -302,7 +550,15 @@
         "specialties": [
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of dirt",
+            "Construction",
+            "Exercise",
+            "Slender objects",
+            "Group Activities",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "033",
@@ -311,7 +567,15 @@
         "specialties": [
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of dirt",
+            "Construction",
+            "Exercise",
+            "Slender objects",
+            "Luxury",
+            "Dry flavors"
+        ]
     },
     {
         "id": "034",
@@ -320,7 +584,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Group Activities",
+            "Fabric",
+            "Stone stuff",
+            "Round stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "035",
@@ -329,7 +601,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Group Activities",
+            "Fabric",
+            "Stone stuff",
+            "Round stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "036",
@@ -338,16 +618,32 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Group Activities",
+            "Fabric",
+            "Stone stuff",
+            "Round stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "037",
         "name": "Hitmontop",
-        "family": "Tyrogue",
+        "family": null,
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Group Activities",
+            "Fabric",
+            "Stone stuff",
+            "Round stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "038",
@@ -356,7 +652,15 @@
         "specialties": [
             "recycle"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Garbage",
+            "Gatherings",
+            "Complicated stuff",
+            "Soft stuff",
+            "Wobbly stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "039",
@@ -365,7 +669,15 @@
         "specialties": [
             "recycle"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Garbage",
+            "Gatherings",
+            "Complicated stuff",
+            "Soft stuff",
+            "Wobbly stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "040",
@@ -375,7 +687,15 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "Vine Rope"
+        "litter_resource": "Vine Rope",
+        "favorites": [
+            "Lots of nature",
+            "Lots of water",
+            "Gatherings",
+            "Pretty flowers",
+            "Slender objects",
+            "Sour flavors"
+        ]
     },
     {
         "id": "041A",
@@ -384,7 +704,15 @@
         "specialties": [
             "appraise"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Complicated stuff",
+            "Letters and words",
+            "Strange stuff",
+            "Group Activities",
+            "Dry flavors"
+        ]
     },
     {
         "id": "041B",
@@ -394,7 +722,15 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "Vine Rope"
+        "litter_resource": "Vine Rope",
+        "favorites": [
+            "Lots of nature",
+            "Lots of water",
+            "Gatherings",
+            "Pretty flowers",
+            "Watching stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "042",
@@ -403,7 +739,15 @@
         "specialties": [
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Nice breezes",
+            "Wooden stuff",
+            "Sharp stuff",
+            "Exercise",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "043",
@@ -412,24 +756,48 @@
         "specialties": [
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Metal stuff",
+            "Wooden stuff",
+            "Hard stuff",
+            "Exercise",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "044",
         "name": "Pinsir",
-        "family": null,
+        "family": "Pinsir",
         "specialties": [
             "chop",
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Pretty flowers",
+            "Sharp stuff",
+            "Exercise",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "045",
         "name": "Magikarp",
         "family": "Magikarp",
         "specialties": [],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Group Activities",
+            "Rides",
+            "Wobbly stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "046",
@@ -438,7 +806,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Nice breezes",
+            "Cleanliness",
+            "Slender objects",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "048",
@@ -448,7 +824,15 @@
             "trade",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Nice breezes",
+            "Fabric",
+            "Wobbly stuff",
+            "Watching stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "049",
@@ -458,7 +842,15 @@
             "trade",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Nice breezes",
+            "Letters and words",
+            "Containers",
+            "Watching stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "050",
@@ -468,7 +860,15 @@
             "chop",
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Pretty flowers",
+            "Looks like food",
+            "Exercise",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "051",
@@ -477,7 +877,15 @@
         "specialties": [
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Shiny stuff",
+            "Cute stuff",
+            "Group Activities",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "052",
@@ -486,7 +894,15 @@
         "specialties": [
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Shiny stuff",
+            "Cute stuff",
+            "Group Activities",
+            "Sour flavors"
+        ]
     },
     {
         "id": "053",
@@ -495,7 +911,15 @@
         "specialties": [
             "storage"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Cute stuff",
+            "Looks like food",
+            "Round stuff",
+            "Containers",
+            "Colorful stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "054",
@@ -504,7 +928,15 @@
         "specialties": [
             "storage"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Garbage",
+            "Looks like food",
+            "Round stuff",
+            "Containers",
+            "Colorful stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "055",
@@ -513,7 +945,15 @@
         "specialties": [
             "grow"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Pretty flowers",
+            "Cute stuff",
+            "Round stuff",
+            "Sharp stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "056",
@@ -523,7 +963,15 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "Sturdy Stick"
+        "litter_resource": "Sturdy Stick",
+        "favorites": [
+            "Lots of nature",
+            "Nice breezes",
+            "Luxury",
+            "Shiny stuff",
+            "Sharp stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "057",
@@ -532,7 +980,15 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "Honey"
+        "litter_resource": "Honey",
+        "favorites": [
+            "Lots of nature",
+            "Nice breezes",
+            "Wooden stuff",
+            "Gatherings",
+            "Group Activities",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "058",
@@ -543,7 +999,15 @@
             "honey",
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Nice breezes",
+            "Wooden stuff",
+            "Gatherings",
+            "Complicated stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "059A",
@@ -552,7 +1016,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Cleanliness",
+            "Colorful stuff",
+            "Containers",
+            "Sour flavors"
+        ]
     },
     {
         "id": "059B",
@@ -561,7 +1033,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Cleanliness",
+            "Colorful stuff",
+            "Containers",
+            "Dry flavors"
+        ]
     },
     {
         "id": "060A",
@@ -571,7 +1051,15 @@
             "water",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Lots of dirt",
+            "Ocean vibes",
+            "Cleanliness",
+            "Containers",
+            "Sour flavors"
+        ]
     },
     {
         "id": "060B",
@@ -581,7 +1069,15 @@
             "water",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Lots of dirt",
+            "Ocean vibes",
+            "Cleanliness",
+            "Containers",
+            "Dry flavors"
+        ]
     },
     {
         "id": "061",
@@ -591,7 +1087,15 @@
             "dream",
             "island"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Strange stuff",
+            "Nice breezes",
+            "Cute stuff",
+            "Round stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "062",
@@ -601,7 +1105,15 @@
             "fly",
             "gather"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Strange stuff",
+            "Nice breezes",
+            "Wobbly stuff",
+            "Spinning stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "063",
@@ -610,7 +1122,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of dirt",
+            "Strange stuff",
+            "Lots of nature",
+            "Watching stuff",
+            "Sharp stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "064",
@@ -620,7 +1140,15 @@
             "search",
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of dirt",
+            "Metal stuff",
+            "Exercise",
+            "Watching stuff",
+            "Sharp stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "065",
@@ -629,7 +1157,15 @@
         "specialties": [
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Construction",
+            "Wooden stuff",
+            "Slender objects",
+            "Blocky stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "066",
@@ -638,7 +1174,15 @@
         "specialties": [
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Construction",
+            "Metal stuff",
+            "Slender objects",
+            "Group Activities",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "067",
@@ -648,7 +1192,15 @@
             "build",
             "crush"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Construction",
+            "Stone stuff",
+            "Slender objects",
+            "Group Activities",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "068",
@@ -657,7 +1209,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Strange stuff",
+            "Lots of fire",
+            "Wobbly stuff",
+            "Blocky stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "069",
@@ -666,7 +1226,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Strange stuff",
+            "Lots of fire",
+            "Wobbly stuff",
+            "Containers",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "070",
@@ -675,7 +1243,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Strange stuff",
+            "Lots of fire",
+            "Wobbly stuff",
+            "Watching stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "071",
@@ -684,7 +1260,15 @@
         "specialties": [
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Luxury",
+            "Lots of dirt",
+            "Hard stuff",
+            "Sharp stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "072",
@@ -693,7 +1277,15 @@
         "specialties": [
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Luxury",
+            "Lots of dirt",
+            "Exercise",
+            "Sharp stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "073",
@@ -703,7 +1295,15 @@
             "chop",
             "litter"
         ],
-        "litter_resource": "Small log"
+        "litter_resource": "Small log",
+        "favorites": [
+            "Lots of fire",
+            "Luxury",
+            "Lots of dirt",
+            "Exercise",
+            "Sharp stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "074",
@@ -712,7 +1312,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Luxury",
+            "Lots of nature",
+            "Cleanliness",
+            "Healing",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "075",
@@ -721,7 +1329,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Luxury",
+            "Soft stuff",
+            "Cleanliness",
+            "Healing",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "076",
@@ -731,7 +1347,15 @@
             "water",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Luxury",
+            "Exercise",
+            "Cleanliness",
+            "Healing",
+            "Sour flavors"
+        ]
     },
     {
         "id": "077",
@@ -741,7 +1365,15 @@
             "fly",
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Nice breezes",
+            "Lots of water",
+            "Ocean vibes",
+            "Slender objects",
+            "Looks like food",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "078",
@@ -750,7 +1382,15 @@
         "specialties": [
             "generate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Glass stuff",
+            "Cute stuff",
+            "Pretty flowers",
+            "Fabric",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "079A",
@@ -759,7 +1399,15 @@
         "specialties": [
             "illuminate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Glass stuff",
+            "Cute stuff",
+            "Healing",
+            "Letters and words",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "079B",
@@ -768,7 +1416,15 @@
         "specialties": [
             "generate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Glass stuff",
+            "Group Activities",
+            "Round stuff",
+            "Rides",
+            "Sour flavors"
+        ]
     },
     {
         "id": "080",
@@ -778,7 +1434,15 @@
             "generate",
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Glass stuff",
+            "Group Activities",
+            "Round stuff",
+            "Play spaces",
+            "Sour flavors"
+        ]
     },
     {
         "id": "081",
@@ -787,7 +1451,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Nice breezes",
+            "Wooden stuff",
+            "Noise stuff",
+            "Complicated stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "082",
@@ -796,7 +1468,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Nice breezes",
+            "Wooden stuff",
+            "Noise stuff",
+            "Complicated stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "083",
@@ -806,7 +1486,15 @@
             "search",
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Nice breezes",
+            "Wooden stuff",
+            "Garbage",
+            "Watching stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "084",
@@ -815,7 +1503,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Containers",
+            "Group Activities",
+            "Shiny stuff",
+            "Glass stuff",
+            "Luxury",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "085",
@@ -825,7 +1521,15 @@
             "trade",
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Containers",
+            "Group Activities",
+            "Shiny stuff",
+            "Watching stuff",
+            "Luxury",
+            "Sour flavors"
+        ]
     },
     {
         "id": "086",
@@ -834,7 +1538,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Strange stuff",
+            "Complicated stuff",
+            "Healing",
+            "Dry flavors"
+        ]
     },
     {
         "id": "087",
@@ -843,7 +1555,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Strange stuff",
+            "Complicated stuff",
+            "Sharp stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "088",
@@ -853,7 +1573,15 @@
             "burn",
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Nice breezes",
+            "Letters and words",
+            "Pretty flowers",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "089",
@@ -863,7 +1591,15 @@
             "burn",
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Nice breezes",
+            "Watching stuff",
+            "Symbols",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "090",
@@ -873,7 +1609,15 @@
             "chop",
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Nice breezes",
+            "Wooden stuff",
+            "Slender objects",
+            "Exercise",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "091",
@@ -882,7 +1626,15 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "Nonburnable Garbage"
+        "litter_resource": "Nonburnable Garbage",
+        "favorites": [
+            "Garbage",
+            "Spooky stuff",
+            "Gatherings",
+            "Shiny stuff",
+            "Containers",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "092",
@@ -891,7 +1643,15 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "Nonburnable Garbage"
+        "litter_resource": "Nonburnable Garbage",
+        "favorites": [
+            "Garbage",
+            "Spooky stuff",
+            "Gatherings",
+            "Shiny stuff",
+            "Colorful stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "093",
@@ -901,7 +1661,15 @@
             "gather",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Strange stuff",
+            "Garbage",
+            "Containers",
+            "Group Activities",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "094",
@@ -911,7 +1679,15 @@
             "gather",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Strange stuff",
+            "Garbage",
+            "Wobbly stuff",
+            "Group Activities",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "095",
@@ -921,7 +1697,15 @@
             "gather",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Strange stuff",
+            "Garbage",
+            "Rides",
+            "Group Activities",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "096",
@@ -931,7 +1715,15 @@
             "generate",
             "explode"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Shiny stuff",
+            "Round stuff",
+            "Colorful stuff",
+            "Spinning stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "097",
@@ -941,7 +1733,15 @@
             "generate",
             "explode"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Shiny stuff",
+            "Round stuff",
+            "Play spaces",
+            "Spinning stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "098",
@@ -951,7 +1751,15 @@
             "grow",
             "teleport"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Strange stuff",
+            "Gatherings",
+            "Watching stuff",
+            "Group Activities",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "099",
@@ -961,7 +1769,15 @@
             "grow",
             "teleport"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Strange stuff",
+            "Gatherings",
+            "Watching stuff",
+            "Wooden stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "100",
@@ -970,7 +1786,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Fabric",
+            "Healing",
+            "Round stuff",
+            "Containers",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "101",
@@ -979,7 +1803,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Fabric",
+            "Healing",
+            "Round stuff",
+            "Group Activities",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "102",
@@ -989,7 +1821,15 @@
             "trade",
             "litter"
         ],
-        "litter_resource": "Stone"
+        "litter_resource": "Stone",
+        "favorites": [
+            "Soft stuff",
+            "Fabric",
+            "Healing",
+            "Round stuff",
+            "Group Activities",
+            "Sour flavors"
+        ]
     },
     {
         "id": "103",
@@ -998,7 +1838,15 @@
         "specialties": [
             "generate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Glass stuff",
+            "Cute stuff",
+            "Round stuff",
+            "Spinning stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "104",
@@ -1007,7 +1855,15 @@
         "specialties": [
             "generate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Glass stuff",
+            "Lots of fire",
+            "Sharp stuff",
+            "Exercise",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "105",
@@ -1017,7 +1873,15 @@
             "generate",
             "crush"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Glass stuff",
+            "Lots of fire",
+            "Hard stuff",
+            "Exercise",
+            "Sour flavors"
+        ]
     },
     {
         "id": "106",
@@ -1026,7 +1890,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Cleanliness",
+            "Watching stuff",
+            "Healing",
+            "Sour flavors"
+        ]
     },
     {
         "id": "107",
@@ -1035,7 +1907,15 @@
         "specialties": [
             "bulldoze"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Lots of nature",
+            "Looks like food",
+            "Wobbly stuff",
+            "Group Activities",
+            "Dry flavors"
+        ]
     },
     {
         "id": "108A",
@@ -1045,7 +1925,15 @@
             "trade",
             "bulldoze"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Fabric",
+            "Looks like food",
+            "Wobbly stuff",
+            "Rides",
+            "Dry flavors"
+        ]
     },
     {
         "id": "109",
@@ -1054,7 +1942,15 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "Twine"
+        "litter_resource": "Twine",
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Garbage",
+            "Rides",
+            "Colorful stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "110",
@@ -1063,7 +1959,15 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "Twine"
+        "litter_resource": "Twine",
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Garbage",
+            "Rides",
+            "Colorful stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "111",
@@ -1073,7 +1977,15 @@
             "generate",
             "litter"
         ],
-        "litter_resource": "Fluff"
+        "litter_resource": "Fluff",
+        "favorites": [
+            "Electronics",
+            "Shiny stuff",
+            "Glass stuff",
+            "Cute stuff",
+            "Fabric",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "112",
@@ -1083,7 +1995,15 @@
             "generate",
             "litter"
         ],
-        "litter_resource": "Fluff"
+        "litter_resource": "Fluff",
+        "favorites": [
+            "Electronics",
+            "Shiny stuff",
+            "Glass stuff",
+            "Cute stuff",
+            "Rides",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "113",
@@ -1093,7 +2013,15 @@
             "generate",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Shiny stuff",
+            "Glass stuff",
+            "Cute stuff",
+            "Pretty flowers",
+            "Sour flavors"
+        ]
     },
     {
         "id": "114",
@@ -1103,7 +2031,15 @@
             "water",
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Cute stuff",
+            "Cleanliness",
+            "Healing",
+            "Rides",
+            "Sour flavors"
+        ]
     },
     {
         "id": "115",
@@ -1113,7 +2049,15 @@
             "water",
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Cute stuff",
+            "Cleanliness",
+            "Round stuff",
+            "Symbols",
+            "Sour flavors"
+        ]
     },
     {
         "id": "116",
@@ -1123,7 +2067,15 @@
             "water",
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Cute stuff",
+            "Construction",
+            "Wobbly stuff",
+            "Symbols",
+            "Sour flavors"
+        ]
     },
     {
         "id": "117",
@@ -1132,7 +2084,15 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "Squishy Clay"
+        "litter_resource": "Squishy Clay",
+        "favorites": [
+            "Garbage",
+            "Lots of dirt",
+            "Stone stuff",
+            "Cleanliness",
+            "Group Activities",
+            "Sour flavors"
+        ]
     },
     {
         "id": "118",
@@ -1142,7 +2102,15 @@
             "litter",
             "bulldoze"
         ],
-        "litter_resource": "Squishy Clay"
+        "litter_resource": "Squishy Clay",
+        "favorites": [
+            "Garbage",
+            "Lots of dirt",
+            "Lots of water",
+            "Cleanliness",
+            "Round stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "119",
@@ -1151,7 +2119,15 @@
         "specialties": [
             "paint"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Fabric",
+            "Strange stuff",
+            "Colorful stuff",
+            "Shiny stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "120",
@@ -1160,7 +2136,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Cute stuff",
+            "Containers",
+            "Pretty flowers",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "121",
@@ -1170,7 +2154,15 @@
             "burn",
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Exercise",
+            "Containers",
+            "Construction",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "122",
@@ -1180,7 +2172,15 @@
             "burn",
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Luxury",
+            "Exercise",
+            "Containers",
+            "Construction",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "123",
@@ -1190,7 +2190,15 @@
             "water",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Nice breezes",
+            "Cleanliness",
+            "Ocean vibes",
+            "Watching stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "124",
@@ -1200,7 +2208,15 @@
             "water",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Nice breezes",
+            "Cleanliness",
+            "Ocean vibes",
+            "Watching stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "125",
@@ -1210,7 +2226,15 @@
             "build",
             "bulldoze"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Construction",
+            "Fabric",
+            "Round stuff",
+            "Wooden stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "126",
@@ -1220,7 +2244,15 @@
             "build",
             "bulldoze"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Construction",
+            "Fabric",
+            "Round stuff",
+            "Rides",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "127",
@@ -1229,7 +2261,15 @@
         "specialties": [
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Nice breezes",
+            "Letters and words",
+            "Complicated stuff",
+            "Exercise",
+            "Dry flavors"
+        ]
     },
     {
         "id": "128",
@@ -1238,7 +2278,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Nice breezes",
+            "Cleanliness",
+            "Containers",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "129",
@@ -1248,7 +2296,15 @@
             "water",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Nice breezes",
+            "Cleanliness",
+            "Containers",
+            "Dry flavors"
+        ]
     },
     {
         "id": "130",
@@ -1258,7 +2314,15 @@
             "water",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Metal stuff",
+            "Cleanliness",
+            "Letters and words",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "131",
@@ -1267,7 +2331,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Fabric",
+            "Healing",
+            "Cute stuff",
+            "Round stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "132",
@@ -1276,7 +2348,15 @@
         "specialties": [
             "recycle"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Garbage",
+            "Construction",
+            "Complicated stuff",
+            "Shiny stuff",
+            "Gatherings",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "133",
@@ -1286,7 +2366,15 @@
             "recycle",
             "litter"
         ],
-        "litter_resource": "Nonburnable Garbage"
+        "litter_resource": "Nonburnable Garbage",
+        "favorites": [
+            "Garbage",
+            "Containers",
+            "Complicated stuff",
+            "Shiny stuff",
+            "Gatherings",
+            "Sour flavors"
+        ]
     },
     {
         "id": "134",
@@ -1295,7 +2383,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Shiny stuff",
+            "Luxury",
+            "Glass stuff",
+            "Cute stuff",
+            "Group Activities",
+            "Sour flavors"
+        ]
     },
     {
         "id": "135",
@@ -1305,7 +2401,15 @@
             "trade",
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Shiny stuff",
+            "Luxury",
+            "Glass stuff",
+            "Strange stuff",
+            "Group Activities",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "136",
@@ -1314,7 +2418,15 @@
         "specialties": [
             "gather"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Fabric",
+            "Rides",
+            "Cute stuff",
+            "Cleanliness",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "137",
@@ -1324,7 +2436,15 @@
             "gather",
             "recycle"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Fabric",
+            "Rides",
+            "Cute stuff",
+            "Cleanliness",
+            "Sour flavors"
+        ]
     },
     {
         "id": "138",
@@ -1333,7 +2453,15 @@
         "specialties": [
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Electronics",
+            "Watching stuff",
+            "Lots of dirt",
+            "Containers",
+            "Dry flavors"
+        ]
     },
     {
         "id": "139",
@@ -1343,7 +2471,15 @@
             "generate",
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Electronics",
+            "Watching stuff",
+            "Glass stuff",
+            "Blocky stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "140",
@@ -1353,7 +2489,15 @@
             "generate",
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Electronics",
+            "Exercise",
+            "Glass stuff",
+            "Nice breezes",
+            "Dry flavors"
+        ]
     },
     {
         "id": "141",
@@ -1362,7 +2506,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Cute stuff",
+            "Electronics",
+            "Fabric",
+            "Group Activities",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "142",
@@ -1371,7 +2523,15 @@
         "specialties": [
             "generate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Shiny stuff",
+            "Cute stuff",
+            "Glass stuff",
+            "Group Activities",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "143",
@@ -1381,7 +2541,15 @@
             "generate",
             "crush"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Shiny stuff",
+            "Exercise",
+            "Glass stuff",
+            "Group Activities",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "144",
@@ -1391,7 +2559,15 @@
             "generate",
             "crush"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Shiny stuff",
+            "Exercise",
+            "Healing",
+            "Group Activities",
+            "Dry flavors"
+        ]
     },
     {
         "id": "145A",
@@ -1400,7 +2576,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Group Activities",
+            "Slender Objects",
+            "Gatherings",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "145B",
@@ -1409,7 +2593,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Group Activities",
+            "Spinning stuff",
+            "Blocky stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "145C",
@@ -1418,7 +2610,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Group Activities",
+            "Letters and words",
+            "Containers",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "146",
@@ -1427,7 +2627,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Garbage",
+            "Watching stuff",
+            "Lots of nature",
+            "Slender objects",
+            "Spinning stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "147",
@@ -1436,7 +2644,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Garbage",
+            "Watching stuff",
+            "Lots of nature",
+            "Slender objects",
+            "Spinning stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "148",
@@ -1445,7 +2661,15 @@
         "specialties": [
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Cute stuff",
+            "Round stuff",
+            "Colorful stuff",
+            "Healing",
+            "Rides",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "149",
@@ -1454,7 +2678,15 @@
         "specialties": [
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Cute stuff",
+            "Play spaces",
+            "Pretty flowers",
+            "Healing",
+            "Group Activities",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "150",
@@ -1464,7 +2696,15 @@
             "hype",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Cute stuff",
+            "Play spaces",
+            "Pretty flowers",
+            "Healing",
+            "Group Activities",
+            "Sour flavors"
+        ]
     },
     {
         "id": "151",
@@ -1473,7 +2713,15 @@
         "specialties": [
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Cute stuff",
+            "Play spaces",
+            "Healing",
+            "Noisy stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "152",
@@ -1482,7 +2730,15 @@
         "specialties": [
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Cute stuff",
+            "Play spaces",
+            "Healing",
+            "Wobbly stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "153",
@@ -1492,7 +2748,15 @@
             "hype",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Cute stuff",
+            "Play spaces",
+            "Healing",
+            "Group Activities",
+            "Sour flavors"
+        ]
     },
     {
         "id": "154",
@@ -1501,7 +2765,15 @@
         "specialties": [
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of dirt",
+            "Play spaces",
+            "Cute stuff",
+            "Group Activities",
+            "Slender objects",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "155",
@@ -1511,7 +2783,15 @@
             "hype",
             "crush"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of dirt",
+            "Play spaces",
+            "Gatherings",
+            "Group Activities",
+            "Slender objects",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "156",
@@ -1521,7 +2801,15 @@
             "build",
             "gather"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Construction",
+            "Stone stuff",
+            "Hard stuff",
+            "Group Activities",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "157",
@@ -1531,7 +2819,15 @@
             "build",
             "gather"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Construction",
+            "Stone stuff",
+            "Hard stuff",
+            "Group Activities",
+            "Sour flavors"
+        ]
     },
     {
         "id": "158",
@@ -1541,7 +2837,15 @@
             "build",
             "gather"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Construction",
+            "Stone stuff",
+            "Hard stuff",
+            "Group Activities",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "159",
@@ -1550,7 +2854,15 @@
         "specialties": [
             "crush"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Spinning stuff",
+            "Round stuff",
+            "Exercise",
+            "Dry flavors"
+        ]
     },
     {
         "id": "160",
@@ -1559,7 +2871,15 @@
         "specialties": [
             "crush"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Spinning stuff",
+            "Round stuff",
+            "Exercise",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "161",
@@ -1569,7 +2889,15 @@
             "crush",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Spinning stuff",
+            "Round stuff",
+            "Exercise",
+            "Sour flavors"
+        ]
     },
     {
         "id": "162",
@@ -1578,7 +2906,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Watching stuff",
+            "Cute stuff",
+            "Wobbly stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "163",
@@ -1587,7 +2923,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Electronics",
+            "Hard stuff",
+            "Exercise",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "164",
@@ -1597,7 +2941,15 @@
             "burn",
             "crush"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Electronics",
+            "Hard stuff",
+            "Exercise",
+            "Dry flavors"
+        ]
     },
     {
         "id": "165",
@@ -1606,7 +2958,15 @@
         "specialties": [
             "bulldoze"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Lots of nature",
+            "Wooden stuff",
+            "Round stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "166",
@@ -1615,7 +2975,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Lots of nature",
+            "Wooden stuff",
+            "Watching stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "167",
@@ -1625,7 +2993,15 @@
             "trade",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Shiny stuff",
+            "Nice breezes",
+            "Group Activities",
+            "Luxury",
+            "Fabric",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "168",
@@ -1635,7 +3011,15 @@
             "trade",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Shiny stuff",
+            "Nice breezes",
+            "Spooky stuff",
+            "Letters and words",
+            "Glass stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "169",
@@ -1645,7 +3029,15 @@
             "crush",
             "bulldoze"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Lots of dirt",
+            "Luxury",
+            "Shiny stuff",
+            "Looks like food",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "170",
@@ -1655,7 +3047,15 @@
             "crush",
             "bulldoze"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Luxury",
+            "Shiny stuff",
+            "Watching stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "171",
@@ -1665,7 +3065,15 @@
             "crush",
             "bulldoze"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Luxury",
+            "Shiny stuff",
+            "Exercise",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "172",
@@ -1674,7 +3082,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Lots of nature",
+            "Cleanliness",
+            "Containers",
+            "Noisy stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "173",
@@ -1683,7 +3099,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Lots of nature",
+            "Cleanliness",
+            "Containers",
+            "Noisy stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "174",
@@ -1693,7 +3117,15 @@
             "water",
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Lots of nature",
+            "Play spaces",
+            "Containers",
+            "Noisy stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "175",
@@ -1703,7 +3135,15 @@
             "trade",
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Metal stuff",
+            "Cute stuff",
+            "Colorful stuff",
+            "Looks like food",
+            "Group Activities",
+            "Dry flavors"
+        ]
     },
     {
         "id": "176",
@@ -1712,7 +3152,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Metal stuff",
+            "Hard stuff",
+            "Watching stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "177",
@@ -1721,7 +3169,15 @@
         "specialties": [
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Noisy stuff",
+            "Colorful stuff",
+            "Watching stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "178",
@@ -1730,7 +3186,15 @@
         "specialties": [
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Noisy stuff",
+            "Colorful stuff",
+            "Watching stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "179",
@@ -1740,7 +3204,15 @@
             "hype",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Nice breezes",
+            "Fabric",
+            "Slender objects",
+            "Play spaces",
+            "Noisy stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "180",
@@ -1749,7 +3221,15 @@
         "specialties": [
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Fabric",
+            "Construction",
+            "Gatherings",
+            "Watching stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "181",
@@ -1758,7 +3238,15 @@
         "specialties": [
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Exercise",
+            "Metal stuff",
+            "Construction",
+            "Complicated stuff",
+            "Healing",
+            "Dry flavors"
+        ]
     },
     {
         "id": "182",
@@ -1767,7 +3255,15 @@
         "specialties": [
             "dj"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Shiny stuff",
+            "Glass stuff",
+            "Noisy stuff",
+            "Group Activities",
+            "Blocky stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "183",
@@ -1777,7 +3273,15 @@
             "burn",
             "litter"
         ],
-        "litter_resource": "Twine"
+        "litter_resource": "Twine",
+        "favorites": [
+            "Lots of nature",
+            "Lots of fire",
+            "Sharp stuff",
+            "Wooden stuff",
+            "Symbols",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "184",
@@ -1787,7 +3291,15 @@
             "burn",
             "litter"
         ],
-        "litter_resource": "Twine"
+        "litter_resource": "Twine",
+        "favorites": [
+            "Lots of nature",
+            "Lots of fire",
+            "Letters and words",
+            "Wooden stuff",
+            "Symbols",
+            "Dry flavors"
+        ]
     },
     {
         "id": "185",
@@ -1796,7 +3308,15 @@
         "specialties": [
             "grow"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Nice breezes",
+            "Containers",
+            "Spinning stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "186",
@@ -1806,7 +3326,15 @@
             "grow",
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Nice breezes",
+            "Slender objects",
+            "Cleanliness",
+            "Sour flavors"
+        ]
     },
     {
         "id": "187",
@@ -1816,7 +3344,15 @@
             "grow",
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Spooky stuff",
+            "Wooden stuff",
+            "Nice breezes",
+            "Letters and words",
+            "Dry flavors"
+        ]
     },
     {
         "id": "188",
@@ -1825,7 +3361,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Soft stuff",
+            "Group Activities",
+            "Sharp stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "189",
@@ -1834,7 +3378,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Play spaces",
+            "Group Activities",
+            "Containers",
+            "Dry flavors"
+        ]
     },
     {
         "id": "190",
@@ -1844,7 +3396,15 @@
             "burn",
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Play spaces",
+            "Group Activities",
+            "Round stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "191",
@@ -1854,7 +3414,15 @@
             "search",
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Wooden stuff",
+            "Watching stuff",
+            "Looks like food",
+            "Round stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "192",
@@ -1863,7 +3431,15 @@
         "specialties": [
             "party"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Metal stuff",
+            "Group Activities",
+            "Looks like food",
+            "Luxury",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "193",
@@ -1873,7 +3449,15 @@
             "burn",
             "gather"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Lots of fire",
+            "Hard stuff",
+            "Metal stuff",
+            "Rides",
+            "Sour flavors"
+        ]
     },
     {
         "id": "194",
@@ -1883,7 +3467,15 @@
             "burn",
             "gather"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Lots of fire",
+            "Hard stuff",
+            "Metal stuff",
+            "Rides",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "195",
@@ -1893,36 +3485,68 @@
             "burn",
             "gather"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Lots of fire",
+            "Hard stuff",
+            "Metal stuff",
+            "Rides",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "196",
         "name": "Toxel",
-        "family": "Toxtricity Amped Form",
+        "family": "Toxtricity",
         "specialties": [
             "generate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Shiny stuff",
+            "Noisy stuff",
+            "Glass stuff",
+            "Garbage",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "197A",
         "name": "Toxtricity Amped Form",
-        "family": "Toxtricity Amped Form",
+        "family": "Toxtricity",
         "specialties": [
             "generate",
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Play spaces",
+            "Noisy stuff",
+            "Slender objects",
+            "Sharp stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "197B",
         "name": "Toxtricity Low Key Form",
-        "family": "Toxtricity Amped Form",
+        "family": "Toxtricity",
         "specialties": [
             "generate",
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Play spaces",
+            "Noisy stuff",
+            "Slender objects",
+            "Sharp stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "198",
@@ -1931,7 +3555,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Cute stuff",
+            "Watching stuff",
+            "Soft stuff",
+            "Lots of fire",
+            "Letters and words",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "199",
@@ -1941,7 +3573,15 @@
             "search",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Cute stuff",
+            "Watching stuff",
+            "Group Activities",
+            "Lots of fire",
+            "Looks like food",
+            "Sour flavors"
+        ]
     },
     {
         "id": "200",
@@ -1950,7 +3590,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Strange stuff",
+            "Exercise",
+            "Luxury",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "201",
@@ -1960,7 +3608,15 @@
             "burn",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Strange stuff",
+            "Exercise",
+            "Luxury",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "202",
@@ -1970,7 +3626,15 @@
             "burn",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Spooky stuff",
+            "Strange stuff",
+            "Luxury",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "203",
@@ -1979,7 +3643,15 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "Iron Ore"
+        "litter_resource": "Iron Ore",
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Garbage",
+            "Shiny stuff",
+            "Complicated stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "204",
@@ -1988,7 +3660,15 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "Iron Ore"
+        "litter_resource": "Iron Ore",
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Garbage",
+            "Shiny stuff",
+            "Complicated stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "205",
@@ -1997,7 +3677,15 @@
         "specialties": [
             "collect"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Metal stuff",
+            "Strange stuff",
+            "Shiny stuff",
+            "Complicated stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "206",
@@ -2006,7 +3694,15 @@
         "specialties": [
             "collect"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Metal stuff",
+            "Strange stuff",
+            "Shiny stuff",
+            "Complicated stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "207",
@@ -2015,7 +3711,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Soft stuff",
+            "Cute stuff",
+            "Round stuff",
+            "Pretty flowers",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "208",
@@ -2024,7 +3728,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Soft stuff",
+            "Watching stuff",
+            "Luxury",
+            "Pretty flowers",
+            "Dry flavors"
+        ]
     },
     {
         "id": "209",
@@ -2033,7 +3745,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Cleanliness",
+            "Round stuff",
+            "Rides",
+            "Spinning stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "210",
@@ -2042,7 +3762,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Cleanliness",
+            "Lots of nature",
+            "Exercise",
+            "Spinning stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "211",
@@ -2052,7 +3780,15 @@
             "water",
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Cleanliness",
+            "Construction",
+            "Exercise",
+            "Group Activities",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "212",
@@ -2062,7 +3798,15 @@
             "water",
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Play spaces",
+            "Noisy stuff",
+            "Gatherings",
+            "Group Activities",
+            "Sour flavors"
+        ]
     },
     {
         "id": "213",
@@ -2071,7 +3815,15 @@
         "specialties": [
             "teleport"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Strange stuff",
+            "Wobbly stuff",
+            "Metal stuff",
+            "Soft stuff",
+            "Watching stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "214",
@@ -2080,7 +3832,15 @@
         "specialties": [
             "teleport"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Strange stuff",
+            "Wobbly stuff",
+            "Metal stuff",
+            "Containers",
+            "Watching stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "215",
@@ -2090,7 +3850,15 @@
             "teleport",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Strange stuff",
+            "Wobbly stuff",
+            "Metal stuff",
+            "Letters and words",
+            "Watching stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "216",
@@ -2099,7 +3867,15 @@
         "specialties": [
             "gather"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Strange stuff",
+            "Cute stuff",
+            "Rides",
+            "Play spaces",
+            "Colorful stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "217",
@@ -2109,7 +3885,15 @@
             "gather",
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Strange stuff",
+            "Cute stuff",
+            "Rides",
+            "Wobbly stuff",
+            "Watching stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "218",
@@ -2118,7 +3902,15 @@
         "specialties": [
             "recycle"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Strange stuff",
+            "Blocky stuff",
+            "Construction",
+            "Colorful stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "219",
@@ -2127,7 +3919,15 @@
         "specialties": [
             "recycle"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Strange stuff",
+            "Round stuff",
+            "Construction",
+            "Colorful stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "220",
@@ -2136,7 +3936,15 @@
         "specialties": [
             "rarify"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Strange stuff",
+            "Fabric",
+            "Watching stuff",
+            "Colorful stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "221",
@@ -2145,7 +3953,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Lots of fire",
+            "Cleanliness",
+            "Cute stuff",
+            "Slender objects",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "222",
@@ -2154,7 +3970,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Lots of fire",
+            "Cleanliness",
+            "Glass stuff",
+            "Slender objects",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "223",
@@ -2164,7 +3988,15 @@
             "water",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Nice breezes",
+            "Cleanliness",
+            "Symbols",
+            "Pretty flowers",
+            "Dry flavors"
+        ]
     },
     {
         "id": "224",
@@ -2173,7 +4005,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Fabric",
+            "Slender objects",
+            "Metal stuff",
+            "Rides",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "225",
@@ -2182,7 +4022,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Fabric",
+            "Slender objects",
+            "Metal stuff",
+            "Rides",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "226",
@@ -2192,7 +4040,15 @@
             "burn",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Fabric",
+            "Slender objects",
+            "Metal stuff",
+            "Rides",
+            "Dry flavors"
+        ]
     },
     {
         "id": "227",
@@ -2201,7 +4057,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Strange stuff",
+            "Shiny stuff",
+            "Colorful stuff",
+            "Watching stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "228",
@@ -2211,7 +4075,15 @@
             "gather",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Strange stuff",
+            "Noisy stuff",
+            "Wobbly stuff",
+            "Group Activities",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "229",
@@ -2220,7 +4092,15 @@
         "specialties": [
             "gather"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Strange stuff",
+            "Rides",
+            "Watching stuff",
+            "Slender objects",
+            "Sour flavors"
+        ]
     },
     {
         "id": "230",
@@ -2230,7 +4110,15 @@
             "gather",
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Strange stuff",
+            "Rides",
+            "Watching stuff",
+            "Slender objects",
+            "Sour flavors"
+        ]
     },
     {
         "id": "231",
@@ -2239,7 +4127,15 @@
         "specialties": [
             "teleport"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Strange stuff",
+            "Cute stuff",
+            "Healing",
+            "Watching stuff",
+            "Symbols",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "232",
@@ -2248,7 +4144,15 @@
         "specialties": [
             "teleport"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Strange stuff",
+            "Cute stuff",
+            "Healing",
+            "Watching stuff",
+            "Symbols",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "233",
@@ -2258,7 +4162,15 @@
             "teleport",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Strange stuff",
+            "Luxury",
+            "Healing",
+            "Watching stuff",
+            "Symbols",
+            "Sour flavors"
+        ]
     },
     {
         "id": "234",
@@ -2268,7 +4180,15 @@
             "teleport",
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Strange stuff",
+            "Exercise",
+            "Healing",
+            "Construction",
+            "Fabric",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "235",
@@ -2277,7 +4197,15 @@
         "specialties": [
             "generate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Glass stuff",
+            "Soft stuff",
+            "Cute stuff",
+            "Group Activities",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "236",
@@ -2286,7 +4214,15 @@
         "specialties": [
             "generate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Glass stuff",
+            "Soft stuff",
+            "Cute stuff",
+            "Group Activities",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "237",
@@ -2296,7 +4232,15 @@
             "bulldoze",
             "litter"
         ],
-        "litter_resource": "Squishy Clay"
+        "litter_resource": "Squishy Clay",
+        "favorites": [
+            "Lots of dirt",
+            "Hard stuff",
+            "Strange stuff",
+            "Watching stuff",
+            "Exercise",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "238",
@@ -2306,7 +4250,15 @@
             "bulldoze",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of dirt",
+            "Lots of fire",
+            "Lots of nature",
+            "Luxury",
+            "Noisy stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "239",
@@ -2316,7 +4268,15 @@
             "bulldoze",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of dirt",
+            "Lots of fire",
+            "Lots of nature",
+            "Stone stuff",
+            "Wooden stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "240",
@@ -2325,7 +4285,15 @@
         "specialties": [
             "litter"
         ],
-        "litter_resource": "Fluff"
+        "litter_resource": "Fluff",
+        "favorites": [
+            "Soft stuff",
+            "Nice breezes",
+            "Cute stuff",
+            "Watching stuff",
+            "Cleanliness",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "241",
@@ -2335,7 +4303,15 @@
             "litter",
             "fly"
         ],
-        "litter_resource": "Fluff"
+        "litter_resource": "Fluff",
+        "favorites": [
+            "Soft stuff",
+            "Nice breezes",
+            "Cute stuff",
+            "Watching stuff",
+            "Noisy stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "242",
@@ -2344,7 +4320,15 @@
         "specialties": [
             "gather"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Strange stuff",
+            "Rides",
+            "Glass stuff",
+            "Fabric",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "243",
@@ -2353,7 +4337,15 @@
         "specialties": [
             "gather"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Strange stuff",
+            "Rides",
+            "Soft stuff",
+            "Containers",
+            "Sour flavors"
+        ]
     },
     {
         "id": "244",
@@ -2363,7 +4355,15 @@
             "gather",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Strange stuff",
+            "Rides",
+            "Group Activities",
+            "Containers",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "245",
@@ -2372,7 +4372,15 @@
         "specialties": [
             "recycle"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Metal stuff",
+            "Strange stuff",
+            "Hard stuff",
+            "Complicated stuff",
+            "Stone stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "246",
@@ -2381,7 +4389,15 @@
         "specialties": [
             "recycle"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Metal stuff",
+            "Strange stuff",
+            "Hard stuff",
+            "Complicated stuff",
+            "Stone stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "247",
@@ -2391,7 +4407,15 @@
             "recycle",
             "crush"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Metal stuff",
+            "Strange stuff",
+            "Hard stuff",
+            "Exercise",
+            "Luxury",
+            "Dry flavors"
+        ]
     },
     {
         "id": "248",
@@ -2401,7 +4425,15 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "Vine Rope"
+        "litter_resource": "Vine Rope",
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Lots of water",
+            "Wobbly stuff",
+            "Shiny stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "249",
@@ -2411,7 +4443,15 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "Vine Rope"
+        "litter_resource": "Vine Rope",
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Lots of water",
+            "Cleanliness",
+            "Shiny stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "250",
@@ -2421,7 +4461,15 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "Vine Rope"
+        "litter_resource": "Vine Rope",
+        "favorites": [
+            "Lots of nature",
+            "Wooden stuff",
+            "Lots of water",
+            "Containers",
+            "Slender objects",
+            "Dry flavors"
+        ]
     },
     {
         "id": "251",
@@ -2430,7 +4478,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Cleanliness",
+            "Watching stuff",
+            "Containers",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "252",
@@ -2439,7 +4495,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Cleanliness",
+            "Watching stuff",
+            "Exercise",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "253",
@@ -2449,7 +4513,15 @@
             "water",
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Cleanliness",
+            "Shiny stuff",
+            "Exercise",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "254",
@@ -2458,7 +4530,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Cute stuff",
+            "Watching stuff",
+            "Group Activities",
+            "Looks like food",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "255",
@@ -2467,7 +4547,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Nice breezes",
+            "Lots of fire",
+            "Watching stuff",
+            "Luxury",
+            "Looks like food",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "256",
@@ -2477,7 +4565,15 @@
             "search",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Nice breezes",
+            "Lots of fire",
+            "Watching stuff",
+            "Play spaces",
+            "Looks like food",
+            "Dry flavors"
+        ]
     },
     {
         "id": "257",
@@ -2486,7 +4582,15 @@
         "specialties": [
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Nice breezes",
+            "Shiny stuff",
+            "Containers",
+            "Slender objects",
+            "Wooden stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "258",
@@ -2495,7 +4599,15 @@
         "specialties": [
             "chop"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Nice breezes",
+            "Shiny stuff",
+            "Containers",
+            "Slender objects",
+            "Wooden stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "259",
@@ -2505,7 +4617,15 @@
             "chop",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Nice breezes",
+            "Metal stuff",
+            "Shiny stuff",
+            "Containers",
+            "Wooden stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "260",
@@ -2515,7 +4635,15 @@
             "gather",
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Spooky stuff",
+            "Rides",
+            "Strange stuff",
+            "Group Activities",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "261",
@@ -2525,7 +4653,15 @@
             "gather",
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Spooky stuff",
+            "Rides",
+            "Strange stuff",
+            "Group Activities",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "262",
@@ -2535,7 +4671,15 @@
             "gather",
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Spooky stuff",
+            "Rides",
+            "Strange stuff",
+            "Group Activities",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "263",
@@ -2544,7 +4688,15 @@
         "specialties": [
             "grow"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Pretty flowers",
+            "Containers",
+            "Colorful stuff",
+            "Cute stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "264",
@@ -2553,7 +4705,15 @@
         "specialties": [
             "grow"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Pretty flowers",
+            "Sharp stuff",
+            "Colorful stuff",
+            "Cute stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "265",
@@ -2563,7 +4723,15 @@
             "grow",
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Pretty flowers",
+            "Shiny stuff",
+            "Luxury",
+            "Cute stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "266",
@@ -2572,7 +4740,15 @@
         "specialties": [
             "generate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Nice breezes",
+            "Ocean vibes",
+            "Gatherings",
+            "Complicated stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "267",
@@ -2582,7 +4758,15 @@
             "generate",
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Nice breezes",
+            "Ocean vibes",
+            "Gatherings",
+            "Slender objects",
+            "Dry flavors"
+        ]
     },
     {
         "id": "268",
@@ -2591,7 +4775,15 @@
         "specialties": [
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Cute stuff",
+            "Metal stuff",
+            "Construction",
+            "Looks like food",
+            "Exercise",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "269",
@@ -2600,7 +4792,15 @@
         "specialties": [
             "build"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Cute stuff",
+            "Metal stuff",
+            "Construction",
+            "Group Activities",
+            "Exercise",
+            "Sour flavors"
+        ]
     },
     {
         "id": "270",
@@ -2609,7 +4809,15 @@
         "specialties": [
             "engineer"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Cute stuff",
+            "Metal stuff",
+            "Construction",
+            "Blocky stuff",
+            "Exercise",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "271",
@@ -2618,7 +4826,15 @@
         "specialties": [
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Nice breezes",
+            "Hard stuff",
+            "Shiny stuff",
+            "Spinning stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "272",
@@ -2627,7 +4843,15 @@
         "specialties": [
             "crush"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Wobbly stuff",
+            "Group Activities",
+            "Exercise",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "273",
@@ -2637,7 +4861,15 @@
             "crush",
             "litter"
         ],
-        "litter_resource": "Stone"
+        "litter_resource": "Stone",
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Metal stuff",
+            "Luxury",
+            "Exercise",
+            "Dry flavors"
+        ]
     },
     {
         "id": "274",
@@ -2646,7 +4878,15 @@
         "specialties": [
             "crush"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Metal stuff",
+            "Luxury",
+            "Round stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "275",
@@ -2656,7 +4896,15 @@
             "crush",
             "litter"
         ],
-        "litter_resource": "Stone"
+        "litter_resource": "Stone",
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Metal stuff",
+            "Luxury",
+            "Exercise",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "276",
@@ -2665,7 +4913,15 @@
         "specialties": [
             "crush"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Lots of fire",
+            "Luxury",
+            "Exercise",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "277",
@@ -2675,7 +4931,15 @@
             "crush",
             "litter"
         ],
-        "litter_resource": "Stone"
+        "litter_resource": "Stone",
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Lots of fire",
+            "Luxury",
+            "Exercise",
+            "Sour flavors"
+        ]
     },
     {
         "id": "278",
@@ -2684,7 +4948,15 @@
         "specialties": [
             "crush"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Shiny stuff",
+            "Group Activities",
+            "Containers",
+            "Dry flavors"
+        ]
     },
     {
         "id": "279",
@@ -2694,7 +4966,15 @@
             "crush",
             "litter"
         ],
-        "litter_resource": "Stone"
+        "litter_resource": "Stone",
+        "favorites": [
+            "Stone stuff",
+            "Hard stuff",
+            "Shiny stuff",
+            "Noisy stuff",
+            "Symbols",
+            "Sour flavors"
+        ]
     },
     {
         "id": "280",
@@ -2703,7 +4983,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Stone stuff",
+            "Cute stuff",
+            "Letters and words",
+            "Group Activities",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "281",
@@ -2712,7 +5000,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Cleanliness",
+            "Cute stuff",
+            "Pretty flowers",
+            "Watching stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "282",
@@ -2721,7 +5017,15 @@
         "specialties": [
             "generate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Shiny stuff",
+            "Cute stuff",
+            "Glass stuff",
+            "Sharp stuff",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "283",
@@ -2730,7 +5034,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Wooden stuff",
+            "Cute stuff",
+            "Metal stuff",
+            "Rides",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "284",
@@ -2739,7 +5051,15 @@
         "specialties": [
             "gather"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Strange stuff",
+            "Nice breezes",
+            "Cute stuff",
+            "Complicated stuff",
+            "Watching stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "285",
@@ -2748,7 +5068,15 @@
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Shiny stuff",
+            "Luxury",
+            "Cute stuff",
+            "Letters and words",
+            "Watching stuff",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "286",
@@ -2757,7 +5085,15 @@
         "specialties": [
             "grow"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of nature",
+            "Pretty flowers",
+            "Cute stuff",
+            "Fabric",
+            "Healing",
+            "Sour flavors"
+        ]
     },
     {
         "id": "287",
@@ -2766,7 +5102,15 @@
         "specialties": [
             "trade"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Shiny stuff",
+            "Cute stuff",
+            "Glass stuff",
+            "Group Activities",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "288",
@@ -2775,7 +5119,15 @@
         "specialties": [
             "hype"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Cute stuff",
+            "Lots of nature",
+            "Fabric",
+            "Noisy stuff",
+            "Round stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "290",
@@ -2784,7 +5136,15 @@
         "specialties": [
             "generate"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Nice breezes",
+            "Shiny stuff",
+            "Glass stuff",
+            "Luxury",
+            "Dry flavors"
+        ]
     },
     {
         "id": "291",
@@ -2793,7 +5153,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Stone stuff",
+            "Symbols",
+            "Exercise",
+            "Luxury",
+            "Bitter flavors"
+        ]
     },
     {
         "id": "292",
@@ -2802,7 +5170,15 @@
         "specialties": [
             "water"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Ocean vibes",
+            "Cleanliness",
+            "Watching stuff",
+            "Healing",
+            "Sour flavors"
+        ]
     },
     {
         "id": "293",
@@ -2811,7 +5187,15 @@
         "specialties": [
             "burn"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Lots of water",
+            "Stone stuff",
+            "Containers",
+            "Symbols",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "294",
@@ -2820,7 +5204,15 @@
         "specialties": [
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of water",
+            "Nice breezes",
+            "Shiny stuff",
+            "Symbols",
+            "Luxury",
+            "Sour flavors"
+        ]
     },
     {
         "id": "295",
@@ -2829,7 +5221,15 @@
         "specialties": [
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Electronics",
+            "Nice breezes",
+            "Glass stuff",
+            "Symbols",
+            "Luxury",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "296",
@@ -2838,7 +5238,15 @@
         "specialties": [
             "fly"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Lots of fire",
+            "Nice breezes",
+            "Stone stuff",
+            "Symbols",
+            "Luxury",
+            "Spicy flavors"
+        ]
     },
     {
         "id": "299",
@@ -2847,7 +5255,15 @@
         "specialties": [
             "teleport"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Strange stuff",
+            "Watching stuff",
+            "Letters and words",
+            "Complicated stuff",
+            "Stone stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "300",
@@ -2856,7 +5272,15 @@
         "specialties": [
             "teleport"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Strange stuff",
+            "Watching stuff",
+            "Luxury",
+            "Complicated stuff",
+            "Play spaces",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "S001",
@@ -2865,7 +5289,15 @@
         "specialties": [
             "grow"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Lots of nature",
+            "Nice breezes",
+            "Pretty flowers",
+            "Wobbly stuff",
+            "Sweet flavors"
+        ]
     },
     {
         "id": "S002",
@@ -2874,7 +5306,15 @@
         "specialties": [
             "grow"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Soft stuff",
+            "Lots of nature",
+            "Nice breezes",
+            "Pretty flowers",
+            "Spinning stuff",
+            "Dry flavors"
+        ]
     },
     {
         "id": "S003A",
@@ -2884,15 +5324,31 @@
             "grow",
             "litter"
         ],
-        "litter_resource": "Fluff"
+        "litter_resource": "Fluff",
+        "favorites": [
+            "Soft stuff",
+            "Lots of nature",
+            "Nice breezes",
+            "Pretty flowers",
+            "Round stuff",
+            "Sour flavors"
+        ]
     },
     {
         "id": "S003B",
         "name": "Sableye",
-        "family": "Hoppip",
+        "family": null,
         "specialties": [
             "search"
         ],
-        "litter_resource": null
+        "litter_resource": null,
+        "favorites": [
+            "Spooky stuff",
+            "Shiny stuff",
+            "Luxury",
+            "Looks like food",
+            "Watching stuff",
+            "Sour flavors"
+        ]
     }
 ]
