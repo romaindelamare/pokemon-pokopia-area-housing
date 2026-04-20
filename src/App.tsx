@@ -23,6 +23,7 @@ import { PokemonPool } from './components/PokemonPool';
 import { AreaColumn } from './components/AreaColumn';
 import { PokemonCardOverlay } from './components/PokemonCard';
 import { ShareLoadPanel } from './components/ShareLoadPanel';
+import { HelpPanel } from './components/HelpPanel';
 import { Icon } from './components/Icon';
 import {
   makeHouse,
@@ -402,6 +403,7 @@ export default function App() {
               <Icon name="description" /> Export TXT
             </button>
             <ShareLoadPanel state={{ poolIds, areas }} onLoad={handleLoadState} />
+            <HelpPanel />
             <label className="family-toggle" htmlFor="family-toggle-input">
               <span className="toggle-label">Move family together</span>
               <div

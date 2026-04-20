@@ -732,6 +732,10 @@
   position: relative;
 }
 
+.help-panel {
+  position: relative;
+}
+
 .header-btn {
   display: inline-flex;
   align-items: center;
@@ -859,6 +863,45 @@
 .share-popover .load-input {
   cursor: text;
   user-select: all;
+}
+
+/* ── Help Popover ─────────────────────────────────────────────────────────── */
+.help-popover {
+  width: 360px;
+  max-width: min(360px, calc(100vw - 24px));
+  gap: 12px;
+}
+
+.help-title {
+  font-size: .92rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.help-subtitle {
+  font-size: .76rem;
+  color: var(--text-3);
+  line-height: 1.45;
+}
+
+.help-list {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.help-list li {
+  font-size: .74rem;
+  color: var(--text-2);
+  line-height: 1.45;
+}
+
+@media (max-width: 1080px) {
+  .help-popover {
+    right: -8px;
+  }
 }
 
 /* ── Litter Resource Row ─────────────────────────────────────────────────── */
